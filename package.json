@@ -6,9 +6,21 @@
         "@testing-library/jest-dom": "^4.2.4",
         "@testing-library/react": "^9.3.2",
         "@testing-library/user-event": "^7.1.2",
+        "bootstrap": "5.0.2",
+        "firebase": "^8.8.1",
+        "firebase-tools": "^9.16.0",
+        "i18next": "^20.3.5",
+        "i18next-browser-languagedetector": "^6.1.2",
+        "node-sass": "4.14.1",
         "react": "^16.14.0",
+        "react-bootstrap": "^2.0.0-beta.4",
         "react-dom": "^16.14.0",
-        "react-scripts": "3.4.3"
+        "react-i18next": "^11.11.4",
+        "react-redux": "^7.2.4",
+        "react-router-dom": "^5.2.0",
+        "react-scripts": "3.4.3",
+        "redux": "^4.1.0",
+        "redux-thunk": "^2.3.0"
     },
     "scripts": {
         "start": "react-scripts start",
