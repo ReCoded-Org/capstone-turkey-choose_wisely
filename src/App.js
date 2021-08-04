@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { ADD_COUNT, REDUCE_COUNT } from "./utilities/types";
 import { Container, Row, Button, Col, ListGroup } from "react-bootstrap";
 import "./App.scss";
-import "./style/style.scss";
+import "./style/style.css";
 import { db } from "./firebase";
 
 function App() {
