@@ -10,15 +10,14 @@ describe("With React Testing Library", () => {
   const mockStore = configureStore();
   let store;
 
-  it('test scss', () => {
+  it("test scss", () => {
     store = mockStore(initialState);
     const { getByText } = render(
       <Provider store={store}>
         <App />
       </Provider>
     );
-    const linkElement = getByText(//i);
-
+    const linkElement = getByText(/learn react/i);
     expect(linkElement).toBeInTheDocument();
   });
 });
