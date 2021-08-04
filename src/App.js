@@ -52,7 +52,7 @@ function App() {
                     firebase (auth, db, google services)
                   </ListGroup.Item>
                 </ListGroup>
-                {/* buttons for reducers and languages toggles */}
+                {/* buttons for reducers and languages buttons */}
                 <div className="buttons">
                   <div className="buttons__wrapper">
                     <div>
