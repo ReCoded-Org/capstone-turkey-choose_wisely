@@ -14,20 +14,24 @@ function App() {
   const dispatch = useDispatch();
   const clicksReducer = useSelector((state) => state.clicks);
 
-  useEffect(() => {
-    (async () => {
-      try {
-        await db.collection("collection").onSnapshot((snapShot) => {
-          const docs = snapShot.docs.map((doc) => {
-            return { id: doc.id, data: doc.data() };
-          });
-          console.log("docs :", docs);
-        });
-      } catch (error) {
-        console.log("error :", error);
-      }
-    })();
-  }, []);
+  // useEffect(() => {
+  //   const fetchCollection = async () => {
+  //     try {
+  //       await db.collection("collection").onSnapshot((snapShot) => {
+  //         const docs = snapShot.docs.map((doc) => {
+  //           return { id: doc.id, data: doc.data() };
+  //         });
+  //         console.log("docs :", docs);
+  //       });
+  //     } catch (error) {
+  //       console.log("error :", error);
+  //     }
+  //   };
+  //   fetchCollection();
+
+  // (async () => {
+  // })();
+  // }, []);
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
   };
