@@ -5,6 +5,10 @@ import App from "./App";
 import { Provider } from "react-redux";
 import configureStore from "redux-mock-store";
 
+jest.mock("react-i18next", () => ({
+  useTranslation: () => ({ t: (key) => key }),
+}));
+
 describe("With React Testing Library", () => {
   const initialState = { output: 10 };
   const mockStore = configureStore();
