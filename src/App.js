@@ -38,6 +38,7 @@ function App() {
             <div className="app">
               <span className="app__text">test scss</span>
             </div>
+            {/* list of libraries */}
             <Row>
               <Col lg={12}>
                 in this application i have added the ...
@@ -52,7 +53,7 @@ function App() {
                     firebase (auth, db, google services)
                   </ListGroup.Item>
                 </ListGroup>
-                {/* buttons for reducers and languages buttons */}
+                {/* buttons for usage of reducers and languages */}
                 <div className="buttons">
                   <div className="buttons__wrapper">
                     <div>
@@ -76,7 +77,7 @@ function App() {
                     </div>
                   </div>
                 </div>
-                {/* some text */}
+                {/* some text to be translated */}
                 <p>{t("home.hero.greeting")}</p>
               </Col>
             </Row>
