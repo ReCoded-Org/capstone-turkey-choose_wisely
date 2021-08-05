@@ -76,6 +76,7 @@ function App() {
                     </div>
                   </div>
                 </div>
+                {/* some text */}
                 <p>{t("home.hero.greeting")}</p>
               </Col>
             </Row>
