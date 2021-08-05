@@ -3,7 +3,7 @@ import { render } from "@testing-library/react";
 import App from "./App";
 
 import { Provider } from "react-redux";
-import configureStore from '"redux-mock-store"';
+import configureStore from "redux-mock-store";
 
 describe("With React Testing Library", () => {
   const initialState = { output: 10 };
@@ -17,7 +17,7 @@ describe("With React Testing Library", () => {
         <App />
       </Provider>
     );
-    const linkElement = getByText(/learn react/i);
+    const linkElement = getByText(/test scss/i);
     expect(linkElement).toBeInTheDocument();
   });
 });

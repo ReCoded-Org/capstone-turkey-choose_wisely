@@ -13,7 +13,7 @@ function App() {
   const { t, i18n } = useTranslation();
   const dispatch = useDispatch();
   const clicksReducer = useSelector((state) => state.clicks);
-  const { clicks } = clicksReducer;
+
   useEffect(() => {
     (async () => {
       await db.collection("collection").onSnapshot((snapShot) => {
@@ -57,10 +57,10 @@ function App() {
                   <div className="buttons__wrapper">
                     <div>
                       <Button onClick={(e) => dispatch({ type: ADD_COUNT })}>
-                        {clicks} Add Click
+                        {clicksReducer?.clicks} Add Click
                       </Button>
                       <Button onClick={(e) => dispatch({ type: REDUCE_COUNT })}>
-                        {clicks} Reduce Click
+                        {clicksReducer?.clicks} Reduce Click
                       </Button>
                     </div>
                     <div>
@@ -76,7 +76,6 @@ function App() {
                     </div>
                   </div>
                 </div>
-                {/* some text */}
                 <p>{t("home.hero.greeting")}</p>
               </Col>
             </Row>
