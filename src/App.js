@@ -1,11 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react"; // , { useEffect }
 import { useTranslation } from "react-i18next";
 import { useDispatch, useSelector } from "react-redux";
 import { ADD_COUNT, REDUCE_COUNT } from "./utilities/types";
 import { Container, Row, Button, Col, ListGroup } from "react-bootstrap";
 import "./App.scss";
 import "./style/style.css";
-import { db } from "./firebase";
+// import { db } from "./firebase";
 import { Route, Switch, Router } from "react-router-dom";
 import history from "./history";
 
@@ -15,23 +15,28 @@ function App() {
   const clicksReducer = useSelector((state) => state.clicks);
 
   // useEffect(() => {
-  //   const fetchCollection = async () => {
-  //     try {
-  //       await db.collection("collection").onSnapshot((snapShot) => {
-  //         const docs = snapShot.docs.map((doc) => {
-  //           return { id: doc.id, data: doc.data() };
+  //   try {
+  //     (async () => {
+  //       try {
+  //         await db.collection("collection").onSnapshot((snapShot) => {
+  //           const docs = snapShot.docs.map((doc) => {
+  //             return { id: doc.id, data: doc.data() };
+  //           });
+  //           console.log("docs :", docs);
   //         });
-  //         console.log("docs :", docs);
-  //       });
-  //     } catch (error) {
-  //       console.log("error :", error);
-  //     }
-  //   };
-  //   fetchCollection();
+  //       } catch (error) {
+  //         console.log("inside async error :", error);
+  //       }
+  //     })();
+  //   } catch (error) {
+  //     console.log("inside useEffect error :", error);
+  //   }
 
-  // (async () => {
-  // })();
+  //   return () => {
+  //     console.log("cleanUp");
+  //   };
   // }, []);
+
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
   };
