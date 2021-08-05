@@ -16,12 +16,16 @@ function App() {
 
   useEffect(() => {
     (async () => {
-      await db.collection("collection").onSnapshot((snapShot) => {
-        const docs = snapShot.docs.map((doc) => {
-          return { id: doc.id, data: doc.data() };
+      try {
+        await db.collection("collection").onSnapshot((snapShot) => {
+          const docs = snapShot.docs.map((doc) => {
+            return { id: doc.id, data: doc.data() };
+          });
+          console.log("docs :", docs);
         });
-        console.log("docs :", docs);
-      });
+      } catch (error) {
+        console.log("error :", error);
+      }
     })();
   }, []);
   const changeLanguage = (lng) => {
