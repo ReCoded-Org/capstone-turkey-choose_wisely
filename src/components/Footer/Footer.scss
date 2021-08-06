@@ -42,6 +42,8 @@ footer {
         .buttons {
           display: flex;
           justify-content: flex-end;
+          min-width: 300px;
+
           .login-button {
             font-size: 14px;
             background-color: $primary-color;
