@@ -21,6 +21,7 @@ const Footer = () => {
         alert.success(t("alertMessages.subscribedSuccessfully"));
       })();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [subscribe]);
 
   return (
