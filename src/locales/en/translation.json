@@ -4,5 +4,20 @@
       "greeting": "Welcome",
       "learn-react": "Learn React"
     }
-  }
+  },
+
+  "footer": {
+    "login": "Login",
+    "subscribe": "Subscribe",
+    "subscribePlaceholder": "Subscribe with your email"
+  },
+
+  "validation": {
+    "required": "Required",
+    "invalidEmail": "Invalid email address"
+  },
+
+  "alertMessages": {
+    "subscribedSuccessfully": "You are subscribed to our newsletter successfully"
+    }
 }

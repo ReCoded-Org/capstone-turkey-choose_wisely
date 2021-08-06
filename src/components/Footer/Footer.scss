@@ -1,0 +1,114 @@
+@import "./../../style/variables";
+
+footer {
+  .footer__top {
+    height: 20rem;
+
+    .top {
+      padding-top: 5.25rem;
+      padding-bottom: 6rem;
+      .top__new_letter {
+        .subscribe_wrapper {
+          background-color: #fff;
+          padding: 0.5rem;
+          display: flex;
+          align-items: center;
+          border-radius: 5px;
+          border: 1px solid #d1dbe3;
+          position: relative;
+          button {
+            font-size: 14px;
+            background-color: $primary-color;
+            color: #fff;
+            width: 30%;
+          }
+          input {
+            width: 100%;
+            border: none;
+            background-color: transparent;
+            outline: none;
+          }
+
+          .subscribe_wrapper__error {
+            position: absolute;
+            bottom: -25px;
+            color: $primary-color;
+            font-size: 12px;
+          }
+        }
+      }
+      .top__button {
+        text-align: right;
+        .buttons {
+          .login-button {
+            font-size: 14px;
+            background-color: $primary-color;
+            border: 1px solid $primary-color;
+            outline: none;
+            color: #fff;
+          }
+          .button__dropdown {
+            .outline {
+              outline: none !important;
+              color: $primary-color;
+              outline: yellow;
+              border-color: $primary-color;
+              background-color: #fff !important;
+            }
+          }
+        }
+      }
+
+      @media screen and (max-width: 992px) {
+        .top__button {
+          text-align: right;
+          margin-top: 60px;
+        }
+      }
+    }
+    @media screen and (max-width: 992px) {
+      .top {
+        padding-bottom: 2rem;
+      }
+    }
+
+    .bottom {
+      padding-top: 2rem;
+
+      .icons {
+        .icons__list {
+          display: flex;
+          list-style: none;
+          justify-content: center;
+          li {
+            padding: 0 0.3rem;
+            cursor: pointer;
+          }
+
+          li:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 992px) {
+      .bottom {
+        padding-top: 0rem;
+      }
+    }
+
+    background-color: $secondary-color;
+  }
+
+  .footer__bottom {
+    padding: 2.4rem;
+    background-color: $gray-secondary-color;
+
+    p {
+      color: #fff;
+      font-weight: 300;
+      font-size: 0.9rem;
+      line-height: 16.41px;
+    }
+  }
+}

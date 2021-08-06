@@ -4,5 +4,20 @@
       "greeting": "Merhaba",
       "learn-react": "React ogren"
     }
-  }
+  },
+
+  "footer": {
+    "login": "Oturum açın",
+    "subscribe": "Abone ol",
+    "subscribePlaceholder": "E-postanızla abone olun"
+  },
+
+  "validation": {
+    "required": "gereklidir",
+    "invalidEmail": "Geçersiz e-posta adresi"
+  },
+
+  "alertMessages": {
+    "subscribedSuccessfully": "Bültenimize başarıyla abone oldunuz"
+    }
 }
