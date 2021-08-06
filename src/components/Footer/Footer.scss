@@ -20,7 +20,7 @@ footer {
             font-size: 14px;
             background-color: $primary-color;
             color: #fff;
-            width: 30%;
+            width: 40%;
           }
           input {
             width: 100%;
@@ -40,6 +40,7 @@ footer {
       .top__button {
         text-align: right;
         .buttons {
+          display: flex;
           .login-button {
             font-size: 14px;
             background-color: $primary-color;
