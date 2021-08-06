@@ -38,9 +38,10 @@ footer {
         }
       }
       .top__button {
-        text-align: right;
+        text-align: right !important;
         .buttons {
           display: flex;
+          justify-content: flex-end;
           .login-button {
             font-size: 14px;
             background-color: $primary-color;
@@ -62,8 +63,11 @@ footer {
 
       @media screen and (max-width: 992px) {
         .top__button {
-          text-align: center;
+          text-align: center !important;
           margin-top: 60px;
+          .buttons {
+            justify-content: flex-start;
+          }
         }
       }
     }
