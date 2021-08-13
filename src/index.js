@@ -4,27 +4,18 @@ import { Provider } from "react-redux";
 import { createStore } from "redux";
 
 import "./i18n";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import App from "./App";
 import reducers from "./store";
 
 import * as serviceWorker from "./serviceWorker";
-import "bootstrap/dist/css/bootstrap.min.css";
 
-import { transitions, positions, Provider as AlertProvider } from "react-alert";
+import { Provider as AlertProvider } from "react-alert";
 import AlertTemplate from "react-alert-template-basic";
+import { options } from "./utilities/AlertOptions";
 
 const store = createStore(reducers);
-
-// optional configuration
-const options = {
-  // you can also just use 'bottom center'
-  position: positions.TOP_RIGHT,
-  timeout: 50000,
-  offset: "30px",
-  // you can also just use 'scale'
-  transition: transitions.SCALE,
-};
 
 // TODO: add the redux devtool.
 

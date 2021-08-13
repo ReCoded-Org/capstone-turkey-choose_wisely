@@ -2,26 +2,28 @@
 @import "./style/variables";
 
 body {
-  font-family: $primary-font !important;
+  font-family: $primary-font;
   margin: 0;
   padding: 0;
 }
 
 p {
-  margin: 0 !important;
+  margin: 0;
   padding: 0;
 }
 
 .btn-check:focus + .btn-primary,
-.btn-primary:focus {
-  background-color: $primary-color !important;
+.btn-primary:focus,
+.btn-primary:active,
+.dropdown-item:active {
+  background-color: $primary-color;
 }
 
 .btn {
   border: none;
   padding: 0.75rem 1.75rem;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.3125rem;
 }
 
 ::-webkit-input-placeholder {
@@ -41,8 +43,12 @@ p {
 #__react-alert__ {
   div {
     div {
-      div {
-        width: 400px !important;
+      margin: 1rem;
+      button {
+        margin: 1rem;
+        div {
+          width: 25rem;
+        }
       }
     }
   }

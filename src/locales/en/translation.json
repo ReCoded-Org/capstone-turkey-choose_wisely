@@ -9,7 +9,9 @@
   "footer": {
     "login": "Login",
     "subscribe": "Subscribe",
-    "subscribePlaceholder": "Subscribe with your email"
+    "subscribePlaceholder": "Subscribe with your email",
+    "copyRights": "Copyright © Choose Wisely development team",
+    "allRightsReserver": "All rights reserve"
   },
 
   "validation": {

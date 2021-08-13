@@ -1,5 +1,5 @@
 import React from "react"; // , { useEffect }
-import Home from "./containers/Home/Home";
+import Home from "./containers/Home";
 import Footer from "./components/Footer";
 
 import { Route, Switch, Router } from "react-router-dom";

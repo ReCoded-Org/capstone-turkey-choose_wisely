@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import SocialLink from "./SocialLink";
-import SubscribeInput from "./SubscribeInput";
-import Buttons from "./Buttons";
+import SocialLink from "../FooterSocialLinks";
+import SubscribeInput from "../FooterSubscribeInput";
+import Buttons from "../FooterButtons";
 import { useAlert } from "react-alert";
 import { db } from "./../../firebase";
 import { useTranslation } from "react-i18next";
-
-import "./Footer.scss";
+import "./style.scss";
 
 const Footer = () => {
   const [subscribe, setSubscribe] = useState({ email: "" });
@@ -15,12 +14,16 @@ const Footer = () => {
   const alert = useAlert();
 
   useEffect(() => {
-    if (subscribe.email !== "") {
-      (async () => {
-        await db.collection("subscribers").add(subscribe);
-        alert.success(t("alertMessages.subscribedSuccessfully"));
-      })();
-    }
+    (async () => {
+      if (subscribe.email !== "") {
+        try {
+          await db.collection("subscribers").add(subscribe);
+          alert.success(t("alertMessages.subscribedSuccessfully"));
+        } catch (error) {
+          alert.error(`${error.message}`);
+        }
+      }
+    })();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [subscribe]);
 
@@ -34,7 +37,7 @@ const Footer = () => {
                 <SubscribeInput handelSubscribe={setSubscribe} />
               </Col>
 
-              <Col className="top__button" lg={4} md={{ span: 4, offset: 4 }}>
+              <Col className="top__button" lg={{ span: 4, offset: 4 }}>
                 <Buttons />
               </Col>
             </Row>
@@ -52,8 +55,8 @@ const Footer = () => {
         <Container>
           <Row>
             <Col>
-              <p>Copyright © Choose Wisely development team</p>
-              <p>All rights reserve</p>
+              <p>{t("footer.copyRights")}</p>
+              <p>{t("footer.allRightsReserver")}</p>
             </Col>
           </Row>
         </Container>

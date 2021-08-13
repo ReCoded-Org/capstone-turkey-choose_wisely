@@ -4,6 +4,7 @@ import Instagram from "./../../images/icons/Instagram.svg";
 import Pinterest from "./../../images/icons/Pinterest.svg";
 import Twitter from "./../../images/icons/Twitter.svg";
 import Vk from "./../../images/icons/Vk.svg";
+import "./style.scss";
 
 const SocialLink = () => {
   return (

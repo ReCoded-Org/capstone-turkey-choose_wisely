@@ -1,6 +1,7 @@
 import React from "react";
 import { Formik } from "formik";
 import { useTranslation } from "react-i18next";
+import "./style.scss";
 
 const initialValues = { email: "" };
 

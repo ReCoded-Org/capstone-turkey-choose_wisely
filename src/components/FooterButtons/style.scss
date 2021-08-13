@@ -1,0 +1,28 @@
+@import "./../../style/variables";
+
+@import "./../../style/mixins.scss";
+
+.buttons {
+  display: flex;
+  min-width: 18.75rem;
+  justify-content: flex-start;
+  @include for-tablet-landscape-up {
+    justify-content: flex-end;
+  }
+  .login-button {
+    font-size: 0.875rem;
+    background-color: $primary-color !important;
+    border: 0.0625rem solid $primary-color !important;
+    outline: none;
+    color: #fff;
+  }
+  .button__dropdown {
+    .outline {
+      outline: none !important;
+      color: $primary-color;
+      outline: yellow;
+      border-color: $primary-color;
+      background-color: #fff !important;
+    }
+  }
+}
