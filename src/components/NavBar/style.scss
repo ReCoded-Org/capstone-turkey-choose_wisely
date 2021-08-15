@@ -1,0 +1,39 @@
+@import "./../../style/variables";
+
+.nav__bar {
+  color: #ffffff !important;
+}
+
+.nav__brand {
+  color: $primary-color !important;
+  font-size: 30px !important;
+  font-family: $logo-font;
+}
+.nav__btn {
+  margin-left: 4ch;
+  padding-right: 2rem !important;
+  padding-left: 2rem !important;
+  background-color: $primary-color !important;
+  border: none !important;
+}
+
+.nav__items {
+  .nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  :hover {
+    color: $primary-color !important;
+
+    .dot {
+  
+      position: absolute;
+      height: 0.4rem;
+      width: 0.4rem;
+      bottom: 1.1rem;
+      background-color: $primary-color;
+      border-radius: 100%;
+    }
+  }
+}

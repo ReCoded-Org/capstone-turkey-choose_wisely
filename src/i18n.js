@@ -4,7 +4,6 @@ import LanguageDetector from "i18next-browser-languagedetector";
 // for passing in lng and translations on init
 import enObj from "./locales/en/translation.json";
 import trObj from "./locales/tr/translation.json";
-console.log("trObj :", trObj);
 
 const resources = {
   en: {

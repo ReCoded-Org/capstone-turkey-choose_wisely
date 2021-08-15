@@ -21,7 +21,7 @@ describe("With React Testing Library", () => {
         <App />
       </Provider>
     );
-    const linkElement = getByText(/test scss/i);
+    const linkElement = getByText(/choose wisly/i);
     expect(linkElement).toBeInTheDocument();
   });
 });
