@@ -1,1 +1,0 @@
-// test components for Slider

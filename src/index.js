@@ -4,12 +4,14 @@ import { Provider } from "react-redux";
 import { createStore } from "redux";
 
 import "./i18n";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import App from "./App";
 import reducers from "./store";
 
 import * as serviceWorker from "./serviceWorker";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 const store = createStore(reducers);
 

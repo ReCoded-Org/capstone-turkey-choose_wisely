@@ -3,6 +3,10 @@
     "hero": {
       "greeting": "Welcome",
       "learn-react": "Learn React"
+    },
+    "topTen": {
+      "title": "Top 10 universities",
+      "subText": "here are the top ten universities according to campus staff and education quality ..the ranking is measured by universal scales."
     }
   }
 }

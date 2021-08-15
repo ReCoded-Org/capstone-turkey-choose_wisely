@@ -3,6 +3,10 @@
     "hero": {
       "greeting": "Merhaba",
       "learn-react": "React ogren"
+    },
+    "topTen": {
+      "title": "ilk 10 üniversite",
+      "subText": "İşte kampüs personeli ve eğitim kalitesine göre ilk on üniversite sıralaması evrensel ölçeklerle ölçülmektedir.."
     }
   }
 }
