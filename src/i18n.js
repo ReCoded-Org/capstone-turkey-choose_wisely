@@ -4,7 +4,6 @@ import LanguageDetector from "i18next-browser-languagedetector";
 // for passing in lng and translations on init
 import enObj from "./locales/en/translation.json";
 import trObj from "./locales/tr/translation.json";
-console.log("trObj :", trObj);
 
 const resources = {
   en: {
@@ -21,9 +20,14 @@ i18n
   .use(initReactI18next)
   // init i18next
   .init({
+    supportedLngs: ["en", "tr"],
     resources,
     fallbackLng: "en",
     debug: true,
+    detection: {
+      order: ["path", "cookie", "htmlTag"],
+      caches: ["cookie"],
+    },
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
     },

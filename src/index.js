@@ -4,12 +4,16 @@ import { Provider } from "react-redux";
 import { createStore } from "redux";
 
 import "./i18n";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import App from "./App";
 import reducers from "./store";
 
 import * as serviceWorker from "./serviceWorker";
-import "bootstrap/dist/css/bootstrap.min.css";
+
+import { Provider as AlertProvider } from "react-alert";
+import AlertTemplate from "react-alert-template-basic";
+import { options } from "./utilities/AlertOptions";
 
 const store = createStore(reducers);
 
@@ -17,9 +21,11 @@ const store = createStore(reducers);
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={store}>
-      <App />
-    </Provider>
+    <AlertProvider template={AlertTemplate} {...options}>
+      <Provider store={store}>
+        <App />
+      </Provider>
+    </AlertProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );

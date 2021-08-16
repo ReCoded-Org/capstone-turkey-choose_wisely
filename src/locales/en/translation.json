@@ -4,5 +4,22 @@
       "greeting": "Welcome",
       "learn-react": "Learn React"
     }
+  },
+
+  "footer": {
+    "login": "Login",
+    "subscribe": "Subscribe",
+    "subscribePlaceholder": "Subscribe with your email",
+    "copyRights": "Copyright © Choose Wisely development team",
+    "allRightsReserver": "All rights reserve"
+  },
+
+  "validation": {
+    "required": "Required",
+    "invalidEmail": "Invalid email address"
+  },
+
+  "alertMessages": {
+    "subscribedSuccessfully": "You are subscribed to our newsletter successfully"
   }
 }
