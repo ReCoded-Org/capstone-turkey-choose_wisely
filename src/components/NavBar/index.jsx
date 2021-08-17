@@ -24,6 +24,10 @@ function NavBar() {
                 <span>Contact </span>
                 <span className="dot"></span>
               </Nav.Link>
+              <Nav.Link href="Ressources">
+                <span>Ressources </span>
+                <span className="dot"></span>
+              </Nav.Link>
               <Nav.Link href="Universities">
                 <span>Universities </span>
                 <span className="dot"></span>

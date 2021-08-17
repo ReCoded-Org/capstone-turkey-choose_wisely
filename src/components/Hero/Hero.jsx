@@ -21,13 +21,13 @@ function Hero() {
                 <p> universities and learning approaches. </p>
               </div>
               <div className="hero_search">
-                <input type="search" placeholder="search... " />
+                <input type="search" placeholder="Search... " />
                 <button> GO </button>
               </div>
             </div>
           </Col>
           <Col lg={7}>
-            <img src={hero} alt="" />
+            <img src={hero} alt="hero section" />
           </Col>
         </Row>
       </Container>

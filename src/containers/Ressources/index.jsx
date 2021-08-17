@@ -1,7 +1,7 @@
 import React from "react";
 
-function Contact() {
+function Ressources() {
   return <div></div>;
 }
 
-export default Contact;
+export default Ressources;

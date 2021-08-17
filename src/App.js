@@ -15,6 +15,7 @@ import NavBar from "./components/NavBar";
 import Home from "./containers/Home";
 import About from "./containers/About";
 import Contact from "./containers/Contact";
+import Ressources from "./containers/Ressources";
 import Universities from "./containers/Universities";
 import Blog from "./containers/Blog";
 
@@ -37,6 +38,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route path="/About" component={About} />
           <Route path="/Contact" component={Contact} />
+          <Route path="/Ressources" component={Ressources} />
           <Route path="/Universities" component={Universities} />
           <Route path="/Blog" component={Blog} />
         </Switch>
