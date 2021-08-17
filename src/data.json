@@ -1,0 +1,16 @@
+{
+  "data": [
+    {
+      "id": 2,
+      "title": "home.whoAreWe.card1Title",
+      "description": "home.whoAreWe.card1Text",
+      "img": "WhoAreWe1"
+    },
+    {
+      "id": 1,
+      "title": "home.whoAreWe.card2Title",
+      "description": "home.whoAreWe.card2Text",
+      "img": "WhoAreWe2"
+    }
+  ]
+}
