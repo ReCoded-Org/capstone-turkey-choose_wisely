@@ -35,7 +35,7 @@ describe("With React Testing Library", () => {
         </AlertProvider>
       </Provider>
     );
-    const linkElement = getByText(/Home/i);
+    const linkElement = getByText(/home.blog.title/i);
     expect(linkElement).toBeInTheDocument();
   });
 });
