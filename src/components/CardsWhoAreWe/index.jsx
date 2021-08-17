@@ -9,7 +9,7 @@ const CardsWhoAreWe = ({ img, title, description, customClassName }) => {
         <img
           alt={title}
           className="img"
-          src={require("./../../images/" + img + ".svg")}
+          src={require(`./../../images/${img}.svg`)}
         />
       </Col>
       <Col>
