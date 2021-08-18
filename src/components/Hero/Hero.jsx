@@ -3,7 +3,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import hero from "./../../images/hero.svg";
 
-function Hero() {
+const Hero = () => {
   return (
     <header className="hero">
       <Container>
@@ -33,6 +33,6 @@ function Hero() {
       </Container>
     </header>
   );
-}
+};
 
 export default Hero;

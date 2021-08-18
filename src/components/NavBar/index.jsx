@@ -2,7 +2,7 @@ import React from "react";
 import "./style.scss";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 
-function NavBar() {
+const NavBar = () => {
   return (
     <div>
       <Navbar bg="light" variant="light" className="nav__bar">
@@ -43,6 +43,6 @@ function NavBar() {
       </Navbar>
     </div>
   );
-}
+};
 
 export default NavBar;
