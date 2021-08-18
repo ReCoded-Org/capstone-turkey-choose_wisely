@@ -3,9 +3,15 @@
     "hero": {
       "greeting": "Welcome",
       "learn-react": "Learn React"
+    },
+    "whoAreWe": {
+      "title": "Who are we?",
+      "card1Title": "Our Mission",
+      "card1Text": "Our mission is to ensure an adequate and relevant orientation to all the students wishing to reach an university in Turkey",
+      "card2Title": "Meet us",
+      "card2Text": "You can contact our team through the contact page"
     }
   },
-
   "footer": {
     "login": "Login",
     "subscribe": "Subscribe",

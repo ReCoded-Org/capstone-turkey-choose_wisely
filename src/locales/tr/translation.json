@@ -3,6 +3,13 @@
     "hero": {
       "greeting": "Merhaba",
       "learn-react": "React ogren"
+    },
+    "whoAreWe": {
+      "title": "Biz kimiz?",
+      "card1Title": "Misyonumuz",
+      "card1Text": "Misyonumuz, Türkiye'de bir üniversiteye ulaşmak isteyen tüm öğrencilere uygun bir oryantasyon sağlamaktır",
+      "card2Title": "Bizimle tanışın",
+      "card2Text": "Ekibimiz ile iletişim sayfasından iletişime geçebilirsiniz"
     }
   },
 
