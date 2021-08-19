@@ -2,17 +2,15 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 import "./style.scss";
 
-export default function CardsWhoAreWe({
-  img,
-  title,
-  description,
-  cutomClassName,
-}) {
-  console.log("customClassName:", cutomClassName);
+const CardsWhoAreWe = ({ img, title, description, customClassName }) => {
   return (
     <Row>
-      <Col lg={{ order: `${cutomClassName && "last"}` }}>
-        <img alt={title} className="img" src={img} />
+      <Col lg={{ order: `${customClassName && "last"}` }}>
+        <img
+          alt={title}
+          className="img"
+          src={require(`./../../images/${img}.svg`)}
+        />
       </Col>
       <Col>
         <div className="text">
@@ -22,4 +20,6 @@ export default function CardsWhoAreWe({
       </Col>
     </Row>
   );
-}
+};
+
+export default CardsWhoAreWe;
