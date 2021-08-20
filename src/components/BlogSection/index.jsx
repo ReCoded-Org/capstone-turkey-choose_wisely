@@ -13,17 +13,18 @@ const Blog = () => {
 
   useEffect(() => {
     setLoading(true);
-    const fetchBlogs = async () => {
+    const fetchBlogs = () => {
       try {
         db.collection("Blog")
           .where("lang", "==", `${i18n.language}`)
           .get()
           .then((querySnapshot) => {
-            const arr = querySnapshot.docs.map((doc) => {
+            const blogInfo = querySnapshot.docs.map((doc) => {
+              
               return { id: doc.id, data: doc.data() };
             });
-            setPosts(arr);
-            setLoading(false);
+            setPosts(blogInfo);
+            setLoading(false);console.log(blogInfo)
           });
       } catch (error) {
         setLoading(false);
@@ -48,7 +49,7 @@ const Blog = () => {
                 <Col key={id} lg={4} sm={12}>
                   <Card>
                     <Card.Body className="card_body">
-                      <span className="art_date">14 March 2021</span>
+                      <span className="art_date">{data.date}</span>
                       <Card.Title className="art_title">
                         {data.title}
                       </Card.Title>
