@@ -30,11 +30,15 @@
     .card{
         .inner_warpper{
             transform: scale(1.05); 
-            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0rem 0rem 1.25rem rgba(0, 0, 0, 0.2);
     }}
 }
 
-// .slick-dots li.slick-active button:before {
-//     opacity: .75;
-//     color: $primary-color;
-// }
+.slick-prev:before {
+    color: #FFFFFF !important;
+    background-color: #eee;
+  }
+  .slick-next:before {
+    color: #386641 !important;
+    background-color: #eee;
+  }

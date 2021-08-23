@@ -1,6 +1,5 @@
 import React from "react"; // , { useEffect }
 // import { useTranslation } from "react-i18next";
-import "./App.scss";
 import "./style/style.css";
 import { Route, Switch, Router } from "react-router-dom";
 import history from "./history";

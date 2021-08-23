@@ -10,6 +10,7 @@ export default function LogosSlider() {
   const settings = {
     className: "center",
     centerMode: true,
+    arrows: true,
     dots: true,
     infinite: true,
     speed: 500,
