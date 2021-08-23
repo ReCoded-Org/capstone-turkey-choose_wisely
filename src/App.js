@@ -7,12 +7,14 @@ import history from "./history";
 
 import "./App.scss";
 import "./style/style.css";
+import RessourcesPage from "./containers/RessourcesPage";
 
 function App() {
   return (
     <Router history={history}>
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route exact path="/ressources" component={RessourcesPage} />
       </Switch>
       <Footer />
     </Router>
