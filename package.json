@@ -3,6 +3,7 @@
     "version": "0.1.0",
     "private": true,
     "dependencies": {
+        "@material-ui/core": "^4.12.3",
         "@testing-library/jest-dom": "^4.2.4",
         "@testing-library/react": "^9.3.2",
         "@testing-library/user-event": "^7.1.2",
@@ -11,6 +12,8 @@
         "firebase-tools": "^9.16.0",
         "i18next": "^20.3.5",
         "i18next-browser-languagedetector": "^6.1.2",
+        "package.json": "^2.0.1",
+        "random-profile-generator": "^2.3.0",
         "react": "^16.14.0",
         "react-bootstrap": "^2.0.0-beta.4",
         "react-dom": "^16.14.0",
@@ -18,10 +21,13 @@
         "react-redux": "^7.2.4",
         "react-router-dom": "^5.2.0",
         "react-scripts": "3.4.3",
+        "react-slick": "^0.28.1",
+        "react-user-avatar": "^1.10.0",
         "redux": "^4.1.0",
         "redux-mock-store": "^1.5.4",
         "redux-thunk": "^2.3.0",
-        "sass": "^1.37.5"
+        "sass": "^1.37.5",
+        "slick-carousel": "^1.8.1"
     },
     "scripts": {
         "start": "react-scripts start",

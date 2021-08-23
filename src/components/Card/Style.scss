@@ -1,0 +1,61 @@
+@import "../../style/mixin.scss";
+.Card{
+    background-color: #fff;
+    padding-left: 1.071875rem;
+    padding-right:  1.4975rem;
+    padding-top: 4.080625rem;
+    padding-bottom: 0.6875rem;
+    transition: scale 0.5s ease-in-out;
+    .SpeechComponent{
+     padding-left: 6.71875rem;
+     padding-bottom: 0.765625rem;
+    .paragraph{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.125rem;
+    
+        letter-spacing: -0.03125rem;
+        color: #386641;
+        @include for-desktop-up{
+            width: 70%;
+         }
+    }
+    
+.auther{
+    height: 1.0625rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    letter-spacing: -0.019886375rem;
+    color: #666666;
+    
+    }
+.description{
+    height: 0.9375rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+    letter-spacing: -0.0170454375rem;
+    
+    color: #666666;
+    }
+}
+    .avatarComponent{
+         padding-right: 4.461875rem;
+        .Avatar{
+            width: 10.3125rem;
+            height: 10.3125rem;
+            background: #EEF2F4;
+            
+           
+        }
+
+    }
+    
+}
+   
