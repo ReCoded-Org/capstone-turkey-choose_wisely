@@ -1,6 +1,6 @@
-import SliderSecion from "../Card/Index";
+import SliderSecion from "../Card";
 import { Container } from "react-bootstrap";
-import "./Style.scss";
+import "./style.scss";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import Slider from "react-slick";
@@ -20,20 +20,20 @@ export default function WhatDidTheyAboutUsCard() {
         settings: {
           arrows: false,
           centerMode: true,
-          centerPadding: "40px",
-          slidesToShow: 3,
-        },
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
       },
       {
         breakpoint: 480,
         settings: {
           arrows: false,
           centerMode: true,
-          centerPadding: "40px",
-          slidesToShow: 1,
-        },
-      },
-    ],
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
   };
   const { t } = useTranslation();
 

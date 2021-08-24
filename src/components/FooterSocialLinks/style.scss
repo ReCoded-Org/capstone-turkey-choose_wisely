@@ -1,0 +1,13 @@
+.icons__list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  li {
+    padding: 0 0.3rem;
+    cursor: pointer;
+  }
+
+  li:hover {
+    opacity: 0.8;
+  }
+}

@@ -20,6 +20,29 @@
         "part2": " Emily Jørgense",
         "part3": " Author at Panoply Store"
       }
-    ]
+    ],
+    "whoAreWe": {
+      "title": "Who are we?",
+      "card1Title": "Our Mission",
+      "card1Text": "Our mission is to ensure an adequate and relevant orientation to all the students wishing to reach an university in Turkey",
+      "card2Title": "Meet us",
+      "card2Text": "You can contact our team through the contact page"
+    }
+  },
+  "footer": {
+    "login": "Login",
+    "subscribe": "Subscribe",
+    "subscribePlaceholder": "Subscribe with your email",
+    "copyRights": "Copyright © Choose Wisely development team",
+    "allRightsReserver": "All rights reserve"
+  },
+
+  "validation": {
+    "required": "Required",
+    "invalidEmail": "Invalid email address"
+  },
+
+  "alertMessages": {
+    "subscribedSuccessfully": "You are subscribed to our newsletter successfully"
   }
 }

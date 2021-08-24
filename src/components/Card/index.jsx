@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
-import "./Style.scss";
+import "./style.scss";
 import Avatar from "@material-ui/core/Avatar";
 
 export default function SliderSecion(speech) {
