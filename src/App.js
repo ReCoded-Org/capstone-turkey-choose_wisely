@@ -7,7 +7,6 @@ import history from "./history";
 
 import "./App.scss";
 
-
 function App() {
   return (
     <Router history={history}>

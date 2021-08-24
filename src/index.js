@@ -10,7 +10,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import App from "./App";
 import reducers from "./store";
 
-
 import { Provider as AlertProvider } from "react-alert";
 import AlertTemplate from "react-alert-template-basic";
 import { options } from "./utilities/AlertOptions";

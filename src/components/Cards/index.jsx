@@ -20,20 +20,20 @@ export default function WhatDidTheyAboutUsCard() {
         settings: {
           arrows: false,
           centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 3
-        }
+          centerPadding: "40px",
+          slidesToShow: 3,
+        },
       },
       {
         breakpoint: 480,
         settings: {
           arrows: false,
           centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1
-        }
-      }
-    ]
+          centerPadding: "40px",
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
   const { t } = useTranslation();
 
