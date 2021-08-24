@@ -20,9 +20,14 @@ i18n
   .use(initReactI18next)
   // init i18next
   .init({
+    supportedLngs: ["en", "tr"],
     resources,
     fallbackLng: "en",
     debug: true,
+    detection: {
+      order: ["path", "cookie", "htmlTag"],
+      caches: ["cookie"],
+    },
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
     },

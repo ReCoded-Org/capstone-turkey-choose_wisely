@@ -1,11 +1,18 @@
-// hero and logo section for homepage
 import React from "react";
 import TopTenUniCard from "../../components/TopTenUniCard";
 
-export default function Home() {
+import "./style.scss";
+import WhoAreWe from "./../../components/WhoAreWe";
+import Map from "./../../components/Map";
+
+const Home = () => {
   return (
-    <div>
+    <main className="home">
+      <WhoAreWe />
+      <Map />
       <TopTenUniCard />
-    </div>
+    </main>
   );
-}
+};
+
+export default Home;

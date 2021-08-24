@@ -13,15 +13,21 @@ import reducers from "./store";
 
 import * as serviceWorker from "./serviceWorker";
 
+import { Provider as AlertProvider } from "react-alert";
+import AlertTemplate from "react-alert-template-basic";
+import { options } from "./utilities/AlertOptions";
+
 const store = createStore(reducers);
 
 // TODO: add the redux devtool.
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={store}>
-      <App />
-    </Provider>
+    <AlertProvider template={AlertTemplate} {...options}>
+      <Provider store={store}>
+        <App />
+      </Provider>
+    </AlertProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );

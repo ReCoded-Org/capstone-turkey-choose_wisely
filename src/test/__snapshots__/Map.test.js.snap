@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshop test of Map component 1`] = `
+<div
+  className="text-center container"
+>
+  <img
+    alt="Map of Universities in Turkey"
+    className="map"
+    src="uni.jpg"
+  />
+</div>
+`;

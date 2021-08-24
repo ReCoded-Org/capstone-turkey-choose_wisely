@@ -1,0 +1,44 @@
+@import "./../../style/variables";
+@import "./../../style/mixins.scss";
+
+footer {
+  .footer__top {
+    height: 20rem;
+
+    .top {
+      padding-top: 5.25rem;
+      padding-bottom: 2rem;
+
+      @include for-tablet-landscape-up {
+        padding-bottom: 6rem;
+      }
+
+      .top__button {
+        margin-top: 3.75rem;
+        @include for-tablet-landscape-up {
+          margin-top: 0rem;
+        }
+      }
+    }
+
+    .bottom {
+      padding-top: 0rem;
+      @include for-tablet-landscape-up {
+        padding-top: 2rem;
+      }
+    }
+    background-color: $secondary-color;
+  }
+
+  .footer__bottom {
+    padding: 2.4rem;
+    background-color: $gray-secondary-color;
+
+    p {
+      color: #fff;
+      font-weight: 300;
+      font-size: 0.9rem;
+      line-height: 1.025rem;
+    }
+  }
+}

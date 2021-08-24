@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Yellowtail&display=swap");
+@import "./style/variables";
+
+body {
+  font-family: $primary-font;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.btn-check:focus + .btn-primary,
+.btn-primary:focus,
+.btn-primary:active,
+.dropdown-item:active {
+  background-color: $primary-color;
+}
+
+.btn {
+  border: none;
+  padding: 0.75rem 1.75rem;
+  box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.3125rem;
+}
+
+::-webkit-input-placeholder {
+  /* Edge */
+  color: #9dafbd;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #9dafbd;
+}
+
+::placeholder {
+  color: #9dafbd;
+}
+
+#__react-alert__ {
+  div {
+    div {
+      margin: 1rem;
+      button {
+        margin: 1rem;
+        div {
+          width: 25rem;
+        }
+      }
+    }
+  }
+}

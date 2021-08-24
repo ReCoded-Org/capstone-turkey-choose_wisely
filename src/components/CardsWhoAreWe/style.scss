@@ -1,0 +1,26 @@
+@import "../../style/variables.scss";
+@import "../../style/mixins.scss";
+
+.text {
+  margin-top: 25%;
+  .title {
+    color: #386641;
+    font-weight: 300;
+    font-size: 2.125rem;
+    line-height: 2.875rem;
+    letter-spacing: -0.00625rem;
+    margin-bottom: 0.8rem;
+  }
+  .sub_text {
+    font-weight: normal;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    letter-spacing: -0.03125rem;
+    color: $gray-secondary-color;
+    margin-bottom: 3.6rem;
+    width: 100%;
+    @include for-desktop-up {
+      width: 70%;
+    }
+  }
+}

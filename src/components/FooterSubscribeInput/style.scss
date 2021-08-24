@@ -1,0 +1,30 @@
+@import "./../../style/variables";
+
+.subscribe_wrapper {
+  background-color: #fff;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  border-radius: 0.3125rem;
+  border: 0.0625rem solid #d1dbe3;
+  position: relative;
+  button {
+    font-size: 0.875rem;
+    background-color: $primary-color;
+    color: #fff;
+    width: 40%;
+  }
+  input {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    outline: none;
+  }
+
+  .subscribe_wrapper__error {
+    position: absolute;
+    bottom: -1.5625rem;
+    color: $primary-color;
+    font-size: 0.75rem;
+  }
+}
