@@ -1,0 +1,27 @@
+@import "../../style/mixin.scss";
+
+.card {
+  display: flex;
+  width: 90rem;
+  height: 21.3125rem;
+  padding-left: 2.321875rem;
+
+  background: #ffffff;
+  box-shadow: 0rem 0.125rem 0.25rem rgba(0, 0, 0, 0.05);
+
+  .header {
+    padding-left: 0.546875rem;
+    padding-right: 3.715rem;
+    padding-top: 0rem;
+    height: 2.756875rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2.125rem;
+    line-height: 2.875rem;
+
+    letter-spacing: -0.00625rem;
+
+    color: #386641;
+  }
+}
