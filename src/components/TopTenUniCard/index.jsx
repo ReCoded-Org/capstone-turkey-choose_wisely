@@ -1,5 +1,5 @@
 import React from "react";
-import LogosSlider from "../LogosSlider/Index";
+import LogosSlider from "../LogosSlider/index";
 import { Container } from "react-bootstrap";
 import "./style.scss";
 import SectionTitle from "../../components/SectionTitle";
