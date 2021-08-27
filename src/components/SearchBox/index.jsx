@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import "./style.scss";
 
 const UniversitiesSearch = ({ search }) => {
   const [term, setTerm] = useState("");
+  const { t } = useTranslation();
 
   return (
     <div className="hero_search">
@@ -11,9 +13,9 @@ const UniversitiesSearch = ({ search }) => {
         value={term}
         onBlur={(e) => search(term)}
         type="search"
-        placeholder="Search... "
+        placeholder={t("search.placeholder")}
       />
-      <button onClick={(e) => search(term)}> GO </button>
+      <button onClick={(e) => search(term)}> {t("search.go")}</button>
     </div>
   );
 };

@@ -6,25 +6,34 @@ import "./style.scss";
 import {
   FETCH_UNIVERSITIES,
   SEARCH_UNIVERSITIES,
-  FILTER_UNIVERSITIES,
+  FILTER_UNIVERSITIES_BY_NAME,
+  FILTER_UNIVERSITIES_BY_STATUS,
+  FILTER_UNIVERSITIES_BY_TYPE,
+  FILTER_UNIVERSITIES_BY_PROVINCE,
   LOADING,
 } from "../../utilities/types";
 import { db } from "./../../firebase";
+import { useTranslation } from "react-i18next";
+
 const Universities = () => {
   const dispatch = useDispatch();
+
+  // eslint-disable-next-line
   const { universities, loading } = useSelector((state) => state.universities);
 
+  const { t } = useTranslation();
+
   const [filter, setFilter] = useState({
-    name: true,
+    name: false,
     province: false,
     type: false,
     status: false,
   });
+  // eslint-disable-next-line
   const [notFound, setNotFound] = useState(false);
 
   useEffect(() => {
     fetchAllUniversities();
-    // await db.collection("universities").doc().set(uni);
     // eslint-disable-next-line
   }, [dispatch]);
 
@@ -89,7 +98,24 @@ const Universities = () => {
 
   const filterUniversities = (term) => {
     dispatch({ type: LOADING });
-    dispatch({ type: FILTER_UNIVERSITIES, payload: term });
+    switch (term) {
+      case "name":
+        dispatch({ type: FILTER_UNIVERSITIES_BY_NAME });
+        break;
+      case "type":
+        dispatch({ type: FILTER_UNIVERSITIES_BY_TYPE });
+        break;
+      case "status":
+        dispatch({ type: FILTER_UNIVERSITIES_BY_STATUS });
+        break;
+
+      case "province":
+        dispatch({ type: FILTER_UNIVERSITIES_BY_PROVINCE });
+        break;
+
+      default:
+        break;
+    }
   };
 
   return (
@@ -108,46 +134,50 @@ const Universities = () => {
               <div className="filter_wrapper">
                 <button
                   onClick={(e) => {
-                    filter.name && filterUniversities("name");
                     setFilter({ ...filter, name: !filter.name });
+                    !filter.name && filterUniversities("name");
                   }}
                   className={`toggle ${filter.name && "active"} `}
                 >
-                  University Name
+                  {t("universities.filter.universityName")}
                 </button>
                 <button
                   onClick={(e) => {
                     setFilter({ ...filter, province: !filter.province });
-                    filterUniversities("province");
+                    !filter.province && filterUniversities("province");
                   }}
                   className={`toggle ${filter.province && "active"} `}
                 >
-                  Province
+                  {t("universities.filter.province")}
                 </button>
                 <button
                   onClick={(e) => {
                     setFilter({ ...filter, type: !filter.type });
-                    filterUniversities("type");
+                    !filter.type && filterUniversities("type");
                   }}
                   className={`toggle ${filter.type && "active"} `}
                 >
-                  Type
+                  {t("universities.filter.type")}
                 </button>
                 <button
                   onClick={(e) => {
                     setFilter({ ...filter, status: !filter.status });
-                    filterUniversities("status");
+                    !filter.status && filterUniversities("status");
                   }}
                   className={`toggle ${filter.status && "active"} `}
                 >
-                  Application Status
+                  {t("universities.filter.applicationStatus")}
                 </button>
               </div>
             </Col>
           </Row>
         </Container>
       </div>
-      {loading ? "Loading" : notFound ? "No Results" : universities.length}
+      {/* {loading ? "Loading" : notFound ? "No Results" :  
+      universities.map(university => {
+        return <p key={university.id}>{university.data.enName}</p>
+      })
+      } */}
     </div>
   );
 };
