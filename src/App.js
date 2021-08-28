@@ -13,7 +13,8 @@ function App() {
   return (
     <Router history={history}>
       <Switch>
-        <Route exact path="/" component={Contact} />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/ressources" component={RessourcesPage} />
       </Switch>
       <Footer />
     </Router>
