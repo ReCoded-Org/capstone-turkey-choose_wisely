@@ -1,12 +1,12 @@
 import React from "react";
 import "./style.scss";
 import { Col, Container, Row, Image } from "react-bootstrap";
-import Login from "./imgs/undraw_Mobile_login_re_9ntv 1.svg";
-import Chatting from "./imgs/undraw_Chatting_re_j55r 1.svg";
+import Login from "./../../images/ContactPageimgs/undraw_Mobile_login_re_9ntv 1.svg";
+import Chatting from "./../../images/ContactPageimgs/undraw_Chatting_re_j55r 1.svg";
+import Location from "./../../images/ContactPageimgs/undraw_My_location_re_r52x 1.svg";
+import Browsing from "./../../images/ContactPageimgs/undraw_web_browsing_p77h 1.svg";
+import Marketing from "./../../images/ContactPageimgs/undraw_Mobile_marketing_re_p77p 1.svg";
 import { useTranslation } from "react-i18next";
-import Location from "./imgs/undraw_My_location_re_r52x 1.svg";
-import Browsing from "./imgs/undraw_web_browsing_p77h 1.svg";
-import Marketing from "./imgs/undraw_Mobile_marketing_re_p77p 1.svg";
 
 const ContactUs = () => {
   const { t } = useTranslation();
