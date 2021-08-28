@@ -29,5 +29,9 @@
     "alertMessages": {
       "subscribedSuccessfully": "You are subscribed to our newsletter successfully"
     }
+  },
+  "blogs": {
+    "header": "Latest Blog Posts",
+    "title": "Home is behind, the world ahead and there are many paths to tread through shadows to the edge."
   }
 }

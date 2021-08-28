@@ -1,0 +1,88 @@
+.blog {
+  height: 400px;
+}
+.header {
+  height: 64px;
+  padding-left: 64.65px;
+  padding-right: 16.18px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 54px;
+  line-height: 63px;
+
+  letter-spacing: -1px;
+
+  color: #386641;
+}
+.blogsParagraph {
+  height: 52px;
+  padding-left: 64.65px;
+  padding-right: 63.54px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.5px;
+
+  color: #9dafbd;
+}
+.image {
+  object-fit: cover;
+
+  height: 350px;
+  width: 555px;
+}
+.title {
+  text-decoration: none !important;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+
+  letter-spacing: -0.318182px;
+
+  color: #ffffff;
+}
+.category {
+  width: 170px;
+  height: 40px;
+  background: #d1dbe3;
+  border-radius: 5px;
+}
+.HeaderText {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 34px;
+  line-height: 46px;
+
+  letter-spacing: -0.1px;
+
+  color: #386641;
+}
+.TextSection {
+  padding-left: 52.01px;
+  padding-right: 16.18px;
+}
+.AutherAndAvatar {
+  padding-top: 29.69px;
+}
+.auther {
+  padding-left: 4px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+
+  letter-spacing: -0.318182px;
+
+  color: #9dafbd;
+}

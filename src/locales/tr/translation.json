@@ -32,5 +32,9 @@
     "alertMessages": {
       "subscribedSuccessfully": "Bültenimize başarıyla abone oldunuz"
     }
+  },
+  "blogs": {
+    "header": "En son blog gönderileri",
+    "title": "Ev geride, dünya önde ve gölgelerin arasından uçlara kadar yürümek için pek çok yol var."
   }
 }
