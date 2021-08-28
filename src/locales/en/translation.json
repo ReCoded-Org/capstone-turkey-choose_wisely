@@ -26,6 +26,20 @@
   },
 
   "alertMessages": {
-    "subscribedSuccessfully": "You are subscribed to our newsletter successfully"
+    "subscribedSuccessfully": "You are subscribed to our newsletter successfully",
+    "contactSuccess": "Thank you for your message"
+  },
+  "constactUs": {
+    "hero": {
+      "title": "Contact Us",
+      "purview": "But Brooke Chaffin and Catherine Connors are looking to change that with the introduction of Maverick, a social network that connects young girls with female mentors to express their creativity in a safe space."
+    },
+    "form": {
+      "email": "Email",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "message": "Message",
+      "submit": "Submit"
+    }
   }
 }

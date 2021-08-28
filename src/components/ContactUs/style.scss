@@ -1,0 +1,84 @@
+@import "../../style/variables";
+@import "../../style/mixins";
+
+.contact_us {
+  background-color: $secondary-color;
+  padding: 3rem 0 4rem 0rem;
+  margin-bottom: 3rem;
+}
+.purview {
+  text-align: justify;
+  text-justify: inter-word;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: rem(26px);
+  text-align: center;
+  letter-spacing: rem(-0.5px);
+
+  color: #000000;
+}
+.title_a {
+  /* Design faster & bett */
+  margin-top: 2rem;
+  font-weight: 300;
+  font-size: rem(34px);
+  line-height: rem(46px);
+  text-align: center;
+  letter-spacing: rem(-0.1px);
+  color: $primary-color;
+}
+
+.location {
+  width: rem(151px);
+  height: rem(133px);
+  border: none;
+  background-color: #eef2f4;
+}
+.browsing {
+  width: rem(148px);
+  height: rem(102px);
+  border: none;
+  background-color: transparent;
+}
+
+.login {
+  width: rem(145px);
+  height: rem(114px);
+  border: none;
+  background-color: #eef2f4;
+}
+.marketing {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: 5.5rem;
+  border: none;
+  background-color: transparent;
+  margin-top: 1rem;
+  width: 40%;
+  @include for-tablet-landscape-up {
+    margin-bottom: 0rem;
+    width: 70%;
+  }
+}
+.chatting {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  border: none;
+  background-color: transparent;
+  width: 40%;
+  @include for-tablet-landscape-up {
+    margin-bottom: 0rem;
+    width: 70%;
+  }
+}
+
+.bottom_section_subheader {
+  margin-top: 3rem;
+}
+
+.img_row_one {
+  text-align: center;
+}
