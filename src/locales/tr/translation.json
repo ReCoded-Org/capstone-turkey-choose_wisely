@@ -40,5 +40,6 @@
   "search": {
     "placeholder": "Ara ...",
     "go": "Git"
-  }
+  },
+  "loading": "Yükleniyor"
 }

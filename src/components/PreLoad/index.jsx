@@ -1,20 +1,24 @@
 import React, { useState, useEffect } from "react";
+import { LOADING_TIME } from "../../utilities/variables";
 import "./style.scss";
+import { useTranslation } from "react-i18next";
+
 const Preloader = () => {
   const [fetchSuccess, setFetchSuccess] = useState(false);
-
+  const { t } = useTranslation();
   useEffect(() => {
-    window.addEventListener("load", () => {
+    setTimeout(() => {
       setFetchSuccess(true);
-    });
+    }, LOADING_TIME);
   }, []);
 
   const preloaderclass = fetchSuccess ? "loaded" : "";
   return (
     <div id="preloader_wrap" className={`${preloaderclass}`}>
+      <h2 className="preloading_heading">{t("loading")}</h2>
       <svg
-        width="44"
-        height="44"
+        width="24"
+        height="24"
         viewBox="0 0 44 44"
         xmlns="http://www.w3.org/2000/svg"
         stroke="#FFF"
