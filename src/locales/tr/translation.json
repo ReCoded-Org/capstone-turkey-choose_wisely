@@ -13,6 +13,13 @@
     }
   },
 
+  "ressourcesPage": {
+    "header": {
+      "title": "Bir sonraki adımlarını planlamaya hazır mısın?",
+      "subtitle": "Üniversite Yolculuğunuza başlamak için ihtiyacınız olan tüm kaynakları burada bulabilirsiniz."
+    }
+  },
+
   "footer": {
     "login": "Oturum açın",
     "subscribe": "Abone ol",

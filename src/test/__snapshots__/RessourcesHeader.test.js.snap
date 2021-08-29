@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshop test of RessourcesHeader component 1`] = `
+<div
+  className="ressource_page"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-md-4 col-sm-2"
+      >
+        <div
+          className="ressources_title"
+        >
+          <div
+            className="section_title"
+          >
+            <h1
+              className="big_title"
+            >
+              ressourcesPage.header.title
+            </h1>
+            <p
+              className="subtitle"
+            >
+              ressourcesPage.header.subtitle
+            </p>
+            <h2
+              className="title"
+            />
+          </div>
+          <div
+            className="row"
+          >
+            <img
+              alt="Illustration of a man working on a PC"
+              className="ressouces_page2"
+              fluid={true}
+              src="RessourcesPage2.svg"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="col-md-4 col-sm-2"
+      >
+        <img
+          alt="Illustration of 2 women planifying taks on a board"
+          className="ressouces_page1"
+          src="RessourcesPage1.svg"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
