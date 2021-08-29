@@ -9,8 +9,6 @@ import PublicDiscussion from "./../../images/ContactPageimgs/undraw_Public_discu
 
 import WallPostRe from "./../../images/ContactPageimgs/undraw_Wall_post_re_y78d.svg";
 
-
-
 const photos = [
   {
     name: "Photo 1",
