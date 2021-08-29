@@ -1,7 +1,6 @@
 import React from "react";
 import "./style.scss";
 
-
 const SectionTitle = ({ bigTitle, subtitle, title, subText }) => {
   return (
     <div className="section_title">

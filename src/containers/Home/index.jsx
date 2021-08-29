@@ -6,7 +6,6 @@ import Map from "./../../components/Map";
 
 const Home = () => {
   return (
-
     <main className="home">
       <WhoAreWe />
       <Blog />
