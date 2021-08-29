@@ -1,5 +1,5 @@
 import React from "react"; // , { useEffect }
-// import Home from "./containers/Home";
+import Home from "./containers/Home";
 import Contact from "./containers/Contact";
 import Footer from "./components/Footer";
 
@@ -8,13 +8,16 @@ import history from "./history";
 
 import "./App.scss";
 import "./style/style.css";
+//import RessourcesPage from "./containers/RessourcesPage";
 
 function App() {
   return (
     <Router history={history}>
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/ressources" component={RessourcesPage} />
+        {/* //<Route exact path="/" component={Contact} /> */}
+
+        <Route exact path="/" component={Contact} />
+        {/* //<Route exact path="/ressources" component={RessourcesPage} /> */}
       </Switch>
       <Footer />
     </Router>
