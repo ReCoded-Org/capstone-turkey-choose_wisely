@@ -4,12 +4,25 @@
       "greeting": "Welcome",
       "learn-react": "Learn React"
     },
-    "blog": {
+     "blog": {
       "title": "Our Blog",
       "subText": "Home is behind, the world ahead and there are many paths to tread through shadows to the edge.",
       "seeAll": "See all",
-      "readMore": "read more!"
+      "readMore": "read more!"},
+     "whoAreWe": {
+      "title": "Who are we?",
+      "card1Title": "Our Mission",
+      "card1Text": "Our mission is to ensure an adequate and relevant orientation to all the students wishing to reach an university in Turkey",
+      "card2Title": "Meet us",
+      "card2Text": "You can contact our team through the contact page"
     }
+  },
+
+  "ressourcesPage": {
+    "header": {
+      "title": "Are you ready to plan your next steps?",
+      "subtitle": "You can find here all the ressources that you need to start your University Journey."
+     }
   },
 
   "footer": {

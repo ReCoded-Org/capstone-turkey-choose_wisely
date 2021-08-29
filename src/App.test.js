@@ -26,7 +26,7 @@ describe("With React Testing Library", () => {
   const mockStore = configureStore();
   let store;
 
-  it("test scss", () => {
+  it("Test Home page", () => {
     store = mockStore(initialState);
     const { getByText } = render(
       <Provider store={store}>
@@ -35,7 +35,8 @@ describe("With React Testing Library", () => {
         </AlertProvider>
       </Provider>
     );
-    const linkElement = getByText(/home.blog.title/i);
+
+    const linkElement = getByText(/home.whoAreWe.title/i);
     expect(linkElement).toBeInTheDocument();
   });
 });

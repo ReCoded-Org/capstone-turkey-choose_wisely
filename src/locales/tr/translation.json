@@ -9,6 +9,20 @@
       "subText": "Ev geride, dünya önde ve gölgelerin arasından uçlara kadar yürümek için pek çok yol var.",
       "seeAll": "Tümünü Gör",
       "readMore": "Devamını oku!"
+    },
+    "whoAreWe": {
+      "title": "Biz kimiz?",
+      "card1Title": "Misyonumuz",
+      "card1Text": "Misyonumuz, Türkiye'de bir üniversiteye ulaşmak isteyen tüm öğrencilere uygun bir oryantasyon sağlamaktır",
+      "card2Title": "Bizimle tanışın",
+      "card2Text": "Ekibimiz ile iletişim sayfasından iletişime geçebilirsiniz"
+    }
+  },
+
+  "ressourcesPage": {
+    "header": {
+      "title": "Bir sonraki adımlarını planlamaya hazır mısın?",
+      "subtitle": "Üniversite Yolculuğunuza başlamak için ihtiyacınız olan tüm kaynakları burada bulabilirsiniz."
     }
   },
 
