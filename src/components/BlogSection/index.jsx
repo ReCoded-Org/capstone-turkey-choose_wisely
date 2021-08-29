@@ -20,11 +20,11 @@ const Blog = () => {
           .get()
           .then((querySnapshot) => {
             const blogInfo = querySnapshot.docs.map((doc) => {
-              
               return { id: doc.id, data: doc.data() };
             });
             setPosts(blogInfo);
-            setLoading(false);console.log(blogInfo)
+            setLoading(false);
+            console.log(blogInfo);
           });
       } catch (error) {
         setLoading(false);
