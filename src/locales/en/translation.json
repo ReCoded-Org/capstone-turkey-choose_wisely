@@ -35,5 +35,23 @@
 
   "alertMessages": {
     "subscribedSuccessfully": "You are subscribed to our newsletter successfully"
+  },
+  "AboutPage": {
+    "title": " Our Service",
+    "section1Title": "For Education Academy ",
+    "section1Text": "By introducing universities in general in terms of specializations, preference, location and a lot of information related to them ",
+    "section2Title": "For students ",
+    "section2Text": "By clarifying the advantages of each university from the other so that the student chooses his favorite university"
+  },
+  "Team": {
+    "title": "Team"
+  },
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "ressources": "Ressources",
+    "universities": "Universities",
+    "blog": "Blog"
   }
 }

@@ -1,3 +1,12 @@
+import zakaria from "./../images/Team/zakaria.jpeg";
+import abduallah from "./../images/Team/abduallah.jpeg";
+import derya from "./../images/Team/derya1.jpg";
+import Abdulrahman from "./../images/Team/abdu.jpeg";
+import Khadija from "./../images/Team/Khadija.jpg";
+import Ammar from "./../images/Team/Ammar.png";
+import facebook from "./../images/icons/Facebook.svg";
+import twitter from "./../images/icons/Twitter.svg";
+
 export const LANGUAGES = [
   {
     name: "Türkçe",
@@ -6,5 +15,50 @@ export const LANGUAGES = [
   {
     name: "English",
     code: "en",
+  },
+];
+
+export const memebers = [
+  {
+    name: "Khadija",
+    department: "Web Devlelopment",
+    image: Khadija,
+    facebook: facebook,
+    twitter: twitter,
+  },
+  {
+    name: "Abdullah",
+    department: "Web Devlelopment",
+    image: abduallah,
+    facebook: facebook,
+    twitter: twitter,
+  },
+  {
+    name: "Mohammed Alalaya",
+    department: "Web Devlelopment",
+    image: zakaria,
+    facebook: facebook,
+    twitter: twitter,
+  },
+  {
+    name: "Abdulrahaman",
+    department: "Web Devlelopment",
+    image: Abdulrahman,
+    facebook: facebook,
+    twitter: twitter,
+  },
+  {
+    name: "Derya",
+    department: "Web Devlelopment",
+    image: derya,
+    facebook: facebook,
+    twitter: twitter,
+  },
+  {
+    name: "Ammar",
+    department: "Web Devlelopment",
+    image: Ammar,
+    facebook: facebook,
+    twitter: twitter,
   },
 ];

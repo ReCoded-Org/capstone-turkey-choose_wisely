@@ -19,21 +19,25 @@
         "react-bootstrap": "^2.0.0-beta.4",
         "react-dom": "^16.14.0",
         "react-i18next": "^11.11.4",
+        "react-icons": "^4.2.0",
         "react-redux": "^7.2.4",
         "react-router-dom": "^5.2.0",
         "react-scripts": "3.4.3",
+        "react-slick": "^0.28.1",
         "react-test-renderer": "^17.0.2",
         "redux": "^4.1.0",
         "redux-mock-store": "^1.5.4",
         "redux-thunk": "^2.3.0",
-        "sass": "^1.37.5"
+        "sass": "^1.37.5",
+        "slick-carousel": "^1.8.1",
+        "swiper": "^7.0.1"
     },
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
-        "fix": "prettier --write 'src/**/*.js*' 'src/**/*.css' '!src/**/*/*.snap'"
+        "fix": "prettier --write 'src/**/*.js*' 'src/**/*.scss' '!src/**/*/*.snap'"
     },
     "eslintConfig": {
         "extends": "react-app"

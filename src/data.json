@@ -12,5 +12,19 @@
       "description": "home.whoAreWe.card2Text",
       "img": "WhoAreWe2"
     }
+  ],
+  "aboutData": [
+    {
+      "id": 2,
+      "title": "AboutPage.section1Title",
+      "description": "AboutPage.section1Text",
+      "img": "About/service1"
+    },
+    {
+      "id": 1,
+      "title": "AboutPage.section2Title",
+      "description": "AboutPage.section2Text",
+      "img": "About/service2"
+    }
   ]
 }

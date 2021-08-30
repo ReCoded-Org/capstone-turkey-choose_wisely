@@ -35,5 +35,24 @@
 
   "alertMessages": {
     "subscribedSuccessfully": "Bültenimize başarıyla abone oldunuz"
+  },
+
+  "AboutPage": {
+    "title": "Servisimiz ",
+    "section1Title": "Eğitim Akademisi için ",
+    "section1Text": "Üniversiteleri uzmanlık, tercih, konum ve bunlarla ilgili birçok bilgi açısından genel olarak tanıtarak ",
+    "section2Title": "Öğrenciler için ",
+    "section2Text": " Öğrencinin en sevdiği üniversiteyi seçmesi için her üniversitenin diğerinden avantajlarını netleştirerek"
+  },
+  "Team": {
+    "title": "Takım"
+  },
+  "navbar": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "contact": "İletişim",
+    "ressources": "kaynaklar",
+    "universities": "üniversiteler",
+    "blog": "Blog"
   }
 }
