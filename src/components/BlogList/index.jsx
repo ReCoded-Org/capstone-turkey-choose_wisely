@@ -1,16 +1,22 @@
 import React, { useEffect, useState } from "react";
 import BlogDetails from "../BlogDetails";
 import { useTranslation } from "react-i18next";
+import { Container, Row, Col } from "react-bootstrap";
+import { LANGUAGES } from "./../../utilities/variables";
 
 const BlogList = () => {
   const [posts, setPosts] = useState([]);
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
     const fetchPostData = async () => {
       try {
+        const [language] = LANGUAGES.filter(
+          (language) => language.code === i18n.language
+        );
+        console.log(language);
         const posts = await fetch(
-          `https://public-api.wordpress.com/wp/v2/sites/choosewisely834444303.wordpress.com/posts?_embad`
+          `https://public-api.wordpress.com/wp/v2/sites/choosewisely834444303.wordpress.com/posts?tags=${language.key}`
         );
         const data = await posts.json();
         setPosts(data);
@@ -27,7 +33,7 @@ const BlogList = () => {
         element.remove();
       });
     }, 900);
-  }, []);
+  }, [i18n?.language]);
 
   const categories = [
     { key: 1342, value: "Education" },
@@ -38,18 +44,27 @@ const BlogList = () => {
 
   return (
     <div>
-      <div>
-        <h1 className="header">{t("blogs.header")}</h1>
-        <p className="blogsParagraph">{t("blogs.title")}</p>
-      </div>
+      <Container>
+        <div>
+          <Row>
+            <Col lg={12}>
+              <h1 className="header">{t("blogs.header")}</h1>
+            </Col>
 
-      {posts.map((post) => {
-        const categoryObject = categories.find(
-          (el) => el.key === post.categories[0]
-        );
-        post.category = categoryObject.value;
-        return <BlogDetails post={post} />;
-      })}
+            <Col lg={6} md={12}>
+              <p className="blogsParagraph">{t("blogs.title")}</p>
+            </Col>
+          </Row>
+        </div>
+
+        {posts.map((post) => {
+          const categoryObject = categories.find(
+            (el) => el.key === post.categories[0]
+          );
+          post.category = categoryObject.value;
+          return <BlogDetails post={post} />;
+        })}
+      </Container>
     </div>
   );
 };

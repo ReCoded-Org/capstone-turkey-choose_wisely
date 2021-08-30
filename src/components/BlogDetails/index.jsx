@@ -5,50 +5,52 @@ import "./style.scss";
 import Avatar from "@material-ui/core/Avatar";
 
 const BlogDetails = ({ post }) => {
-  console.log(post);
   return (
     <div className="blog">
-      <Link to={`singleBlog/${post.id}`} className="title">
-        <Container className=" justify-content-center  ">
-          <Row xs={1}>
-            <Col md={6}>
-              <img
-                src={post.jetpack_featured_media_url}
-                alt="featcherd"
-                className="image"
-              />
-            </Col>
-            <Col md={6} className="TextSection">
-              <h2
-                dangerouslySetInnerHTML={{ __html: post.category }}
-                className="category"
-              ></h2>
-              <h1
-                dangerouslySetInnerHTML={{ __html: post.title.rendered }}
-                className="HeaderText"
-              ></h1>
-              {/* the html because it was fetching the tags also  */}
-              {/* <p dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }} ></p> */}
-              <Row xs={2} className="AutherAndAvatar">
-                <Col md={1}>
-                  <Avatar className="Avatar" alt="Remy Sharp" />
-                </Col>
-                <Col md={1}>
-                  <h6
-                    dangerouslySetInnerHTML={{
-                      __html: post.author === 210641422 && "Khadija",
-                    }}
-                    className="auther"
-                  ></h6>
-                </Col>
-              </Row>
-              {/* <Link to={`/post/${post.slug}`}>
-           Contenui Reading "{post.slug}"
-         </Link> */}
-            </Col>
-          </Row>
-        </Container>
-      </Link>
+      {/* <Link to={`singleBlog/${post.id}`} className="title"> */}
+      {/* <Container className=" justify-content-center  "> */}
+      <Row
+      // className="justify-content-center"
+      >
+        <Col sm={12} md={6} lg={5}>
+          <div className="post_show_case">
+            <img
+              src={post.jetpack_featured_media_url}
+              alt="featcherd"
+              className="blog_image"
+            />
+          </div>
+        </Col>
+        <Col sm={12} md={6} lg={5}>
+          <div className="post_info">
+            <h2
+              dangerouslySetInnerHTML={{ __html: post.category }}
+              className="category"
+            ></h2>
+            <h1
+              dangerouslySetInnerHTML={{ __html: post.title.rendered }}
+              className="HeaderText"
+            ></h1>
+
+            <div className="auther_info">
+              <Avatar className="Avatar" alt="Remy Sharp" />
+              <div className="auther_name_title">
+                <h6
+                  dangerouslySetInnerHTML={{
+                    __html: post.author === 210641422 && "Khadija",
+                  }}
+                  className="auther_name"
+                ></h6>
+                <span className="auther_job_title">
+                  Content Writing / IT Depatement
+                </span>
+              </div>
+            </div>
+          </div>
+        </Col>
+      </Row>
+      {/* </Container> */}
+      {/* </Link> */}
     </div>
   );
 };

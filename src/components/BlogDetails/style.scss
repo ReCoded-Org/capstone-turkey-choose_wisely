@@ -1,88 +1,88 @@
+@import "./../../style/variables";
 .blog {
-  height: 400px;
+  padding-bottom: 2rem;
+}
+.post_inof {
+  display: block;
+  word-wrap: break-word;
+  padding: 1rem;
 }
 .header {
-  height: 64px;
-  padding-left: 64.65px;
-  padding-right: 16.18px;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
   font-size: 54px;
   line-height: 63px;
-
-  letter-spacing: -1px;
-
   color: #386641;
+  margin: 2.5rem 0 2rem 0;
 }
 .blogsParagraph {
-  height: 52px;
-  padding-left: 64.65px;
-  padding-right: 63.54px;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
+  // height: 52px;
+  // width: 50%;
   font-size: 18px;
-  line-height: 26px;
-  letter-spacing: -0.5px;
-
+  margin-bottom: 3.75rem;
   color: #9dafbd;
 }
-.image {
-  object-fit: cover;
+.post_show_case {
+  padding: 1rem 1rem 1rem 0;
+  .blog_image {
+    border-radius: 0.31rem;
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+  }
+}
+.post_info {
+  padding: 1rem 0 1rem 1rem;
+  .category {
+    display: inline-block;
+    padding: 0.8rem 1.4rem;
+    font-weight: bold;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    color: #fff;
+    background-color: #d1dbe3;
+    border-radius: 00.31rem;
+  }
 
-  height: 350px;
-  width: 555px;
+  .HeaderText {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 46px;
+    color: #386641;
+    word-wrap: break-word;
+    padding: 0.5rem 0;
+  }
+  .auther_info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
 }
 .title {
   text-decoration: none !important;
-
-  font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
-  /* identical to box height */
-
-  letter-spacing: -0.318182px;
-
   color: #ffffff;
 }
-.category {
-  width: 170px;
-  height: 40px;
-  background: #d1dbe3;
-  border-radius: 5px;
-}
-.HeaderText {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 34px;
-  line-height: 46px;
 
-  letter-spacing: -0.1px;
-
-  color: #386641;
+// .TextSection {
+// padding-left: 52.01px;
+// padding-right: 16.18px;
+// }
+.auther_name_title {
+  padding-left: 1rem;
 }
-.TextSection {
-  padding-left: 52.01px;
-  padding-right: 16.18px;
-}
-.AutherAndAvatar {
-  padding-top: 29.69px;
-}
-.auther {
-  padding-left: 4px;
-  font-family: Roboto;
-  font-style: normal;
+.auther_name {
   font-weight: bold;
   font-size: 14px;
-  line-height: 16px;
-
-  letter-spacing: -0.318182px;
+  color: #9dafbd;
+  margin: 0;
+}
+.auther_job_title {
+  font-weight: 300;
+  font-size: 12px;
+  // line-height: 14px;
+  // letter-spacing: -0.272727px;
 
   color: #9dafbd;
 }
