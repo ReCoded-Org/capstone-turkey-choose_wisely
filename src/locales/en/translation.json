@@ -20,12 +20,9 @@
         "auther": " Emily Jørgense",
         "AutherSection": " Author at Panoply Store"
       }
-      
     ],
-    "WhatDidTheySayAboutUs":{
-      
-        "HeaderSection": "What did they say about us"
-      
+    "WhatDidTheySayAboutUs": {
+      "HeaderSection": "What did they say about us"
     },
     "whoAreWe": {
       "title": "Who are we?",

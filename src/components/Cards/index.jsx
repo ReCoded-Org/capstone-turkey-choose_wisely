@@ -7,7 +7,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
 // function SampleNextArrow(props) {
 //   const { className, style, onClick } = props;
 //   return (
@@ -60,11 +59,13 @@ export default function WhatDidTheyAboutUsCard() {
     ],
   };
   const { t } = useTranslation();
-  
+
   return (
     <div className="card">
       <Container>
-        <h2 className="header">{t('home.WhatDidTheySayAboutUs.HeaderSection')}</h2>
+        <h2 className="header">
+          {t("home.WhatDidTheySayAboutUs.HeaderSection")}
+        </h2>
 
         <Slider {...settings}>
           {t("home.speeches", { returnObjects: true }).map((speech) => (

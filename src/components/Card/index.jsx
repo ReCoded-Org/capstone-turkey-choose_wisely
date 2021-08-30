@@ -7,9 +7,7 @@ export default function SliderSecion(speech) {
   console.log(speech);
 
   return (
-    
     <Container>
-      
       <Row className="align-items-center justify-content-center Card">
         <Col className="ps-5 avatarComponent" md={2}>
           <Avatar className="Avatar" alt="Remy Sharp" />
