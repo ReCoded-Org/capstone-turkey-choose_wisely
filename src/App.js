@@ -1,6 +1,7 @@
 import React from "react"; // , { useEffect }
 import Home from "./containers/Home";
 import Footer from "./components/Footer";
+import ResourcesPage from "./containers/ResourcesPage";
 
 import { Route, Switch, Router } from "react-router-dom";
 import history from "./history";
@@ -13,6 +14,7 @@ function App() {
     <Router history={history}>
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route exact path="/resources" component={ResourcesPage} />
       </Switch>
       <Footer />
     </Router>

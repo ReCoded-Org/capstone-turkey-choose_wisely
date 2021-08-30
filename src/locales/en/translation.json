@@ -12,6 +12,13 @@
       "card2Text": "You can contact our team through the contact page"
     }
   },
+  "resourcesPage": {
+    "ResourcesInfos": {
+      "bigTitle": "Useful Resources",
+      "support": "Relevant Department Phone Website"
+    }
+  },
+
   "footer": {
     "login": "Login",
     "subscribe": "Subscribe",

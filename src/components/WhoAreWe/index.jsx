@@ -3,14 +3,14 @@ import { Container } from "react-bootstrap";
 import CardsWhoAreWe from "./../CardsWhoAreWe";
 import SectionTitle from "./../SectionTitle";
 import { useTranslation } from "react-i18next";
-import { data } from "./../../data.json";
+import { whoAreWe } from "./../../data.json";
 import "./style.scss";
 
 const WhoAreWe = () => {
   const { t } = useTranslation();
 
   const renderElements = () => {
-    return data.map((element) => {
+    return whoAreWe.map((element) => {
       return (
         <div className="card_row">
           <CardsWhoAreWe

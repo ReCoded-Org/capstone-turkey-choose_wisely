@@ -9,11 +9,6 @@ import { lang } from "../../utilities/helpers";
 const Buttons = () => {
   const { t } = useTranslation();
 
-  // useEffect(() => {
-  //   console.log("Setting page stuff");
-  //   document.title = t("app_title");
-  // }, [currentLanguage, t]);
-
   return (
     <div className="buttons">
       <button className="btn login-button">{t("footer.login")}</button>

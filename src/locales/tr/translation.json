@@ -13,6 +13,13 @@
     }
   },
 
+  "resourcesPage": {
+    "ResourcesInfos": {
+      "bigTitle": "Faydalı Kaynaklar",
+      "support": "İlgili Birimlerin Telefon ve İnternet Siteleri"
+    }
+  },
+
   "footer": {
     "login": "Oturum açın",
     "subscribe": "Abone ol",
