@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./style.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -6,20 +6,19 @@ import Slider from "react-slick";
 
 import EmailsReCqen from "./../../images/ContactPageimgs/undraw_Emails_re_cqen.svg";
 import PublicDiscussion from "./../../images/ContactPageimgs/undraw_Public_discussion_re_w9up.svg";
-
 import WallPostRe from "./../../images/ContactPageimgs/undraw_Wall_post_re_y78d.svg";
 
-const photos = [
+const sliderPhotos = [
   {
-    name: "Photo 1",
+    name: "WallPostImg",
     url: WallPostRe,
   },
   {
-    name: "Photo 2",
+    name: "EmailsReImg",
     url: EmailsReCqen,
   },
   {
-    name: "Photo 3",
+    name: "PublicDiscussionImg",
     url: PublicDiscussion,
   },
 ];
@@ -31,26 +30,50 @@ const photoItem = (url, alt, index) => {
   );
 };
 
-export default class SimpleSlider extends Component {
-  render() {
-    const settings = {
-      dots: true,
-      infinite: true,
-      // speed: 500,
-      slidesToScroll: 2,
-      slidesToShow: 2,
-      autoplay: true,
-      speed: 2000,
-    };
+// export default class SimpleSlider extends Component {
+//   render() {
+//     const settings = {
+//       dots: true,
+//       infinite: true,
+//       // speed: 500,
+//       slidesToScroll: 2,
+//       slidesToShow: 2,
+//       autoplay: true,
+//       speed: 2000,
+//     };
 
-    return (
-      <div>
-        <Slider className="col" {...settings}>
-          {photos.map((photo, index) => {
-            return photoItem(photo.url, photo.name, index);
-          })}
-        </Slider>
-      </div>
-    );
-  }
-}
+//     return (
+//       <div>
+//         <Slider className="col" {...settings}>
+//           {sliderPhotos.map((photo, index) => {
+//             return photoItem(photo.url, photo.name, index);
+//           })}
+//         </Slider>
+//       </div>
+//     );
+//   }
+// }
+
+const SimpleSlider = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    // speed: 500,
+    slidesToScroll: 2,
+    slidesToShow: 2,
+    autoplay: true,
+    speed: 2000,
+  };
+
+  return (
+    <div>
+      <Slider className="col" {...settings}>
+        {sliderPhotos.map((photo, index) => {
+          return photoItem(photo.url, photo.name, index);
+        })}
+      </Slider>
+    </div>
+  );
+};
+
+export default SimpleSlider;
