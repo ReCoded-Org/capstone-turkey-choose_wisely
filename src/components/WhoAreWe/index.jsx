@@ -12,7 +12,7 @@ const WhoAreWe = () => {
   const renderElements = () => {
     return data.map((element) => {
       return (
-        <div className="card_row">
+        <div key={element.id} className="card_row">
           <CardsWhoAreWe
             customClassName={element.id % 2 === 0 && true}
             title={t(element.title)}
