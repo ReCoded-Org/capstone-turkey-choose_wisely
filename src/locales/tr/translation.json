@@ -12,6 +12,17 @@
       "card2Text": "Ekibimiz ile iletişim sayfasından iletişime geçebilirsiniz"
     }
   },
+<<<<<<< HEAD
+=======
+
+  "ressourcesPage": {
+    "header": {
+      "title": "Bir sonraki adımlarını planlamaya hazır mısın?",
+      "subtitle": "Üniversite Yolculuğunuza başlamak için ihtiyacınız olan tüm kaynakları burada bulabilirsiniz."
+    }
+  },
+
+>>>>>>> f12fbb44da3a3b54fc9d9f33b657240279b8c5e7
   "footer": {
     "login": "Oturum açın",
     "subscribe": "Abone ol",
