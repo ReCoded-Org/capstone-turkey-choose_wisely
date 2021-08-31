@@ -27,13 +27,27 @@
     "copyRights": "Copyright © Choose Wisely development team",
     "allRightsReserver": "All rights reserve"
   },
-
   "validation": {
     "required": "Required",
     "invalidEmail": "Invalid email address"
   },
-
   "alertMessages": {
     "subscribedSuccessfully": "You are subscribed to our newsletter successfully"
-  }
+  },
+  "universities": {
+    "filter": {
+      "universityName": "University Name",
+      "province": "Province",
+      "type": "Type",
+      "applicationStatus": "Application Status"
+    }
+  },
+  "notFounded": {
+    "message": "The page you requested is not found"
+  },
+  "search": {
+    "placeholder": "Search ...",
+    "go": "Go"
+  },
+  "loading": "Loading"
 }
