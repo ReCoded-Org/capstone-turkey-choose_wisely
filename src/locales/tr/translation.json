@@ -38,6 +38,11 @@
       "province": "Vilayet",
       "type": "Tip",
       "applicationStatus": "Uygulama durumu"
+    },
+    "lists": {
+      "unknown": "Bilinmeyen",
+      "applied": "Başvurdu",
+      "notApplied": "Başvur Yok"
     }
   },
   "notFounded": {

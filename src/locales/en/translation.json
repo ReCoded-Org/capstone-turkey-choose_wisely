@@ -12,14 +12,12 @@
       "card2Text": "You can contact our team through the contact page"
     }
   },
-
   "ressourcesPage": {
     "header": {
       "title": "Are you ready to plan your next steps?",
       "subtitle": "You can find here all the ressources that you need to start your University Journey."
     }
   },
-
   "footer": {
     "login": "Login",
     "subscribe": "Subscribe",
@@ -40,6 +38,11 @@
       "province": "Province",
       "type": "Type",
       "applicationStatus": "Application Status"
+    },
+    "lists": {
+      "unknown": "Unknown",
+      "applied": "Applied",
+      "notApplied": "Not Applied"
     }
   },
   "notFounded": {
