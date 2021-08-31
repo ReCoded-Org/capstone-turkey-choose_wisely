@@ -8,9 +8,7 @@ const BlogDetails = ({ post }) => {
     <div className="blog">
       {/* <Link to={`singleBlog/${post.id}`} className="title"> */}
       {/* <Container className=" justify-content-center  "> */}
-      <Row
-      // className="justify-content-center"
-      >
+      <Row>
         <Col sm={12} md={6} lg={5}>
           <div className="post_show_case">
             <img

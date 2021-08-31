@@ -8,15 +8,13 @@
   padding: 1rem;
 }
 .header {
-  font-size: 54px;
-  line-height: 63px;
+  font-size: 3.375rem;
+  line-height: 3.938rem;
   color: #386641;
   margin: 2.5rem 0 2rem 0;
 }
 .blogsParagraph {
-  // height: 52px;
-  // width: 50%;
-  font-size: 18px;
+  font-size: 1.125rem;
   margin-bottom: 3.75rem;
   color: #9dafbd;
 }
@@ -45,8 +43,8 @@
   .HeaderText {
     font-style: normal;
     font-weight: 300;
-    font-size: 28px;
-    line-height: 46px;
+    font-size: 1.75rem;
+    line-height: 2.875rem;
     color: #386641;
     word-wrap: break-word;
     padding: 0.5rem 0;
@@ -60,29 +58,23 @@
 .title {
   text-decoration: none !important;
   font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 0.875rem;
+  line-height: 1rem;
   color: #ffffff;
 }
 
-// .TextSection {
-// padding-left: 52.01px;
-// padding-right: 16.18px;
-// }
 .auther_name_title {
   padding-left: 1rem;
 }
 .auther_name {
   font-weight: bold;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #9dafbd;
   margin: 0;
 }
 .auther_job_title {
   font-weight: 300;
-  font-size: 12px;
-  // line-height: 14px;
-  // letter-spacing: -0.272727px;
+  font-size: 0.75rem;
 
   color: #9dafbd;
 }
