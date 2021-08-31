@@ -4,6 +4,9 @@ exports[`Snapshop test of sectionTitle component 1`] = `
 <div
   className="section_title"
 >
+  <h1
+    className="big_title"
+  />
   <h2
     className="title"
   />

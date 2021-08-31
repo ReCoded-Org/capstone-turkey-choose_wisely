@@ -1,8 +1,6 @@
 import React from "react"; // , { useEffect }
 // import { useTranslation } from "react-i18next";
 import "./style/style.css";
-import { useTranslation } from "react-i18next";
-import { Button } from "react-bootstrap";
 import Home from "./containers/Home";
 import Footer from "./components/Footer";
 
@@ -11,6 +9,7 @@ import history from "./history";
 import "./App.scss";
 import Blog from "./containers/Blog";
 import "./style/style.css";
+import RessourcesPage from "./containers/RessourcesPage";
 
 //  const { t, i18n } = useTranslation();
 
@@ -37,6 +36,8 @@ function App() {
         </Route>
         <Route exact path="/blog" component={Blog} />
         <Route exact path="singlePost/:id" />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/ressources" component={RessourcesPage} />
       </Switch>
       <Footer />
     </Router>
