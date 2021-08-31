@@ -3,6 +3,7 @@ import "./style.scss";
 import { Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { getImageUrl } from "../../utilities/helpers";
 
 const University = ({ logo, name, location, url, type, isApplied }) => {
   const { t } = useTranslation();
@@ -14,7 +15,12 @@ const University = ({ logo, name, location, url, type, isApplied }) => {
             <Row>
               <Col sm={12} lg={5} className="university_details__logo">
                 {/* <div className="university_details__logo"> */}
-                <img className="university_logo" src={logo} alt={name} />
+                {}
+                <img
+                  className="university_logo"
+                  src={getImageUrl(logo)}
+                  alt={name}
+                />
                 <div className="university_details__info">
                   <h3 className="university_name">{name}</h3>
                   {url ? (

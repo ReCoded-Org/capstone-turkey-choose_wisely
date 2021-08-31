@@ -2,13 +2,9 @@
 @import "./../../style/mixins";
 
 .university_details {
-  // display: flex;
-  // align-items: center;
-  // justify-content: space-between;
   padding: 1rem 2rem;
   .university_details__logo {
     display: flex;
-    // flex: 1;
     .university_logo {
       max-width: 15rem;
       min-width: 12rem;
@@ -16,7 +12,6 @@
     align-items: center;
     justify-content: flex-start;
     .university_details__info {
-      // width: 19rem;
       padding: 1rem 2rem;
       .university_name {
         font-style: normal;
@@ -52,12 +47,13 @@
     .university_data {
       width: 100%;
       margin: 1rem auto;
+      white-space: nowrap;
       @include for-tablet-landscape-up {
         margin: 0 1rem;
       }
-      border: 1px solid #386641;
+      border: 0.0625rem solid #386641;
       box-sizing: border-box;
-      border-radius: 5px;
+      border-radius: 0.3125;
       padding: 0.625rem 0.75rem;
       min-height: 2.5rem;
     }
@@ -67,14 +63,14 @@
     .application:hover {
       color: $primary-color;
       background-color: #fff;
-      border: 1px solid #fff;
+      border: 0.0625rem solid #fff;
       box-shadow: 0rem 0.625rem 1.25rem rgb(0 0 0 / 10%);
       border-radius: 0.3125rem;
     }
     .applied {
       color: #fff;
       background-color: $primary-color;
-      border: 1px solid #fff;
+      border: 0.0625rem solid #fff;
       box-shadow: 0rem 0.625rem 1.25rem rgb(0 0 0 / 10%);
       border-radius: 0.3125rem;
     }
