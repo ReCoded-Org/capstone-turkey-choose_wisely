@@ -4,6 +4,12 @@
       "greeting": "Welcome",
       "learn-react": "Learn React"
     },
+    "blog": {
+      "title": "Our Blog",
+      "subText": "Home is behind, the world ahead and there are many paths to tread through shadows to the edge.",
+      "seeAll": "See all",
+      "readMore": "read more!"
+    },
     "whoAreWe": {
       "title": "Who are we?",
       "card1Title": "Our Mission",
@@ -47,5 +53,6 @@
     "placeholder": "Search ...",
     "go": "Go"
   },
-  "loading": "Loading"
+  "loading": "Loading",
+  "notData": "No Data found ..."
 }
