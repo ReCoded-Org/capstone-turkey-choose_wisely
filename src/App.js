@@ -1,6 +1,5 @@
 import React from "react"; // , { useEffect }
 // import { useTranslation } from "react-i18next";
-import "./style/style.css";
 import Home from "./containers/Home";
 import Universities from "./containers/Universities";
 import NotFound from "./containers/NotFound";
@@ -12,7 +11,6 @@ import { Route, Switch, Router } from "react-router-dom";
 import history from "./history";
 import "./App.scss";
 
-import "./style/style.css";
 import RessourcesPage from "./containers/RessourcesPage";
 
 // const { t, i18n } = useTranslation();
@@ -37,5 +35,4 @@ function App() {
     </Router>
   );
 }
-
 export default App;
