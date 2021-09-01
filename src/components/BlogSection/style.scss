@@ -1,0 +1,52 @@
+@import "./../../style/variables";
+
+.blog {
+  padding: 3rem 0 2rem 0;
+}
+.art_btn12 {
+  background-color: $secondary-color;
+  border: 0.063rem solid $primary-color !important;
+  color: $primary-color;
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+.art_btn12:hover {
+  background-color: $primary-color;
+  border: 0.063rem solid $primary-color !important;
+  color: $secondary-color;
+}
+
+.blog_cards {
+  margin: 6rem 0 4rem 0;
+}
+.card_body {
+  padding: 1.3rem;
+  min-height: 22rem;
+  display: flex;
+  flex-direction: column;
+  .art_date {
+    color: $gray-secondary-color;
+    font-size: 0.875rem;
+    font-weight: bold;
+    margin-bottom: 1.25rem;
+  }
+  .art_title {
+    color: $primary-color;
+    font-size: 1.125rem;
+    margin-bottom: 1.25rem;
+  }
+  .art_text {
+    font-size: 0.875rem;
+    color: $gray-secondary-color;
+    margin-bottom: 1rem;
+  }
+}
+
+.card:hover {
+  box-shadow: 0rem 1.25rem 2.5rem rgba(0, 0, 0, 0.2);
+  border-color: #fff;
+}
+.card {
+  margin-bottom: 1rem;
+}

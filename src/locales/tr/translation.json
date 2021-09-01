@@ -4,6 +4,12 @@
       "greeting": "Merhaba",
       "learn-react": "React ogren"
     },
+    "blog": {
+      "title": "Blogumuz",
+      "subText": "Ev geride, dünya önde ve gölgelerin arasından uçlara kadar yürümek için pek çok yol var.",
+      "seeAll": "Tümünü Gör",
+      "readMore": "Devamını oku!"
+    },
     "whoAreWe": {
       "title": "Biz kimiz?",
       "card1Title": "Misyonumuz",
@@ -35,7 +41,6 @@
       "subtitle": "Üniversite Yolculuğunuza başlamak için ihtiyacınız olan tüm kaynakları burada bulabilirsiniz."
     }
   },
-
   "footer": {
     "login": "Oturum açın",
     "subscribe": "Abone ol",
@@ -43,13 +48,47 @@
     "copyRights": "Copyright © Choose Wisely Geliştirme Takımı",
     "allRightsReserver": "Her hakkı saklıdır"
   },
-
   "validation": {
     "required": "gereklidir",
     "invalidEmail": "Geçersiz e-posta adresi"
   },
-
   "alertMessages": {
-    "subscribedSuccessfully": "Bültenimize başarıyla abone oldunuz"
-  }
+    "subscribedSuccessfully": "Bültenimize başarıyla abone oldunuz",
+    "contactSuccess": "Thank you for your message"
+  },
+  "constactUs": {
+    "hero": {
+      "title": "Bizimle iletişime geçin",
+      "purview": "Ancak Brooke Chaffin ve Catherine Connors, yaratıcılığını güvenli bir alanda ifade etmek için genç kızları kadın danışmanlarla birleştiren bir sosyal ağ olan Maverick'in tanıtımıyla bunu değiştirmeye çalışıyor."
+    },
+    "form": {
+      "email": "E-posta",
+      "firstName": "Ad",
+      "lastName": "Soyadı",
+      "message": "Mesaj",
+      "submit": "Gönder"
+    }
+  },
+  "universities": {
+    "filter": {
+      "universityName": "Üniversite adı",
+      "province": "Vilayet",
+      "type": "Tip",
+      "applicationStatus": "Uygulama durumu"
+    },
+    "lists": {
+      "unknown": "Bilinmeyen",
+      "applied": "Başvurdu",
+      "notApplied": "Başvur Yok"
+    }
+  },
+  "notFounded": {
+    "message": "İstediğiniz sayfa bulunamadı"
+  },
+  "search": {
+    "placeholder": "Ara ...",
+    "go": "Git"
+  },
+  "loading": "Yükleniyor",
+  "universitiesTempLink": "universities ler"
 }

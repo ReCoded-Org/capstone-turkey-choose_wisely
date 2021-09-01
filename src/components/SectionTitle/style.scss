@@ -1,6 +1,25 @@
 @import "../../style/variables.scss";
 @import "../../style/mixins.scss";
 .section_title {
+  .big_title {
+    color: #386641;
+    font-weight: 400;
+    font-size: 3.375rem;
+    line-height: 3.955rem;
+    letter-spacing: -0.031rem;
+  }
+  .subtitle {
+    font-weight: normal;
+    font-size: 1.125rem;
+    line-height: 1.318rem;
+    letter-spacing: -0.031rem;
+    color: $gray-base-color;
+    margin-bottom: 3.6rem;
+    width: 100%;
+    @include for-desktop-up {
+      width: 70%;
+    }
+  }
   .title {
     color: #386641;
     font-weight: 300;
@@ -8,45 +27,16 @@
     line-height: 2.875rem;
     letter-spacing: -0.00625rem;
   }
-
-  .section_title {
-    .big_title {
-      color: #386641;
-      font-weight: 400;
-      font-size: 3.375rem;
-      line-height: 3.955rem;
-      letter-spacing: -0.031rem;
-    }
-    .subtitle {
-      font-weight: normal;
-      font-size: 1.125rem;
-      line-height: 1.318rem;
-      letter-spacing: -0.031rem;
-      color: $gray-base-color;
-      margin-bottom: 3.6rem;
-      width: 100%;
-      @include for-desktop-up {
-        width: 70%;
-      }
-    }
-    .title {
-      color: #386641;
-      font-weight: 300;
-      font-size: 2.125rem;
-      line-height: 2.875rem;
-      letter-spacing: -0.00625rem;
-    }
-    .sub_text {
-      font-weight: normal;
-      font-size: 1.125rem;
-      line-height: 1.625rem;
-      letter-spacing: -0.03125rem;
-      color: $secondary-color;
-      margin-bottom: 3.6rem;
-      width: 100%;
-      @include for-desktop-up {
-        width: 70%;
-      }
+  .sub_text {
+    font-weight: normal;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    letter-spacing: -0.03125rem;
+    color: $secondary-color;
+    margin-bottom: 3.6rem;
+    width: 100%;
+    @include for-desktop-up {
+      width: 70%;
     }
   }
 }
