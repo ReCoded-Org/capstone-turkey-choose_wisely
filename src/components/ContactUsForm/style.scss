@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Yellowtail&display=swap");
+@import "../../style/variables";
+@import "../../style/mixins";
+
+.form-control:focus {
+  border-color: $primary-color !important;
+  box-shadow: 0 0 0 0.25rem rgba(56, 102, 65, 0.5);
+}
+
+.btn:hover {
+  background-color: $primary-color;
+}
+.contsact_us_form {
+  width: 80%;
+
+  @include for-tablet-landscape-up {
+    width: 65%;
+  }
+}
+
+.form_wrapper {
+  box-shadow: 0px 40px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin: 4rem 0 4rem 0;
+  padding: 1rem 0 2rem 1rem;
+}
+.contact-us_form {
+  position: relative;
+}
+.slider_postion {
+  position: relative;
+  @include for-tablet-landscape-up {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55%;
+    transform: translateY(200%);
+  }
+}
