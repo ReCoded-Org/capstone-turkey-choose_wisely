@@ -1,22 +1,20 @@
 import React from "react"; // , { useEffect }
 // import { useTranslation } from "react-i18next";
-
 import Home from "./containers/Home";
 import Universities from "./containers/Universities";
 import NotFound from "./containers/NotFound";
 import Contact from "./containers/Contact";
 import Footer from "./components/Footer";
 import Preloader from "./components/PreLoad";
-
 import { Route, Switch, Router } from "react-router-dom";
 import history from "./history";
 import "./App.scss";
 import Blog from "./containers/Blog";
 
-
 import RessourcesPage from "./containers/RessourcesPage";
 
 //  const { t, i18n } = useTranslation();
+// const { t, i18n } = useTranslation();
 
 // const changeLanguage = (lng) => {
 //   i18n.changeLanguage(lng);

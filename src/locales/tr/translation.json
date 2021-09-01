@@ -18,6 +18,22 @@
     }
   },
 
+  "validation": {
+    "required": "gereklidir",
+    "invalidEmail": "Geçersiz e-posta adresi"
+  },
+
+  "alertMessages": {
+    "subscribedSuccessfully": "Bültenimize başarıyla abone oldunuz"
+  },
+
+  "blog": {
+    "title": "Blogumuz",
+    "subText": "Ev geride, dünya önde ve gölgelerin arasından uçlara kadar yürümek için pek çok yol var.",
+    "seeAll": "Tümünü Gör",
+    "readMore": "Devamını oku!"
+  },
+
   "speeches": {
     "speechText1": "Şu anda Ford, Fiesta, Focus, Fusion, C-Max, Mustang ve Taurus ile Kuzey Amerika'da altı sedan ve coupe satıyor. Bu seri, kompakt Fiest'ten orta boy Focus, C-Max ve Fusion'dan tam boy Taurus'a kadar birçok segmente hitap ediyor.",
     "auther1": " Emily Jørgense",
@@ -34,7 +50,6 @@
     "HeaderSection": "Bizim için ne dediler"
   },
 
- 
   "footer": {
     "login": "Oturum açın",
     "subscribe": "Abone ol",
@@ -48,24 +63,10 @@
       "subtitle": "Üniversite Yolculuğunuza başlamak için ihtiyacınız olan tüm kaynakları burada bulabilirsiniz."
     }
   },
-  "validation": {
-    "required": "gereklidir",
-    "invalidEmail": "Geçersiz e-posta adresi"
-  },
-
-  "alertMessages": {
-    "subscribedSuccessfully": "Bültenimize başarıyla abone oldunuz"
-  },
 
   "blogs": {
     "header": "En son blog gönderileri",
     "title": "Ev geride, dünya önde ve gölgelerin arasından uçlara kadar yürümek için pek çok yol var."
-  },
-  "blog": {
-    "title": "Blogumuz",
-    "subText": "Ev geride, dünya önde ve gölgelerin arasından uçlara kadar yürümek için pek çok yol var.",
-    "seeAll": "Tümünü Gör",
-    "readMore": "Devamını oku!"
   },
 
   "constactUs": {

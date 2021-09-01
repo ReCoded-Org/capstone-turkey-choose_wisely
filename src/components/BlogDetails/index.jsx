@@ -1,28 +1,18 @@
 import React from "react";
-<<<<<<< HEAD
 import { Row, Col } from "react-bootstrap";
 import "./style.scss";
 // import Avatar from "@material-ui/core/Avatar";
 import Avatar from "react-avatar";
-=======
-import { Link } from "react-router-dom";
-import { Container, Row, Col } from "react-bootstrap";
+
 import "./style.scss";
-import Avatar from "@material-ui/core/Avatar";
->>>>>>> e8607d2bf9dcd15f9ebcbaa9b57cf155105f0a40
+// import Avatar from "@material-ui/core/Avatar";
 
 const BlogDetails = ({ post }) => {
   return (
     <div className="blog">
       {/* <Link to={`singleBlog/${post.id}`} className="title"> */}
       {/* <Container className=" justify-content-center  "> */}
-<<<<<<< HEAD
       <Row>
-=======
-      <Row
-      // className="justify-content-center"
-      >
->>>>>>> e8607d2bf9dcd15f9ebcbaa9b57cf155105f0a40
         <Col sm={12} md={6} lg={5}>
           <div className="post_show_case">
             <img
@@ -44,12 +34,9 @@ const BlogDetails = ({ post }) => {
             ></h1>
 
             <div className="auther_info">
-<<<<<<< HEAD
               {/* <Avatar className="Avatar" alt="Remy Sharp" /> */}
               <Avatar name="Khadija" size="45" round={true} />
-=======
-              <Avatar className="Avatar" alt="Remy Sharp" />
->>>>>>> e8607d2bf9dcd15f9ebcbaa9b57cf155105f0a40
+              {/* <Avatar className="Avatar" alt="Remy Sharp" /> */}
               <div className="auther_name_title">
                 <h6
                   dangerouslySetInnerHTML={{
