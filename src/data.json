@@ -29,5 +29,19 @@
       "auther": "speeches.auther3",
       "AutherSection": "speeches.AutherSection3"
     }
+  ] ,
+  "aboutData": [
+    {
+      "id": 2,
+      "title": "AboutPage.section1Title",
+      "description": "AboutPage.section1Text",
+      "img": "About/service1"
+    },
+    {
+      "id": 1,
+      "title": "AboutPage.section2Title",
+      "description": "AboutPage.section2Text",
+      "img": "About/service2"
+    }
   ]
 }

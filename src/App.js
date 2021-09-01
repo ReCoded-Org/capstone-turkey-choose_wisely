@@ -11,7 +11,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import "./App.scss";
-import "./style/style.css";
+
 
 // import pages
 import Home from "./containers/Home";
