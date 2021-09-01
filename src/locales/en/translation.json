@@ -7,12 +7,6 @@
       "heroSubTitle": "You can find all the content you are looking for about",
       "heroSubTitle2": "universities and learning approaches."
     },
-    "blog": {
-      "title": "Our Blog",
-      "subText": "Home is behind, the world ahead and there are many paths to tread through shadows to the edge.",
-      "seeAll": "See all",
-      "readMore": "read more!"
-    },
     "whoAreWe": {
       "title": "Who are we?",
       "card1Title": "Our Mission",
@@ -39,7 +33,21 @@
     "invalidEmail": "Invalid email address"
   },
   "alertMessages": {
-    "subscribedSuccessfully": "You are subscribed to our newsletter successfully"
+    "subscribedSuccessfully": "You are subscribed to our newsletter successfully",
+    "contactSuccess": "Thank you for your message"
+  },
+  "constactUs": {
+    "hero": {
+      "title": "Contact Us",
+      "purview": "But Brooke Chaffin and Catherine Connors are looking to change that with the introduction of Maverick, a social network that connects young girls with female mentors to express their creativity in a safe space."
+    },
+    "form": {
+      "email": "Email",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "message": "Message",
+      "submit": "Submit"
+    }
   },
   "AboutPage": {
     "title": " Our Service",
@@ -69,6 +77,11 @@
       "province": "Province",
       "type": "Type",
       "applicationStatus": "Application Status"
+    },
+    "lists": {
+      "unknown": "Unknown",
+      "applied": "Applied",
+      "notApplied": "Not Applied"
     }
   },
   "notFounded": {
@@ -79,5 +92,5 @@
     "go": "Go"
   },
   "loading": "Loading",
-  "notData": "No Data found ..."
+  "universitiesTempLink": "universities"
 }

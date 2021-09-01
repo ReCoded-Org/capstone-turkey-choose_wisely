@@ -39,7 +39,21 @@
     "invalidEmail": "Geçersiz e-posta adresi"
   },
   "alertMessages": {
-    "subscribedSuccessfully": "Bültenimize başarıyla abone oldunuz"
+    "subscribedSuccessfully": "Bültenimize başarıyla abone oldunuz",
+    "contactSuccess": "Thank you for your message"
+  },
+  "constactUs": {
+    "hero": {
+      "title": "Bizimle iletişime geçin",
+      "purview": "Ancak Brooke Chaffin ve Catherine Connors, yaratıcılığını güvenli bir alanda ifade etmek için genç kızları kadın danışmanlarla birleştiren bir sosyal ağ olan Maverick'in tanıtımıyla bunu değiştirmeye çalışıyor."
+    },
+    "form": {
+      "email": "E-posta",
+      "firstName": "Ad",
+      "lastName": "Soyadı",
+      "message": "Mesaj",
+      "submit": "Gönder"
+    }
   },
 
   "AboutPage": {
@@ -69,6 +83,11 @@
       "province": "Vilayet",
       "type": "Tip",
       "applicationStatus": "Uygulama durumu"
+    },
+    "lists": {
+      "unknown": "Bilinmeyen",
+      "applied": "Başvurdu",
+      "notApplied": "Başvur Yok"
     }
   },
   "notFounded": {
@@ -79,5 +98,5 @@
     "go": "Git"
   },
   "loading": "Yükleniyor",
-  "notData": "Veri bulunamadı ..."
+  "universitiesTempLink": "universities ler"
 }
