@@ -10,7 +10,7 @@ import { Route, Switch, Router } from "react-router-dom";
 import history from "./history";
 
 import "./App.scss";
-import "./style/style.css";
+
 import RessourcesPage from "./containers/RessourcesPage";
 
 function App() {
@@ -29,5 +29,4 @@ function App() {
     </Router>
   );
 }
-
 export default App;

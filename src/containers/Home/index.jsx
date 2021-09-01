@@ -3,6 +3,7 @@ import Blog from "../../components/BlogSection";
 import "./style.scss";
 import WhoAreWe from "./../../components/WhoAreWe";
 import Map from "./../../components/Map";
+import WhatDidTheyAboutUsCard from "../../components/Cards";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
@@ -15,6 +16,7 @@ const Home = () => {
       <WhoAreWe />
       <Blog />
       <Map />
+      <WhatDidTheyAboutUsCard />
     </main>
   );
 };
