@@ -52,5 +52,6 @@
     "placeholder": "Search ...",
     "go": "Go"
   },
-  "loading": "Loading"
+  "loading": "Loading",
+  "universitiesTempLink": "universities"
 }
