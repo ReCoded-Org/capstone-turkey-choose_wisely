@@ -5,6 +5,8 @@ import history from "./history";
 import "./App.scss";
 
 // import pages
+import NavBar from "./components/NavBar";
+
 import Home from "./containers/Home";
 import About from "./containers/About";
 import Contact from "./containers/Contact";
