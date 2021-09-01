@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshop test of BlogList component 1`] = `
+<div>
+  <div
+    className="container"
+  >
+    <div>
+      <div
+        className="row"
+      >
+        <div
+          className="col-lg-12"
+        >
+          <h1
+            className="header"
+          >
+            blogs.header
+          </h1>
+        </div>
+        <div
+          className="col-lg-6 col-md-12"
+        >
+          <p
+            className="blogsParagraph"
+          >
+            blogs.title
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

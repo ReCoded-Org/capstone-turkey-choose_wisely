@@ -1,7 +1,12 @@
 import React from "react";
-
-const Blog = () => {
-  return <div></div>;
+import BlogList from "../../components/BlogList";
+import "./style.scss";
+const index = () => {
+  return (
+    <div>
+      <BlogList />
+    </div>
+  );
 };
 
-export default Blog;
+export default index;
