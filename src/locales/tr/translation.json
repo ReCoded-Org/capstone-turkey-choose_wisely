@@ -6,7 +6,8 @@
     },
     "topTen": {
       "title": "ilk 10 üniversite",
-      "subText": "İşte kampüs personeli ve eğitim kalitesine göre ilk on üniversite sıralaması evrensel ölçeklerle ölçülmektedir..",
+      "subText": "İşte kampüs personeli ve eğitim kalitesine göre ilk on üniversite sıralaması evrensel ölçeklerle ölçülmektedir.."},
+
       "whoAreWe": {
         "title": "Biz kimiz?",
         "card1Title": "Misyonumuz",
@@ -31,6 +32,56 @@
 
     "alertMessages": {
       "subscribedSuccessfully": "Bültenimize başarıyla abone oldunuz"
+    },
+  
+    "blog": {
+      "title": "Blogumuz",
+      "subText": "Ev geride, dünya önde ve gölgelerin arasından uçlara kadar yürümek için pek çok yol var.",
+      "seeAll": "Tümünü Gör",
+      "readMore": "Devamını oku!"
+    },
+    
+  
+  "ressourcesPage": {
+    "header": {
+      "title": "Bir sonraki adımlarını planlamaya hazır mısın?",
+      "subtitle": "Üniversite Yolculuğunuza başlamak için ihtiyacınız olan tüm kaynakları burada bulabilirsiniz."
     }
-  }
+  },
+ 
+  "constactUs": {
+    "hero": {
+      "title": "Bizimle iletişime geçin",
+      "purview": "Ancak Brooke Chaffin ve Catherine Connors, yaratıcılığını güvenli bir alanda ifade etmek için genç kızları kadın danışmanlarla birleştiren bir sosyal ağ olan Maverick'in tanıtımıyla bunu değiştirmeye çalışıyor."
+    },
+    "form": {
+      "email": "E-posta",
+      "firstName": "Ad",
+      "lastName": "Soyadı",
+      "message": "Mesaj",
+      "submit": "Gönder"
+    }
+  },
+  "universities": {
+    "filter": {
+      "universityName": "Üniversite adı",
+      "province": "Vilayet",
+      "type": "Tip",
+      "applicationStatus": "Uygulama durumu"
+    },
+    "lists": {
+      "unknown": "Bilinmeyen",
+      "applied": "Başvurdu",
+      "notApplied": "Başvur Yok"
+    }
+  },
+  "notFounded": {
+    "message": "İstediğiniz sayfa bulunamadı"
+  },
+  "search": {
+    "placeholder": "Ara ...",
+    "go": "Git"
+  },
+  "loading": "Yükleniyor",
+  "universitiesTempLink": "universities ler"
 }

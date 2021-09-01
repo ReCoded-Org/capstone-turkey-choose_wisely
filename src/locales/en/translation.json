@@ -6,7 +6,8 @@
     },
     "topTen": {
       "title": "Top 10 universities",
-      "subText": "here are the top ten universities according to campus staff and education quality ..the ranking is measured by universal scales.",
+      "subText": "here are the top ten universities according to campus staff and education quality ..the ranking is measured by universal scales."},
+
       "whoAreWe": {
         "title": "Who are we?",
         "card1Title": "Our Mission",
@@ -28,6 +29,49 @@
     },
     "alertMessages": {
       "subscribedSuccessfully": "You are subscribed to our newsletter successfully"
+    },
+  
+  
+  "ressourcesPage": {
+    "header": {
+      "title": "Are you ready to plan your next steps?",
+      "subtitle": "You can find here all the ressources that you need to start your University Journey."
     }
-  }
+  },
+ 
+  "constactUs": {
+    "hero": {
+      "title": "Contact Us",
+      "purview": "But Brooke Chaffin and Catherine Connors are looking to change that with the introduction of Maverick, a social network that connects young girls with female mentors to express their creativity in a safe space."
+    },
+    "form": {
+      "email": "Email",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "message": "Message",
+      "submit": "Submit"
+    }
+  },
+  "universities": {
+    "filter": {
+      "universityName": "University Name",
+      "province": "Province",
+      "type": "Type",
+      "applicationStatus": "Application Status"
+    },
+    "lists": {
+      "unknown": "Unknown",
+      "applied": "Applied",
+      "notApplied": "Not Applied"
+    }
+  },
+  "notFounded": {
+    "message": "The page you requested is not found"
+  },
+  "search": {
+    "placeholder": "Search ...",
+    "go": "Go"
+  },
+  "loading": "Loading",
+  "universitiesTempLink": "universities"
 }

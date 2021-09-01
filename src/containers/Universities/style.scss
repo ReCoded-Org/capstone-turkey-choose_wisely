@@ -1,0 +1,10 @@
+@import "./../../style/variables";
+@import "./../../style/mixins.scss";
+
+.universities {
+  min-height: 100vh;
+}
+
+.universities_list {
+  margin-top: 6rem;
+}

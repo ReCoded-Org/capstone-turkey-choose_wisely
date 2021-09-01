@@ -1,0 +1,29 @@
+@import "../../style/variables.scss";
+@import "../../style/mixins.scss";
+
+.ressources_page {
+  background-color: $light-color;
+  height: 50.438rem;
+
+  .ressources_title {
+    height: 12.188rem;
+    width: 31.563rem;
+    left: 2.938rem;
+    margin-top: 4.563rem;
+  }
+
+  .ressouces_page1 {
+    height: 30.75rem;
+    width: 43.625;
+    margin-left: 5.188rem;
+    margin-top: 7.063rem;
+  }
+
+  .ressouces_page2 {
+    height: 26.563rem;
+    width: 34.938rem;
+    margin-left: 1.25rem;
+    margin-top: 4rem;
+    margin-bottom: 4.438rem;
+  }
+}
