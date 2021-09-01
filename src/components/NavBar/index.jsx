@@ -43,11 +43,11 @@ const NavBar = () => {
                 <span className="dot"></span>
               </Nav.Link>
               <Nav.Link
-                className={location.pathname === "/Ressources" && "active"}
+                className={location.pathname === "/Resources" && "active"}
                 as={Link}
-                to="/Ressources"
+                to="/Resources"
               >
-                <span> {t("navbar.ressources")}</span>
+                <span> {t("navbar.resources")}</span>
                 <span className="dot"></span>
               </Nav.Link>
               <Nav.Link
