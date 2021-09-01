@@ -1,0 +1,88 @@
+@import "./../../style/variables";
+
+@media screen and (min-width: 1200px) {
+  .serv {
+    display: flex;
+  }
+
+  .serv .left_col,
+  .serv .right_col {
+    width: 50%;
+    height: 50%;
+  }
+
+  .serv .left_col_2,
+  .serv .right_co_2l {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+.serv {
+  padding: 6.25rem 0;
+}
+
+.serv_row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text {
+  float: left;
+}
+
+.title {
+  color: $primary-color;
+  padding-bottom: 2.5rem;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 3rem;
+  line-height: 2.875rem;
+  letter-spacing: -0.006rem;
+}
+
+.left_col {
+  flex-basis: 50%;
+}
+
+.left_col img {
+  width: 100%;
+}
+
+.right_col {
+  flex-basis: 50%;
+}
+
+.right_col_2 {
+  flex-basis: 50%;
+}
+
+.right_col_2 img {
+  width: 100%;
+}
+.left_col_2 {
+  flex-basis: 50%;
+}
+.text {
+  .icons {
+    color: #d43a3a;
+    padding-top: 3rem;
+    size: 100%;
+  }
+}
+.instagram_icon,
+.twiter_icon,
+.facebook_icon {
+  padding-right: 0.5rem;
+}
+
+.about_service {
+  .row {
+    .col-lg {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

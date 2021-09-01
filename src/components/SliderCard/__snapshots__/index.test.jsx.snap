@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshop test of Card component 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="align-items-center justify-content-center Card row"
+  >
+    <div
+      className="ps-5 avatarComponent col-md-2 col-sm-12"
+    >
+      <div
+        className="MuiAvatar-root MuiAvatar-circular Avatar MuiAvatar-colorDefault"
+      >
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root MuiAvatar-fallback"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      className="col-md-offset-2 SpeechComponent col-md-10 col-sm-12"
+    >
+      <p
+        className="paragraph"
+      />
+      <h5
+        className="auther"
+      />
+      <h6
+        className="description"
+      />
+    </div>
+  </div>
+</div>
+`;

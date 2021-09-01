@@ -2,8 +2,16 @@
   "home": {
     "hero": {
       "greeting": "Welcome",
-      "learn-react": "Learn React"
+      "learn-react": "Learn React",
+      "heroTitle": "The Only Place for  selecting you future",
+      "heroSubTitle": "You can find all the content you are looking for about",
+      "heroSubTitle2": "universities and learning approaches."
     },
+    "topTen": {
+      "title": "Top 10 universities",
+      "subText": "here are the top ten universities according to campus staff and education quality ..the ranking is measured by universal scales."
+    },
+
     "whoAreWe": {
       "title": "Who are we?",
       "card1Title": "Our Mission",
@@ -26,13 +34,103 @@
     "copyRights": "Copyright © Choose Wisely development team",
     "allRightsReserver": "All rights reserve"
   },
-
   "validation": {
     "required": "Required",
     "invalidEmail": "Invalid email address"
   },
-
   "alertMessages": {
     "subscribedSuccessfully": "You are subscribed to our newsletter successfully"
-  }
+  },
+
+  "speeches": {
+    "speechText1": "Currently, Ford sells six sedans and coupes in North America with the Fiesta, Focus, Fusion, C-Max, Mustang and Taurus. This lineup hits multiple segments from the compact Fiest to the mid-size Focus, C-Max and Fusion to the full-size Taurus",
+    "auther1": " Emily Jørgense",
+    "AutherSection1": "Author at Panoply Store",
+    "speechText2": "Currently, Ford sells six sedans and coupes in North America with the Fiesta, Focus, Fusion, C-Max, Mustang and Taurus. This lineup hits multiple segments from the compact Fiest to the mid-size Focus, C-Max and Fusion to the full-size Taurus",
+    "auther2": " Emily Jørgense",
+    "AutherSection2": "Author at Panoply Store",
+    "speechText3": "Currently, Ford sells six sedans and coupes in North America with the Fiesta, Focus, Fusion, C-Max, Mustang and Taurus. This lineup hits multiple segments from the compact Fiest to the mid-size Focus, C-Max and Fusion to the full-size Taurus",
+    "auther3": " Emily Jørgense",
+    "AutherSection3": "Author at Panoply Store"
+  },
+
+  "WhatDidTheySayAboutUs": {
+    "HeaderSection": "What did they say about us"
+  },
+
+  "ressourcesPage": {
+    "header": {
+      "title": "Are you ready to plan your next steps?",
+      "subtitle": "You can find here all the ressources that you need to start your University Journey."
+    }
+  },
+
+  "blogs": {
+    "header": "Latest Blog Posts",
+    "title": "Home is behind, the world ahead and there are many paths to tread through shadows to the edge."
+  },
+  "blog": {
+    "title": "Our Blog",
+    "subText": "Home is behind, the world ahead and there are many paths to tread through shadows to the edge.",
+    "seeAll": "See all",
+    "readMore": "read more!"
+  },
+
+  "constactUs": {
+    "hero": {
+      "title": "Contact Us",
+      "purview": "But Brooke Chaffin and Catherine Connors are looking to change that with the introduction of Maverick, a social network that connects young girls with female mentors to express their creativity in a safe space."
+    },
+    "form": {
+      "email": "Email",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "message": "Message",
+      "submit": "Submit"
+    }
+  },
+  "AboutPage": {
+    "title": " Our Service",
+    "section1Title": "For Education Academy ",
+    "section1Text": "By introducing universities in general in terms of specializations, preference, location and a lot of information related to them ",
+    "section2Title": "For students ",
+    "section2Text": "By clarifying the advantages of each university from the other so that the student chooses his favorite university"
+  },
+  "Team": {
+    "title": "Team"
+  },
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "ressources": "Ressources",
+    "universities": "Universities",
+    "blog": "Blog"
+  },
+  "signUp": {
+    "sign-up": "Sign up"
+  },
+
+  "universities": {
+    "filter": {
+      "universityName": "University Name",
+      "province": "Province",
+      "type": "Type",
+      "applicationStatus": "Application Status"
+    },
+    "lists": {
+      "unknown": "Unknown",
+      "applied": "Applied",
+      "notApplied": "Not Applied"
+    }
+  },
+  "notFounded": {
+    "message": "The page you requested is not found"
+  },
+  "search": {
+    "placeholder": "Search ...",
+    "go": "Go"
+  },
+  "loading": "Loading",
+  "universitiesTempLink": "universities"
 }

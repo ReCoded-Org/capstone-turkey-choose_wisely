@@ -1,9 +1,9 @@
 // store file to combine the reducers
 import { combineReducers } from "redux";
-import clicksReducer from "./clicksReducer";
+import universitiesReducer from "./universitiesReducer";
 
 const reducers = combineReducers({
-  clicks: clicksReducer,
+  universities: universitiesReducer,
 });
 
 export default reducers;

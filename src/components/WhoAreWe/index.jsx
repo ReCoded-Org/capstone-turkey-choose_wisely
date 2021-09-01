@@ -10,9 +10,9 @@ const WhoAreWe = () => {
   const { t } = useTranslation();
 
   const renderElements = () => {
-    return whoAreWe.map((element) => {
+    return whoAreWe.map((element, index) => {
       return (
-        <div className="card_row">
+        <div key={index} className="card_row">
           <CardsWhoAreWe
             customClassName={element.id % 2 === 0 && true}
             title={t(element.title)}
