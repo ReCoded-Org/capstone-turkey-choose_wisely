@@ -4,6 +4,11 @@
       "greeting": "Welcome",
       "learn-react": "Learn React"
     },
+    "topTen": {
+      "title": "Top 10 universities",
+      "subText": "here are the top ten universities according to campus staff and education quality ..the ranking is measured by universal scales."
+    },
+
     "whoAreWe": {
       "title": "Who are we?",
       "card1Title": "Our Mission",
@@ -11,6 +16,20 @@
       "card2Title": "Meet us",
       "card2Text": "You can contact our team through the contact page"
     }
+  },
+  "footer": {
+    "login": "Login",
+    "subscribe": "Subscribe",
+    "subscribePlaceholder": "Subscribe with your email",
+    "copyRights": "Copyright © Choose Wisely development team",
+    "allRightsReserver": "All rights reserve"
+  },
+  "validation": {
+    "required": "Required",
+    "invalidEmail": "Invalid email address"
+  },
+  "alertMessages": {
+    "subscribedSuccessfully": "You are subscribed to our newsletter successfully"
   },
 
   "speeches": {
@@ -35,21 +54,7 @@
       "subtitle": "You can find here all the ressources that you need to start your University Journey."
     }
   },
-  "footer": {
-    "login": "Login",
-    "subscribe": "Subscribe",
-    "subscribePlaceholder": "Subscribe with your email",
-    "copyRights": "Copyright © Choose Wisely development team",
-    "allRightsReserver": "All rights reserve"
-  },
-  "validation": {
-    "required": "Required",
-    "invalidEmail": "Invalid email address"
-  },
-  "alertMessages": {
-    "subscribedSuccessfully": "You are subscribed to our newsletter successfully",
-    "contactSuccess": "Thank you for your message"
-  },
+
   "constactUs": {
     "hero": {
       "title": "Contact Us",

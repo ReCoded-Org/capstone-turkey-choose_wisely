@@ -1,4 +1,5 @@
 import React from "react";
+import TopTenUniCard from "../../components/TopTenUniCard";
 import Blog from "../../components/BlogSection";
 import "./style.scss";
 import WhoAreWe from "./../../components/WhoAreWe";
@@ -14,6 +15,7 @@ const Home = () => {
       {/* this a temporally link i need it until we have the navbar ready */}
       <Link to="/universities">{t("Go To Universities Page")}</Link>
       <WhoAreWe />
+      <TopTenUniCard />
       <Blog />
       <Map />
       <WhatDidTheyAboutUsCard />
