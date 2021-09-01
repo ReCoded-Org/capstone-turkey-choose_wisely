@@ -37,6 +37,7 @@
         "sass": "^1.37.5",
         "slick-carousel": "^1.8.1",
         "yarn": "^1.22.11"
+        
     },
     "scripts": {
         "start": "react-scripts start",

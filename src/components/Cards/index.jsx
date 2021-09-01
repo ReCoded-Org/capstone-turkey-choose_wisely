@@ -1,11 +1,13 @@
-import React from "react";
-import SliderSecion from "../Card";
-import { Container } from "react-bootstrap";
+import React, { useEffect, useState } from "react";
+import SliderCard from "../SliderCard";
+import SectionTitle from "../SectionTitle";
+import { Container, Col, Row } from "react-bootstrap";
 import "./style.scss";
 import { useTranslation } from "react-i18next";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { speeches } from "./../../data.json";
 
 // function SampleNextArrow(props) {
 //   const { className, style, onClick } = props;
@@ -29,49 +31,45 @@ import "slick-carousel/slick/slick-theme.css";
 //   );
 // }
 export default function WhatDidTheyAboutUsCard() {
+  const [comments, setComments] = useState(speeches);
+
+  useEffect(() => {
+    setComments(speeches);
+  }, []);
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    // nextArrow: <SampleNextArrow />,
-    // prevArrow: <SamplePrevArrow />,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: "2.5rem",
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: "40px",
-          slidesToShow: 1,
-        },
-      },
-    ],
   };
+
   const { t } = useTranslation();
 
   return (
-    <div className="card">
+    <div className="comments_card">
       <Container>
-        <h2 className="header">
-          {t("home.WhatDidTheySayAboutUs.HeaderSection")}
-        </h2>
-
-        <Slider {...settings}>
-          {t("home.speeches", { returnObjects: true }).map((speech) => (
-            <SliderSecion {...speech} />
-          ))}
-        </Slider>
+        <Row className="sider_title">
+          <Col>
+            <SectionTitle title={t("WhatDidTheySayAboutUs.HeaderSection")} />
+          </Col>
+        </Row>
+        <Row className="justify-content-md-center">
+          <Col lg={11} md={12}>
+            <Slider {...settings}>
+              {/* {t("home.speeches", { returnObjects: true }).map((speech, index) => ( */}
+              {speeches.map((speech, index) => (
+                <SliderCard
+                  key={index}
+                  speachText={t(speech.speechText)}
+                  auther={t(speech.auther)}
+                  AutherSection={t(speech.AutherSection)}
+                />
+              ))}
+            </Slider>
+          </Col>
+        </Row>
       </Container>
     </div>
   );
