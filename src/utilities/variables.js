@@ -10,3 +10,5 @@ export const LANGUAGES = [
     key: 10221,
   },
 ];
+
+export const LOADING_TIME = 1000;
