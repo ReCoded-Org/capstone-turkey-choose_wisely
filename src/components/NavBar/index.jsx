@@ -1,6 +1,6 @@
 import "./style.scss";
 
-import React, { useEffect } from "react";
+import React from "react";
 
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import { useLocation, Link } from "react-router-dom";

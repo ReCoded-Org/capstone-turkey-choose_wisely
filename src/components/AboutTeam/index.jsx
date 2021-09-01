@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
@@ -13,14 +13,13 @@ import SectionTitle from "./../SectionTitle";
 
 const AboutTeam = () => {
   const { t } = useTranslation();
-  const [memebersState, setMemebersState] = useState(memebers);
 
   const settings = {
     focusOnSelect: true,
     dots: false,
     centerMode: true,
     infinite: true,
-    infinite: true,
+
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 5,
@@ -59,8 +58,8 @@ const AboutTeam = () => {
 
       <div>
         <Slider className="teams_slider" {...settings}>
-          {memebersState.length > 0 &&
-            memebersState.map((memeber, index) => {
+          {memebers.length > 0 &&
+            memebers.map((memeber, index) => {
               return (
                 <div key={index} className="slide ">
                   <div className="slide-contact">

@@ -1,9 +1,5 @@
 import React from "react";
 
-// import image
-import service1 from "./../../images/About/service1.svg";
-import service2 from "./../../images/About/service2.svg";
-
 // import bootstrab
 import { Container } from "react-bootstrap";
 
