@@ -11,7 +11,6 @@ import history from "./history";
 
 import "./App.scss";
 import "./style/style.css";
-
 import RessourcesPage from "./containers/RessourcesPage";
 
 function App() {
@@ -20,6 +19,7 @@ function App() {
       <Preloader />
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route exact path="/ressources" component={RessourcesPage} />
         <Route exact path="/universities" component={Universities} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/ressources" component={RessourcesPage} />
