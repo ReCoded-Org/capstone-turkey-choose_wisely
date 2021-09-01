@@ -6,14 +6,14 @@
     },
     "topTen": {
       "title": "Top 10 universities",
-      "subText": "here are the top ten universities according to campus staff and education quality ..the ranking is measured by universal scales.",
-      "whoAreWe": {
-        "title": "Who are we?",
-        "card1Title": "Our Mission",
-        "card1Text": "Our mission is to ensure an adequate and relevant orientation to all the students wishing to reach an university in Turkey",
-        "card2Title": "Meet us",
-        "card2Text": "You can contact our team through the contact page"
-      }
+      "subText": "here are the top ten universities according to campus staff and education quality ..the ranking is measured by universal scales."
+    
+    },  "whoAreWe": {
+      "title": "Who are we?",
+      "card1Title": "Our Mission",
+      "card1Text": "Our mission is to ensure an adequate and relevant orientation to all the students wishing to reach an university in Turkey",
+      "card2Title": "Meet us",
+      "card2Text": "You can contact our team through the contact page"
     }
   },
   "speeches": {
@@ -31,6 +31,8 @@
   "WhatDidTheySayAboutUs": {
     "HeaderSection": "What did they say about us"
   },
+
+ 
 
   "ressourcesPage": {
     "header": {

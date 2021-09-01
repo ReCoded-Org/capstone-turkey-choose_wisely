@@ -6,16 +6,17 @@
     },
     "topTen": {
       "title": "ilk 10 üniversite",
-      "subText": "İşte kampüs personeli ve eğitim kalitesine göre ilk on üniversite sıralaması evrensel ölçeklerle ölçülmektedir..",
-      "whoAreWe": {
-        "title": "Biz kimiz?",
-        "card1Title": "Misyonumuz",
-        "card1Text": "Misyonumuz, Türkiye'de bir üniversiteye ulaşmak isteyen tüm öğrencilere uygun bir oryantasyon sağlamaktır",
-        "card2Title": "Bizimle tanışın",
-        "card2Text": "Ekibimiz ile iletişim sayfasından iletişime geçebilirsiniz"
-      }
+      "subText": "İşte kampüs personeli ve eğitim kalitesine göre ilk on üniversite sıralaması evrensel ölçeklerle ölçülmektedir.."
+     
+    }, "whoAreWe": {
+      "title": "Biz kimiz?",
+      "card1Title": "Misyonumuz",
+      "card1Text": "Misyonumuz, Türkiye'de bir üniversiteye ulaşmak isteyen tüm öğrencilere uygun bir oryantasyon sağlamaktır",
+      "card2Title": "Bizimle tanışın",
+      "card2Text": "Ekibimiz ile iletişim sayfasından iletişime geçebilirsiniz"
     }
   },
+
   "speeches": {
     "speechText1": "Şu anda Ford, Fiesta, Focus, Fusion, C-Max, Mustang ve Taurus ile Kuzey Amerika'da altı sedan ve coupe satıyor. Bu seri, kompakt Fiest'ten orta boy Focus, C-Max ve Fusion'dan tam boy Taurus'a kadar birçok segmente hitap ediyor.",
     "auther1": " Emily Jørgense",
@@ -27,6 +28,10 @@
     "auther3": " Emily Jørgense",
     "AutherSection3": "Panoply Store'da yazar"
   },
+
+  
+
+  
 
   "WhatDidTheySayAboutUs": {
     "HeaderSection": "Bizim için ne dediler"
