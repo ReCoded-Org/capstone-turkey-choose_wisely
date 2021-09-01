@@ -14,8 +14,6 @@ const University = ({ logo, name, location, url, type, isApplied }) => {
           <div className="university_details">
             <Row>
               <Col sm={12} lg={5} className="university_details__logo">
-                {/* <div className="university_details__logo"> */}
-                {}
                 <img
                   className="university_logo"
                   src={getImageUrl(logo)}
