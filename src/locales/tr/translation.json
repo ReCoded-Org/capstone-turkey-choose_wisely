@@ -2,7 +2,10 @@
   "home": {
     "hero": {
       "greeting": "Merhaba",
-      "learn-react": "React ogren"
+      "learn-react": "React ogren",
+      "heroTitle": "Geleceğinizi seçmek için Tek Yer",
+      "heroSubTitle": "hakkında aradığınız tüm içerikleri bulabilirsiniz",
+      "heroSubTitle2": "üniversiteler ve öğrenme yaklaşımları."
     },
     "topTen": {
       "title": "ilk 10 üniversite",
@@ -81,6 +84,28 @@
       "message": "Mesaj",
       "submit": "Gönder"
     }
+  },
+
+  "AboutPage": {
+    "title": "Servisimiz ",
+    "section1Title": "Eğitim Akademisi için ",
+    "section1Text": "Üniversiteleri uzmanlık, tercih, konum ve bunlarla ilgili birçok bilgi açısından genel olarak tanıtarak ",
+    "section2Title": "Öğrenciler için ",
+    "section2Text": " Öğrencinin en sevdiği üniversiteyi seçmesi için her üniversitenin diğerinden avantajlarını netleştirerek"
+  },
+  "Team": {
+    "title": "Takım"
+  },
+  "navbar": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "contact": "İletişim",
+    "ressources": "kaynaklar",
+    "universities": "üniversiteler",
+    "blog": "Blog"
+  },
+  "signUp": {
+    "sign-up": "Üye olmak"
   },
   "universities": {
     "filter": {

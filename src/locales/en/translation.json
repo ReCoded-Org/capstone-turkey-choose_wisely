@@ -2,7 +2,10 @@
   "home": {
     "hero": {
       "greeting": "Welcome",
-      "learn-react": "Learn React"
+      "learn-react": "Learn React",
+      "heroTitle": "The Only Place for  selecting you future",
+      "heroSubTitle": "You can find all the content you are looking for about",
+      "heroSubTitle2": "universities and learning approaches."
     },
     "topTen": {
       "title": "Top 10 universities",
@@ -79,6 +82,28 @@
       "submit": "Submit"
     }
   },
+  "AboutPage": {
+    "title": " Our Service",
+    "section1Title": "For Education Academy ",
+    "section1Text": "By introducing universities in general in terms of specializations, preference, location and a lot of information related to them ",
+    "section2Title": "For students ",
+    "section2Text": "By clarifying the advantages of each university from the other so that the student chooses his favorite university"
+  },
+  "Team": {
+    "title": "Team"
+  },
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "ressources": "Ressources",
+    "universities": "Universities",
+    "blog": "Blog"
+  },
+  "signUp": {
+    "sign-up": "Sign up"
+  },
+
   "universities": {
     "filter": {
       "universityName": "University Name",

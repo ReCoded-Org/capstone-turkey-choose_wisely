@@ -2,7 +2,13 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 import "./style.scss";
 
-const CardsWhoAreWe = ({ img, title, description, customClassName }) => {
+const CardsWhoAreWe = ({
+  img,
+  title,
+  description,
+  customClassName,
+  children,
+}) => {
   return (
     <Row>
       <Col lg={{ order: `${customClassName && "last"}` }}>
@@ -16,6 +22,7 @@ const CardsWhoAreWe = ({ img, title, description, customClassName }) => {
         <div className="text">
           <h2 className="title">{title}</h2>
           <p className="sub_text">{description}</p>
+          {children}
         </div>
       </Col>
     </Row>

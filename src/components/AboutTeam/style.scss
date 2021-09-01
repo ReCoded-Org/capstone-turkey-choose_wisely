@@ -1,0 +1,131 @@
+@import "./../../style/variables";
+
+.about_section_title {
+  padding-top: 10%;
+}
+
+.swiper-container {
+  background-color: #ffffff;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.625rem;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.slide-contact {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  padding: 3.3rem 0;
+  margin: auto auto 2rem auto;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border: 0.063rem solid #d1dbe3;
+}
+
+.slick-center {
+  // we have to use DIV in here
+  div {
+    // we have to use DIV in here
+    .slide {
+      .slide-contact {
+        box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
+        border: none;
+        .team_memeber_name {
+          color: $primary-color;
+        }
+
+        .team_memeber_dep {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+.team_memeber_icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.6rem auto;
+  .team_memeber_icons__icons_link {
+    padding: 0 0.3rem;
+  }
+}
+.user-image {
+  width: 5.625rem;
+  height: 5.625rem;
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+}
+
+.user-photo {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.team_memeber_name {
+  margin: 1.5rem 0 0 0;
+  font-weight: bold;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #9dafbd;
+}
+.team_memeber_dep {
+  font-weight: 300;
+  font-size: 0.75rem;
+  text-align: center;
+  color: #9dafbd;
+}
+
+.title {
+  color: $primary-color;
+  padding-bottom: 3.5rem;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 3rem;
+  line-height: 2.875rem;
+  letter-spacing: -0.006rem;
+  font-weight: normal;
+}
+
+.teams_slider {
+  position: relative;
+  .slick-arrow {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+  }
+  .slick-arrow::before {
+    font-size: 1.5rem;
+  }
+  .slick-prev::before {
+    color: $primary-color;
+    overflow: hidden;
+    padding: 0;
+    border-radius: 50%;
+  }
+  .slick-prev {
+    margin: 0 -2.5rem;
+  }
+  .slick-next::before {
+    color: $primary-color;
+    background-color: #fff;
+    width: 100%;
+  }
+}

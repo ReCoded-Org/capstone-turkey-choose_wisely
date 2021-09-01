@@ -18,8 +18,6 @@ import { options } from "./utilities/AlertOptions";
 
 const store = createStore(reducers);
 
-// TODO: add the redux devtool.
-
 ReactDOM.render(
   <React.StrictMode>
     <AlertProvider template={AlertTemplate} {...options}>
