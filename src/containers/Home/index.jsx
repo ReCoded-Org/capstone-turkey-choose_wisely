@@ -17,5 +17,5 @@ const Home = () => {
       <Map />
     </main>
   );
-
+};
 export default Home;

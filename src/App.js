@@ -10,7 +10,7 @@ import history from "./history";
 
 import "./App.scss";
 import "./style/style.css";
-// import RessourcesPage from "./containers/RessourcesPage";
+import RessourcesPage from "./containers/RessourcesPage";
 
 function App() {
   return (
