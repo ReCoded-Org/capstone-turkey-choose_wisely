@@ -1,7 +1,8 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import "./style.scss";
-import Avatar from "@material-ui/core/Avatar";
+// import Avatar from "@material-ui/core/Avatar";
+import Avatar from "react-avatar";
 
 const BlogDetails = ({ post }) => {
   return (
@@ -30,7 +31,8 @@ const BlogDetails = ({ post }) => {
             ></h1>
 
             <div className="auther_info">
-              <Avatar className="Avatar" alt="Remy Sharp" />
+              {/* <Avatar className="Avatar" alt="Remy Sharp" /> */}
+              <Avatar name="Khadija" size="45" round={true} />
               <div className="auther_name_title">
                 <h6
                   dangerouslySetInnerHTML={{
