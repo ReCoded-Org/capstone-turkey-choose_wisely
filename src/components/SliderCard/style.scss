@@ -1,0 +1,47 @@
+@import "../../style/mixin.scss";
+.comments_card {
+  background-color: #fff;
+  margin-bottom: 4rem;
+  .SpeechComponent {
+    padding-left: 6.71875rem;
+    .paragraph {
+      font-size: 1.125rem;
+      letter-spacing: -0.03125rem;
+      color: #386641;
+      text-align: justify;
+      text-justify: inter-word;
+      margin-top: 2rem;
+      @include for-desktop-up {
+        width: 100%;
+        text-align: left;
+        margin-top: 0rem;
+      }
+    }
+
+    .auther {
+      margin-top: 2rem;
+      font-weight: bold;
+      font-size: 0.875rem;
+      color: #666666;
+    }
+    .description {
+      height: 0.9375rem;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 0.75rem;
+      line-height: 0.875rem;
+      letter-spacing: -0.0170454375rem;
+      color: #666666;
+    }
+  }
+  .avatarComponent {
+    // padding-right: 4.461875rem;
+    .Avatar {
+      margin: auto;
+      width: 10.3125rem;
+      height: 10.3125rem;
+      background: #eef2f4;
+    }
+  }
+}

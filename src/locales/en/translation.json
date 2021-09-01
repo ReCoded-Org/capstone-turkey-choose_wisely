@@ -17,6 +17,24 @@
     }
   },
 
+  "speeches": {
+    "speechText1": "Currently, Ford sells six sedans and coupes in North America with the Fiesta, Focus, Fusion, C-Max, Mustang and Taurus. This lineup hits multiple segments from the compact Fiest to the mid-size Focus, C-Max and Fusion to the full-size Taurus",
+    "auther1": " Emily Jørgense",
+    "AutherSection1": "Author at Panoply Store",
+    "speechText2": "Currently, Ford sells six sedans and coupes in North America with the Fiesta, Focus, Fusion, C-Max, Mustang and Taurus. This lineup hits multiple segments from the compact Fiest to the mid-size Focus, C-Max and Fusion to the full-size Taurus",
+    "auther2": " Emily Jørgense",
+    "AutherSection2": "Author at Panoply Store",
+    "speechText3": "Currently, Ford sells six sedans and coupes in North America with the Fiesta, Focus, Fusion, C-Max, Mustang and Taurus. This lineup hits multiple segments from the compact Fiest to the mid-size Focus, C-Max and Fusion to the full-size Taurus",
+    "auther3": " Emily Jørgense",
+    "AutherSection3": "Author at Panoply Store"
+  },
+
+  "WhatDidTheySayAboutUs": {
+    "HeaderSection": "What did they say about us"
+  },
+
+  
+
   "footer": {
     "login": "Login",
     "subscribe": "Subscribe",
@@ -68,6 +86,11 @@
       "province": "Province",
       "type": "Type",
       "applicationStatus": "Application Status"
+    },
+    "lists": {
+      "unknown": "Unknown",
+      "applied": "Applied",
+      "notApplied": "Not Applied"
     }
   },
   "notFounded": {
@@ -78,5 +101,5 @@
     "go": "Go"
   },
   "loading": "Loading",
-  "notData": "No Data found ..."
+  "universitiesTempLink": "universities"
 }

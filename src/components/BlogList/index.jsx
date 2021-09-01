@@ -33,7 +33,10 @@ const BlogList = () => {
         element.remove();
       });
     }, 900);
+<<<<<<< HEAD
     // eslint-disable-next-line
+=======
+>>>>>>> e8607d2bf9dcd15f9ebcbaa9b57cf155105f0a40
   }, [i18n?.language]);
 
   const categories = [

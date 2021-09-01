@@ -12,5 +12,22 @@
       "description": "home.whoAreWe.card2Text",
       "img": "WhoAreWe2"
     }
+  ],
+  "speeches": [
+    {
+      "speechText": "speeches.speechText1",
+      "auther": "speeches.auther1",
+      "AutherSection": "speeches.AutherSection1"
+    },
+    {
+      "speechText": "speeches.speechText2",
+      "auther": "speeches.auther2",
+      "AutherSection": "speeches.AutherSection2"
+    },
+    {
+      "speechText": "speeches.speechText3",
+      "auther": "speeches.auther3",
+      "AutherSection": "speeches.AutherSection3"
+    }
   ]
 }
