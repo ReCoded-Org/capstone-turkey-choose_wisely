@@ -2,7 +2,10 @@
   "home": {
     "hero": {
       "greeting": "Welcome",
-      "learn-react": "Learn React"
+      "learn-react": "Learn React",
+      "heroTitle":"The Only Place for  selecting you future",
+      "heroSubTitle" :"You can find all the content you are looking for about",
+      "heroSubTitle2":"universities and learning approaches."
     },
     "whoAreWe": {
       "title": "Who are we?",
@@ -53,5 +56,9 @@
     "ressources": "Ressources",
     "universities": "Universities",
     "blog": "Blog"
+  },
+  "signUp":{
+    "sign-up":"Sign up"
   }
+
 }

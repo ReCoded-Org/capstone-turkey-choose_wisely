@@ -2,7 +2,10 @@
   "home": {
     "hero": {
       "greeting": "Merhaba",
-      "learn-react": "React ogren"
+      "learn-react": "React ogren",
+    "heroTitle":"Geleceğinizi seçmek için Tek Yer",
+    "heroSubTitle" :"hakkında aradığınız tüm içerikleri bulabilirsiniz",
+    "heroSubTitle2":"üniversiteler ve öğrenme yaklaşımları."
     },
     "whoAreWe": {
       "title": "Biz kimiz?",
@@ -54,5 +57,8 @@
     "ressources": "kaynaklar",
     "universities": "üniversiteler",
     "blog": "Blog"
+  },
+  "signUp":{
+    "sign-up":"Üye olmak"
   }
 }

@@ -2,8 +2,10 @@ import React from "react";
 
 import { Container, Row, Col } from "react-bootstrap";
 import hero from "./../../images/hero.svg";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+  const { t } = useTranslation();
   return (
     <header className="hero">
       <Container>
@@ -12,13 +14,12 @@ const Hero = () => {
             <div className="hero_contant">
               <div className="hero_title">
                 <h1>
-                  The Only Place for <br />
-                  selecting you future
+                {t("home.hero.heroTitle")}
                 </h1>
               </div>
               <div className="hero_text">
-                <p> You can find all the content you are looking for about </p>
-                <p> universities and learning approaches. </p>
+                <p> {t("home.hero.heroSubTitle")} </p>
+                <p> {t("home.hero.heroSubTitle2")}  </p>
               </div>
               <div className="hero_search">
                 <input type="search" placeholder="Search... " />

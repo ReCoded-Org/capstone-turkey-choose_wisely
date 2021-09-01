@@ -66,7 +66,7 @@ const NavBar = () => {
                 <span> {t("navbar.blog")}</span>
                 <span className="dot"></span>
               </Nav.Link>
-              <Button className="nav__btn">Sign up</Button>
+              <Button className="nav__btn">{t("signUp.sign-up")}</Button>
             </Nav>
           </div>
         </Container>
