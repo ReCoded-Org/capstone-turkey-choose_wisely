@@ -18,14 +18,6 @@
     }
   },
 
-  "footer": {
-    "login": "Oturum açın",
-    "subscribe": "Abone ol",
-    "subscribePlaceholder": "E-postanızla abone olun",
-    "copyRights": "Copyright © Choose Wisely Geliştirme Takımı",
-    "allRightsReserver": "Her hakkı saklıdır"
-  },
-
   "validation": {
     "required": "gereklidir",
     "invalidEmail": "Geçersiz e-posta adresi"
@@ -58,11 +50,23 @@
     "HeaderSection": "Bizim için ne dediler"
   },
 
+  "footer": {
+    "login": "Oturum açın",
+    "subscribe": "Abone ol",
+    "subscribePlaceholder": "E-postanızla abone olun",
+    "copyRights": "Copyright © Choose Wisely Geliştirme Takımı",
+    "allRightsReserver": "Her hakkı saklıdır"
+  },
   "ressourcesPage": {
     "header": {
       "title": "Bir sonraki adımlarını planlamaya hazır mısın?",
       "subtitle": "Üniversite Yolculuğunuza başlamak için ihtiyacınız olan tüm kaynakları burada bulabilirsiniz."
     }
+  },
+
+  "blogs": {
+    "header": "En son blog gönderileri",
+    "title": "Ev geride, dünya önde ve gölgelerin arasından uçlara kadar yürümek için pek çok yol var."
   },
 
   "constactUs": {

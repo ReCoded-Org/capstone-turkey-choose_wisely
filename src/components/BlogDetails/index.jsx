@@ -1,17 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import "./style.scss";
-import Avatar from "@material-ui/core/Avatar";
+// import Avatar from "@material-ui/core/Avatar";
+import Avatar from "react-avatar";
+
+import "./style.scss";
+// import Avatar from "@material-ui/core/Avatar";
 
 const BlogDetails = ({ post }) => {
   return (
     <div className="blog">
       {/* <Link to={`singleBlog/${post.id}`} className="title"> */}
       {/* <Container className=" justify-content-center  "> */}
-      <Row
-      // className="justify-content-center"
-      >
+      <Row>
         <Col sm={12} md={6} lg={5}>
           <div className="post_show_case">
             <img
@@ -33,7 +34,9 @@ const BlogDetails = ({ post }) => {
             ></h1>
 
             <div className="auther_info">
-              <Avatar className="Avatar" alt="Remy Sharp" />
+              {/* <Avatar className="Avatar" alt="Remy Sharp" /> */}
+              <Avatar name="Khadija" size="45" round={true} />
+              {/* <Avatar className="Avatar" alt="Remy Sharp" /> */}
               <div className="auther_name_title">
                 <h6
                   dangerouslySetInnerHTML={{
