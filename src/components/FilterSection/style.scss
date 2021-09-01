@@ -1,0 +1,49 @@
+@import "./../../style/variables";
+@import "./../../style/mixins.scss";
+
+.search_bar_section {
+  margin-bottom: 2.5rem;
+}
+
+.filter_section {
+  padding: 2.5rem 0 4rem 0;
+  background-color: $secondary-color;
+}
+
+.filter_wrapper {
+  @include for-tablet-portrait-up {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+    grid-gap: 3rem;
+    justify-content: center;
+    align-content: center;
+  }
+  display: flex;
+  flex-direction: column;
+  .toggle {
+    @include for-tablet-portrait-up {
+      margin: 0;
+    }
+    margin: 0.4rem 0;
+    padding: 0.8rem 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    letter-spacing: -0.03125;
+    color: #9dafbd;
+    border: 0.0625rem solid #d1dbe3;
+    box-sizing: border-box;
+    border-radius: 0.3125rem;
+  }
+  .active {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1rem;
+    line-height: 1.625rem;
+    color: #386641;
+    background: #ffffff;
+    box-shadow: 0rem 0.625rem 1.25rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.3125rem;
+  }
+}

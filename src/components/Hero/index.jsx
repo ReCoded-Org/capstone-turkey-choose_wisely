@@ -13,13 +13,11 @@ const Hero = () => {
           <Col lg={5}>
             <div className="hero_contant">
               <div className="hero_title">
-                <h1>
-                {t("home.hero.heroTitle")}
-                </h1>
+                <h1>{t("home.hero.heroTitle")}</h1>
               </div>
               <div className="hero_text">
                 <p> {t("home.hero.heroSubTitle")} </p>
-                <p> {t("home.hero.heroSubTitle2")}  </p>
+                <p> {t("home.hero.heroSubTitle2")} </p>
               </div>
               <div className="hero_search">
                 <input type="search" placeholder="Search... " />

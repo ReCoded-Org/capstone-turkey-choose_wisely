@@ -3,9 +3,15 @@
     "hero": {
       "greeting": "Welcome",
       "learn-react": "Learn React",
-      "heroTitle":"The Only Place for  selecting you future",
-      "heroSubTitle" :"You can find all the content you are looking for about",
-      "heroSubTitle2":"universities and learning approaches."
+      "heroTitle": "The Only Place for  selecting you future",
+      "heroSubTitle": "You can find all the content you are looking for about",
+      "heroSubTitle2": "universities and learning approaches."
+    },
+    "blog": {
+      "title": "Our Blog",
+      "subText": "Home is behind, the world ahead and there are many paths to tread through shadows to the edge.",
+      "seeAll": "See all",
+      "readMore": "read more!"
     },
     "whoAreWe": {
       "title": "Who are we?",
@@ -15,14 +21,12 @@
       "card2Text": "You can contact our team through the contact page"
     }
   },
-
   "ressourcesPage": {
     "header": {
       "title": "Are you ready to plan your next steps?",
       "subtitle": "You can find here all the ressources that you need to start your University Journey."
     }
   },
-
   "footer": {
     "login": "Login",
     "subscribe": "Subscribe",
@@ -30,12 +34,10 @@
     "copyRights": "Copyright © Choose Wisely development team",
     "allRightsReserver": "All rights reserve"
   },
-
   "validation": {
     "required": "Required",
     "invalidEmail": "Invalid email address"
   },
-
   "alertMessages": {
     "subscribedSuccessfully": "You are subscribed to our newsletter successfully"
   },
@@ -57,8 +59,25 @@
     "universities": "Universities",
     "blog": "Blog"
   },
-  "signUp":{
-    "sign-up":"Sign up"
-  }
+  "signUp": {
+    "sign-up": "Sign up"
+  },
 
+  "universities": {
+    "filter": {
+      "universityName": "University Name",
+      "province": "Province",
+      "type": "Type",
+      "applicationStatus": "Application Status"
+    }
+  },
+  "notFounded": {
+    "message": "The page you requested is not found"
+  },
+  "search": {
+    "placeholder": "Search ...",
+    "go": "Go"
+  },
+  "loading": "Loading",
+  "notData": "No Data found ..."
 }

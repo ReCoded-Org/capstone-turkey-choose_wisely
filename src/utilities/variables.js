@@ -62,3 +62,5 @@ export const memebers = [
     twitter: twitter,
   },
 ];
+
+export const LOADING_TIME = 1000;

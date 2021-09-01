@@ -5,7 +5,6 @@ import history from "./history";
 
 // import componentes
 import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
 
 // slider links
 import "slick-carousel/slick/slick.css";
@@ -21,12 +20,18 @@ import Contact from "./containers/Contact";
 import RessourcesPage from "./containers/RessourcesPage";
 import Universities from "./containers/Universities";
 import Blog from "./containers/Blog";
+import NotFound from "./containers/NotFound";
+import Footer from "./components/Footer";
+import Preloader from "./components/PreLoad";
 
 function App() {
   return (
     <Router history={history}>
+      <Preloader />
       <NavBar />
+
       {/* Routing part */}
+
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
@@ -34,6 +39,7 @@ function App() {
         <Route exact path="/ressources" component={RessourcesPage} />
         <Route exact path="/Universities" component={Universities} />
         <Route exact path="/Blog" component={Blog} />
+        <Route component={NotFound} />
       </Switch>
       <Footer />
     </Router>
