@@ -8,3 +8,5 @@ export const LANGUAGES = [
     code: "en",
   },
 ];
+
+export const LOADING_TIME = 1000;

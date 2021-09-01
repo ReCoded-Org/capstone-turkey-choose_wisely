@@ -18,14 +18,12 @@
       "card2Text": "You can contact our team through the contact page"
     }
   },
-
   "ressourcesPage": {
     "header": {
       "title": "Are you ready to plan your next steps?",
       "subtitle": "You can find here all the ressources that you need to start your University Journey."
     }
   },
-
   "footer": {
     "login": "Login",
     "subscribe": "Subscribe",
@@ -33,15 +31,28 @@
     "copyRights": "Copyright © Choose Wisely development team",
     "allRightsReserver": "All rights reserve"
   },
-
   "validation": {
     "required": "Required",
     "invalidEmail": "Invalid email address"
   },
-
   "alertMessages": {
     "subscribedSuccessfully": "You are subscribed to our newsletter successfully"
   },
-  "loading": "Loading ...",
+  "universities": {
+    "filter": {
+      "universityName": "University Name",
+      "province": "Province",
+      "type": "Type",
+      "applicationStatus": "Application Status"
+    }
+  },
+  "notFounded": {
+    "message": "The page you requested is not found"
+  },
+  "search": {
+    "placeholder": "Search ...",
+    "go": "Go"
+  },
+  "loading": "Loading",
   "notData": "No Data found ..."
 }
