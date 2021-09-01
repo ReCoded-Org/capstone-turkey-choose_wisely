@@ -21,6 +21,12 @@
     }
   },
 
+  "resourcesPage": {
+    "ResourcesInfos": {
+      "bigTitle": "Faydalı Kaynaklar",
+      "support": "İlgili Birimlerin Telefon ve İnternet Siteleri"
+    }
+  },
   "validation": {
     "required": "gereklidir",
     "invalidEmail": "Geçersiz e-posta adresi"

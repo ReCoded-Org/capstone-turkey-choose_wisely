@@ -1,0 +1,43 @@
+@import "../../style/variables.scss";
+@import "../../style/mixins.scss";
+
+.text {
+  margin: 4.438rem 3.125rem 12.5rem 3.125rem;
+}
+
+.new-line {
+  margin-top: 1.25rem;
+}
+
+.theme {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  letter-spacing: -0.02rem;
+  color: #9dafbd;
+}
+
+.info {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  letter-spacing: -0.02rem;
+  color: #9dafbd;
+}
+
+.card_content_wrapper {
+  padding-bottom: 3.5rem;
+  .title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.9rem;
+    line-height: 2.875rem;
+    letter-spacing: -0.006rem;
+    color: #386641;
+  }
+}
