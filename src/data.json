@@ -13,18 +13,21 @@
       "img": "WhoAreWe2"
     }
   ],
-  "aboutData": [
+  "speeches": [
     {
-      "id": 2,
-      "title": "AboutPage.section1Title",
-      "description": "AboutPage.section1Text",
-      "img": "About/service1"
+      "speechText": "speeches.speechText1",
+      "auther": "speeches.auther1",
+      "AutherSection": "speeches.AutherSection1"
     },
     {
-      "id": 1,
-      "title": "AboutPage.section2Title",
-      "description": "AboutPage.section2Text",
-      "img": "About/service2"
+      "speechText": "speeches.speechText2",
+      "auther": "speeches.auther2",
+      "AutherSection": "speeches.AutherSection2"
+    },
+    {
+      "speechText": "speeches.speechText3",
+      "auther": "speeches.auther3",
+      "AutherSection": "speeches.AutherSection3"
     }
   ]
 }

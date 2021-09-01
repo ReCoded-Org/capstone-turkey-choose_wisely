@@ -21,6 +21,23 @@
       "card2Text": "Ekibimiz ile iletişim sayfasından iletişime geçebilirsiniz"
     }
   },
+
+  "speeches": {
+    "speechText1": "Şu anda Ford, Fiesta, Focus, Fusion, C-Max, Mustang ve Taurus ile Kuzey Amerika'da altı sedan ve coupe satıyor. Bu seri, kompakt Fiest'ten orta boy Focus, C-Max ve Fusion'dan tam boy Taurus'a kadar birçok segmente hitap ediyor.",
+    "auther1": " Emily Jørgense",
+    "AutherSection1": "Panoply Store'da yazar",
+    "speechText2": "Şu anda Ford, Fiesta, Focus, Fusion, C-Max, Mustang ve Taurus ile Kuzey Amerika'da altı sedan ve coupe satıyor. Bu seri, kompakt Fiest'ten orta boy Focus, C-Max ve Fusion'dan tam boy Taurus'a kadar birçok segmente hitap ediyor.",
+    "auther2": " Emily Jørgense",
+    "AutherSection2": "Panoply Store'da yazar",
+    "speechText3": "Şu anda Ford, Fiesta, Focus, Fusion, C-Max, Mustang ve Taurus ile Kuzey Amerika'da altı sedan ve coupe satıyor. Bu seri, kompakt Fiest'ten orta boy Focus, C-Max ve Fusion'dan tam boy Taurus'a kadar birçok segmente hitap ediyor.",
+    "auther3": " Emily Jørgense",
+    "AutherSection3": "Panoply Store'da yazar"
+  },
+
+  "WhatDidTheySayAboutUs": {
+    "HeaderSection": "Bizim için ne dediler"
+  },
+
   "ressourcesPage": {
     "header": {
       "title": "Bir sonraki adımlarını planlamaya hazır mısın?",

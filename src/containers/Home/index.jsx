@@ -5,6 +5,7 @@ import WhoAreWe from "./../../components/WhoAreWe";
 import Map from "./../../components/Map";
 import Hero from "./../../components/Hero";
 import "./../../components/Hero/style.scss";
+import WhatDidTheyAboutUsCard from "../../components/Cards";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <WhoAreWe />
       <Blog />
       <Map />
+      <WhatDidTheyAboutUsCard />
     </main>
   );
 };
