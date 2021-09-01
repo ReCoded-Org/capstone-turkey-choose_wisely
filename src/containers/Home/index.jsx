@@ -1,4 +1,5 @@
 import React from "react";
+import TopTenUniCard from "../../components/TopTenUniCard";
 import Blog from "../../components/BlogSection";
 import "./style.scss";
 import WhoAreWe from "./../../components/WhoAreWe";
@@ -13,6 +14,7 @@ const Home = () => {
       <Hero />
 
       <WhoAreWe />
+      <TopTenUniCard />
       <Blog />
       <Map />
       <WhatDidTheyAboutUsCard />

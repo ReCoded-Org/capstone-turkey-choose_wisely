@@ -2,16 +2,7 @@ import React from "react";
 
 import { Router, Switch, Route } from "react-router-dom";
 import history from "./history";
-
-// import componentes
-import NavBar from "./components/NavBar";
-
-// slider links
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
 import "./App.scss";
-
 
 // import pages
 import Home from "./containers/Home";
@@ -23,6 +14,12 @@ import Blog from "./containers/Blog";
 import NotFound from "./containers/NotFound";
 import Footer from "./components/Footer";
 import Preloader from "./components/PreLoad";
+
+// const { t, i18n } = useTranslation();
+
+// const changeLanguage = (lng) => {
+//   i18n.changeLanguage(lng);
+// };
 
 function App() {
   return (

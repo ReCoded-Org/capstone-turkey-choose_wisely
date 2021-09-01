@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshop test of TopTenUniCard component 1`] = `
+<div
+  className="top_ten_uni_card"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="section_title"
+    >
+      <h1
+        className="big_title"
+      />
+      <h2
+        className="title"
+      >
+        home.topTen.title
+      </h2>
+      <p
+        className="sub_text"
+      >
+        home.topTen.subText
+      </p>
+    </div>
+    <div
+      className="logos_slider"
+    >
+      <div
+        className="slick-slider center slick-initialized"
+      >
+        
+        <div
+          className="slick-list"
+        >
+          <div
+            className="slick-track"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            style={
+              Object {
+                "WebkitTransform": "translate3d(0px, 0px, 0px)",
+                "WebkitTransition": "",
+                "msTransform": "translateX(0px)",
+                "opacity": 1,
+                "transform": "translate3d(0px, 0px, 0px)",
+                "transition": "",
+              }
+            }
+          />
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+`;
