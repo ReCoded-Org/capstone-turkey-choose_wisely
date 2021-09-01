@@ -35,6 +35,7 @@ describe("With React Testing Library", () => {
         </AlertProvider>
       </Provider>
     );
+
     const linkElement = getByText(/home.whoAreWe.title/i);
     expect(linkElement).toBeInTheDocument();
   });

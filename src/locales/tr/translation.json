@@ -4,6 +4,12 @@
       "greeting": "Merhaba",
       "learn-react": "React ogren"
     },
+    "blog": {
+      "title": "Blogumuz",
+      "subText": "Ev geride, dünya önde ve gölgelerin arasından uçlara kadar yürümek için pek çok yol var.",
+      "seeAll": "Tümünü Gör",
+      "readMore": "Devamını oku!"
+    },
     "whoAreWe": {
       "title": "Biz kimiz?",
       "card1Title": "Misyonumuz",
@@ -35,5 +41,7 @@
 
   "alertMessages": {
     "subscribedSuccessfully": "Bültenimize başarıyla abone oldunuz"
-  }
+  },
+  "loading": "Yükleniyor ...",
+  "notData": "Veri bulunamadı ..."
 }
