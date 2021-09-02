@@ -16,6 +16,7 @@ import Blog from "./containers/Blog";
 import NotFound from "./containers/NotFound";
 import Footer from "./components/Footer";
 import Preloader from "./components/PreLoad";
+import UserProfilePage from "./containers/UserProfilePage";
 
 // const { t, i18n } = useTranslation();
 
@@ -38,6 +39,7 @@ function App() {
         <Route exact path="/resources" component={ResourcesPage} />
         <Route exact path="/Universities" component={Universities} />
         <Route exact path="/Blog" component={Blog} />
+        <Route exact path="/Profile" component={UserProfilePage} />
         <Route component={NotFound} />
       </Switch>
       <Footer />
