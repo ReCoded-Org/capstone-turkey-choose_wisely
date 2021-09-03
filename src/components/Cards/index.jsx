@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import SliderCard from "../SliderCard";
 import SectionTitle from "../SectionTitle";
 import { Container, Col, Row } from "react-bootstrap";
@@ -31,12 +31,7 @@ import { speeches } from "./../../data.json";
 //   );
 // }
 export default function WhatDidTheyAboutUsCard() {
-  const [comments, setComments] = useState(speeches);
-
-  useEffect(() => {
-    setComments(speeches);
-  }, []);
-
+ 
   const settings = {
     dots: true,
     infinite: true,
