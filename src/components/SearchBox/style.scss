@@ -1,0 +1,27 @@
+@import "../../style/variables.scss";
+@import "../../style/mixins.scss";
+
+.hero_search {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 4rem;
+  overflow: hidden;
+  box-shadow: 0rem 0.62rem 1.25rem rgba(0, 0, 0, 0.2);
+  button {
+    background-color: $primary-color;
+    padding: 0.75rem 2.5rem;
+    font-size: 0.875rem;
+    color: #ffffff;
+    border-radius: 4rem;
+    border: none;
+  }
+  input {
+    width: 100%;
+    border: none;
+    outline: 0;
+    background: transparent;
+    padding: 0rem 1.875rem;
+  }
+}

@@ -23,7 +23,7 @@ i18n
     supportedLngs: ["en", "tr"],
     resources,
     fallbackLng: "en",
-    debug: true,
+    debug: false,
     detection: {
       order: ["path", "cookie", "htmlTag"],
       caches: ["cookie"],

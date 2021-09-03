@@ -2,20 +2,47 @@
   "home": {
     "hero": {
       "greeting": "Merhaba",
-      "learn-react": "React ogren"
+      "learn-react": "React ogren",
+      "heroTitle": "Geleceğinizi seçmek için Tek Yer",
+      "heroSubTitle": "hakkında aradığınız tüm içerikleri bulabilirsiniz",
+      "heroSubTitle2": "üniversiteler ve öğrenme yaklaşımları."
     },
     "topTen": {
       "title": "ilk 10 üniversite",
       "subText": "İşte kampüs personeli ve eğitim kalitesine göre ilk on üniversite sıralaması evrensel ölçeklerle ölçülmektedir.."
-     
-    }, "whoAreWe": {
+    },
+
+    "whoAreWe": {
       "title": "Biz kimiz?",
       "card1Title": "Misyonumuz",
       "card1Text": "Misyonumuz, Türkiye'de bir üniversiteye ulaşmak isteyen tüm öğrencilere uygun bir oryantasyon sağlamaktır",
       "card2Title": "Bizimle tanışın",
       "card2Text": "Ekibimiz ile iletişim sayfasından iletişime geçebilirsiniz"
+    },
+    "blog": {
+      "title": "Blogumuz",
+      "subText": "Ev geride, dünya önde ve gölgelerin arasından uçlara kadar yürümek için pek çok yol var.",
+      "seeAll": "Tümünü Gör",
+      "readMore": "Devamını oku!"
     }
   },
+
+  "resourcesPage": {
+    "ResourcesInfos": {
+      "bigTitle": "Faydalı Kaynaklar",
+      "support": "İlgili Birimlerin Telefon ve İnternet Siteleri"
+    }
+  },
+  "validation": {
+    "required": "gereklidir",
+    "invalidEmail": "Geçersiz e-posta adresi"
+  },
+
+  "alertMessages": {
+    "subscribedSuccessfully": "Bültenimize başarıyla abone oldunuz"
+  },
+
+ 
 
   "speeches": {
     "speechText1": "Şu anda Ford, Fiesta, Focus, Fusion, C-Max, Mustang ve Taurus ile Kuzey Amerika'da altı sedan ve coupe satıyor. Bu seri, kompakt Fiest'ten orta boy Focus, C-Max ve Fusion'dan tam boy Taurus'a kadar birçok segmente hitap ediyor.",
@@ -29,6 +56,7 @@
     "AutherSection3": "Panoply Store'da yazar"
   },
 
+ 
   
 
   
@@ -43,7 +71,6 @@
     "copyRights": "Copyright © Choose Wisely Geliştirme Takımı",
     "allRightsReserver": "Her hakkı saklıdır"
   },
-
   "ressourcesPage": {
     "header": {
       "title": "Bir sonraki adımlarını planlamaya hazır mısın?",
@@ -51,12 +78,68 @@
     }
   },
 
-  "validation": {
-    "required": "gereklidir",
-    "invalidEmail": "Geçersiz e-posta adresi"
+ 
+
+  "blogs": {
+    "header": "En son blog gönderileri",
+    "title": "Ev geride, dünya önde ve gölgelerin arasından uçlara kadar yürümek için pek çok yol var."
   },
 
-  "alertMessages": {
-    "subscribedSuccessfully": "Bültenimize başarıyla abone oldunuz"
-  }
+  "constactUs": {
+    "hero": {
+      "title": "Bizimle iletişime geçin",
+      "purview": "Ancak Brooke Chaffin ve Catherine Connors, yaratıcılığını güvenli bir alanda ifade etmek için genç kızları kadın danışmanlarla birleştiren bir sosyal ağ olan Maverick'in tanıtımıyla bunu değiştirmeye çalışıyor."
+    },
+    "form": {
+      "email": "E-posta",
+      "firstName": "Ad",
+      "lastName": "Soyadı",
+      "message": "Mesaj",
+      "submit": "Gönder"
+    }
+  },
+
+  "AboutPage": {
+    "title": "Servisimiz ",
+    "section1Title": "Eğitim Akademisi için ",
+    "section1Text": "Üniversiteleri uzmanlık, tercih, konum ve bunlarla ilgili birçok bilgi açısından genel olarak tanıtarak ",
+    "section2Title": "Öğrenciler için ",
+    "section2Text": " Öğrencinin en sevdiği üniversiteyi seçmesi için her üniversitenin diğerinden avantajlarını netleştirerek"
+  },
+  "Team": {
+    "title": "Takım"
+  },
+  "navbar": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "contact": "İletişim",
+    "ressources": "kaynaklar",
+    "universities": "üniversiteler",
+    "blog": "Blog"
+  },
+  "signUp": {
+    "sign-up": "Üye olmak"
+  },
+  "universities": {
+    "filter": {
+      "universityName": "Üniversite adı",
+      "province": "Vilayet",
+      "type": "Tip",
+      "applicationStatus": "Uygulama durumu"
+    },
+    "lists": {
+      "unknown": "Bilinmeyen",
+      "applied": "Başvurdu",
+      "notApplied": "Başvur Yok"
+    }
+  },
+  "notFounded": {
+    "message": "İstediğiniz sayfa bulunamadı"
+  },
+  "search": {
+    "placeholder": "Ara ...",
+    "go": "Git"
+  },
+  "loading": "Yükleniyor",
+  "universitiesTempLink": "universities ler"
 }

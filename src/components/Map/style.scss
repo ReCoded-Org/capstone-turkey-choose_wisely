@@ -1,3 +1,7 @@
+@import "../../style/variables.scss";
+@import "../../style/mixins.scss";
+
 .map {
-  width: 80%;
+  width: 43.75rem;
+  padding: 2rem 0;
 }

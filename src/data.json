@@ -1,5 +1,5 @@
 {
-  "data": [
+  "whoAreWe": [
     {
       "id": 2,
       "title": "home.whoAreWe.card1Title",
@@ -13,6 +13,130 @@
       "img": "WhoAreWe2"
     }
   ],
+  "resources": {
+    "scholarships": [
+      {
+        "lang": "en",
+        "theme": "SCHOLARSHIPS",
+        "title": "Turkey’s Scholarships",
+        "infor": [
+          {
+            "text": [
+              "Website: www.turkiyeburslari.gov.tr",
+              "Tel: 0 850 455 0982",
+              "Email: info@turkiyeburslari.gov.tr"
+            ]
+          }
+        ]
+      },
+      {
+        "lang": "tr",
+        "theme": "BURS",
+        "title": "Türkiye Bursları",
+        "infor": [
+          {
+            "text": [
+              "Web sitesi: www.turkiyeburslari.gov.tr",
+              "Tel: 0 850 455 0982",
+              "Email: info@turkiyeburslari.gov.tr"
+            ]
+          }
+        ]
+      }
+    ],
+    "regulations": [
+      {
+        "lang": "en",
+        "theme": "REGULATIONS",
+        "title": "Important Informations",
+        "infor": [
+          {
+            "text": [
+              "Undergraduate Transfer from the Higher Education Institutions Situated Abroad to the Higher Education Institutions in Turkey: http://www.yok.gov.tr/web/guest/yurtdisindan-ulkemizdeki-yuksekogretimkurumlarina-yatay-gecis"
+            ]
+          },
+          {
+            "text": [
+              "Directorate of Recognition and Accreditation Services: http://www.yok.gov.tr/web/denklikbirimi"
+            ]
+          }
+        ]
+      },
+      {
+        "lang": "tr",
+        "theme": "YÖNETMELİKLER",
+        "title": "Önemli Bilgiler",
+        "infor": [
+          {
+            "text": [
+              "Yurtdışındaki Yükseköğretim Kurumlarından Ülkemizdeki Yükseköğretim Kurumlarına Yatay Geçiş: http://www.yok.gov.tr/web/guest/yurtdisindan-ulkemizdeki-yuksekogretimkurumlarina-yatay-gecis"
+            ]
+          },
+          {
+            "text": [
+              "Tanıma ve Denklik Hizmetleri Daire Başkanlığı: http://www.yok.gov.tr/web/denklikbirimi"
+            ]
+          }
+        ]
+      }
+    ],
+    "support": [
+      {
+        "lang": "en",
+        "theme": "SUPPORT",
+        "title": "Need Support?",
+        "infor": [
+          {
+            "text": [
+              {
+                "heading": "Ministry of National Education",
+                "content": "http://www.meb.gov.tr/ Tel: 0312 413 2680 0312 413 2681 0312 413 1838"
+              },
+              {
+                "heading": "Higher Education Board (YÖK)",
+                "content": "http://www.yok.gov.tr Tel: 0312 298 7000"
+              },
+              {
+                "heading": "Ministry of National Education General Directorate of Lifelong Learning",
+                "content": "https://hbogm.meb.gov.tr/ Tel: 0312 413 2114  0312 413 2116"
+              },
+              {
+                "heading": "Presidency for Turks Abroad and Related Communities (YTB)",
+                "content": "https://www.ytb.gov.tr/ Tel: 0312 218 4000"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "lang": "tr",
+        "theme": "DESTEK",
+        "title": "Desteğe mi ihtiyacınız var?",
+        "infor": [
+          {
+            "text": [
+              {
+                "heading": "Milli Eğitim Bakanlığı",
+                "content": "http://www.meb.gov.tr/ Tel: 0312 413 2680 0312 413 2681 0312 413 1838"
+              },
+              {
+                "heading": "Yükseköğretim Kurulu (YÖK)",
+                "content": "http://www.yok.gov.tr Tel: 0312 298 7000"
+              },
+              {
+                "heading": "Milli Eğitim Bakanlığı Hayat Boyu Öğrenme Genel Müdürlüğü",
+                "content": "https://hbogm.meb.gov.tr/ Tel: 0312 413 2114  0312 413 2116"
+              },
+              {
+                "heading": "Yurtdışı Türkler ve Akraba Topluluklar Başkanlığı (YTB)",
+                "content": "https://www.ytb.gov.tr/ Tel: 0312 218 4000"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "speeches": [
     {
       "speechText": "speeches.speechText1",
@@ -28,6 +152,20 @@
       "speechText": "speeches.speechText3",
       "auther": "speeches.auther3",
       "AutherSection": "speeches.AutherSection3"
+    }
+  ],
+  "aboutData": [
+    {
+      "id": 2,
+      "title": "AboutPage.section1Title",
+      "description": "AboutPage.section1Text",
+      "img": "About/service1"
+    },
+    {
+      "id": 1,
+      "title": "AboutPage.section2Title",
+      "description": "AboutPage.section2Text",
+      "img": "About/service2"
     }
   ]
 }

@@ -38,7 +38,6 @@ const SubscribeInput = ({ handelSubscribe }) => {
         handleBlur,
         handleSubmit,
         isSubmitting,
-        /* and other goodies */
       }) => (
         <form className="subscribe_wrapper" onSubmit={handleSubmit}>
           <input

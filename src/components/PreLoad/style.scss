@@ -1,0 +1,27 @@
+@import "./../../style//variables";
+/* Preloaders */
+#preloader_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20009;
+  background-color: $primary-color;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  .preloading_heading {
+    color: $secondary-color;
+    padding-right: 1rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    // font-family: Yellowtail;
+  }
+}
+#preloader_wrap.loaded {
+  visibility: hidden;
+  opacity: 0;
+}
