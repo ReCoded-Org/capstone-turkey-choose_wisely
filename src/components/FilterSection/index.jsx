@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import SearchBox from "../../components/SearchBox";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import "./style.scss";
 import {
   FETCH_UNIVERSITIES,
@@ -16,11 +16,11 @@ import {
 } from "../../utilities/types";
 import { db } from "./../../firebase";
 import { useTranslation } from "react-i18next";
-const FilterSection = ({ isLoggedIn }) => {
+const FilterSection = () => {
   const dispatch = useDispatch();
 
   // eslint-disable-next-line
-  // const { universities, loading } = useSelector((state) => state.universities);
+  const { userInfo, isLoggedIn } = useSelector((state) => state.user);
 
   const { t } = useTranslation();
 
@@ -34,24 +34,67 @@ const FilterSection = ({ isLoggedIn }) => {
   // const [notFound, setNotFound] = useState(false);
 
   useEffect(() => {
-    fetchAllUniversities();
+    (async () => {
+      await fetchAllUniversities();
+    })();
     // eslint-disable-next-line
-  }, [dispatch]);
+  }, [dispatch, isLoggedIn]);
 
   const fetchAllUniversities = async () => {
     try {
       dispatch({ type: LOADING });
-      db.collection("universities")
+      await db
+        .collection("universities")
         .get()
-        .then((querySnapshot) => {
+        .then(async (querySnapshot) => {
           const universities = querySnapshot.docs.map((doc) => {
             return { id: doc.id, data: doc.data() };
           });
-          dispatch({ type: FETCH_UNIVERSITIES, payload: universities });
+          if (isLoggedIn) {
+            const withStat = await userAuthenticated(userInfo, universities);
+            dispatch({ type: FETCH_UNIVERSITIES, payload: withStat });
+          } else {
+            dispatch({ type: FETCH_UNIVERSITIES, payload: universities });
+          }
         });
     } catch (error) {
       console.log("error fetch universities:", error);
     }
+  };
+
+  const userAuthenticated = async (userInfo, universities) => {
+    const { email } = userInfo;
+    return await Promise.all(
+      universities.map(async (university) => {
+        const status = await db
+          .collection("universities")
+          .doc(university.id)
+          .collection("users")
+          .where("email", "==", email)
+          .get()
+          .then(async (querySnapshot) => {
+            return querySnapshot.docs.map((doc) => {
+              return { id: doc.id, data: doc.data() };
+            });
+            // querySnapshot.docs.map((doc) => {
+            //   return { id: doc.id, data: doc.data() };
+            // });
+          });
+
+        if (status.length > 0) {
+          university = {
+            ...university,
+            data: { ...university.data, status: true },
+          };
+        } else {
+          university = {
+            ...university,
+            data: { ...university.data, status: false },
+          };
+        }
+        return university;
+      })
+    );
   };
 
   const searchKeyWord = async (field, term) => {

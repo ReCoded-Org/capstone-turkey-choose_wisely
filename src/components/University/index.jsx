@@ -53,15 +53,18 @@ const University = ({
                 <span className="university_data">{type}</span>
                 {isLoggedIn && (
                   <span
+                    // onClick={e => }
                     className={`university_data application ${
-                      isApplied && "applied"
+                      isApplied === "applied" && "applied"
                     }`}
                   >
-                    {isApplied
+                    {isApplied === "applied"
                       ? `${t("universities.lists.applied")}`
                       : `${t("universities.lists.notApplied")}`}
                   </span>
                 )}
+
+                {/* <span>{isApplied}</span> */}
                 {/* </div> */}
               </Col>
             </Row>

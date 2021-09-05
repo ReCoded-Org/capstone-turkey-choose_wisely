@@ -23,10 +23,13 @@ const Universities = () => {
         <div className="universities_list">
           {loading && "Loading"}
           {notFound && "No Results"}
-          {universities.length > 0 &&
-            universities.map((university, index) => {
+
+          {Array.isArray(universities) &&
+            universities.length > 0 &&
+            universities.map((university) => {
               // return <p key={university.id}>{university.data.enName}</p>
               const { data } = university;
+              const sts = data.status === true ? "applied" : "notApplied";
               return (
                 <University
                   key={university.id}
@@ -35,8 +38,7 @@ const Universities = () => {
                   location={data.location}
                   url={data.url}
                   type={code === "en" ? data.enType : data.trType}
-                  isApplied={index % 2 === 1 && true}
-                  isLogin={true}
+                  isApplied={sts}
                   isLoggedIn={isLoggedIn}
                 />
               );
