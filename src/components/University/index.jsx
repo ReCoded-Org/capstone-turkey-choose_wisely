@@ -15,7 +15,6 @@ const University = ({
   isLoggedIn,
 }) => {
   const { t } = useTranslation();
-
   return (
     <div className="university">
       <Row>
@@ -55,10 +54,10 @@ const University = ({
                   <span
                     // onClick={e => }
                     className={`university_data application ${
-                      isApplied === "applied" && "applied"
+                      isApplied !== false && "applied"
                     }`}
                   >
-                    {isApplied === "applied"
+                    {isApplied !== false
                       ? `${t("universities.lists.applied")}`
                       : `${t("universities.lists.notApplied")}`}
                   </span>

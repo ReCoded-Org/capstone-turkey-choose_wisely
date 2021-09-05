@@ -126,6 +126,8 @@
   "loading": "Loading",
   "universitiesTempLink": "universities",
   "auth": {
+    "plzLogin": "You need to login",
+    "status": "Status Page",
     "email": "Email",
     "name": "First & last name ",
     "password": "Password",

@@ -29,7 +29,6 @@ const Universities = () => {
             universities.map((university) => {
               // return <p key={university.id}>{university.data.enName}</p>
               const { data } = university;
-              const sts = data.status === true ? "applied" : "notApplied";
               return (
                 <University
                   key={university.id}
@@ -38,7 +37,7 @@ const Universities = () => {
                   location={data.location}
                   url={data.url}
                   type={code === "en" ? data.enType : data.trType}
-                  isApplied={sts}
+                  isApplied={data.status}
                   isLoggedIn={isLoggedIn}
                 />
               );

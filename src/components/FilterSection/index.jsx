@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import SearchBox from "../../components/SearchBox";
 import { useDispatch, useSelector } from "react-redux";
@@ -33,12 +33,12 @@ const FilterSection = () => {
   // eslint-disable-next-line
   // const [notFound, setNotFound] = useState(false);
 
-  useEffect(() => {
-    (async () => {
-      await fetchAllUniversities();
-    })();
-    // eslint-disable-next-line
-  }, [dispatch, isLoggedIn]);
+  // useEffect(() => {
+  //   (async () => {
+  //     await fetchAllUniversities();
+  //   })();
+  //   // eslint-disable-next-line
+  // }, [dispatch, isLoggedIn]);
 
   const fetchAllUniversities = async () => {
     try {
@@ -84,7 +84,7 @@ const FilterSection = () => {
         if (status.length > 0) {
           university = {
             ...university,
-            data: { ...university.data, status: true },
+            data: { ...university.data, status: status },
           };
         } else {
           university = {

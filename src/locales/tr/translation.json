@@ -126,7 +126,9 @@
   "loading": "Yükleniyor",
   "universitiesTempLink": "universities ler",
   "auth": {
+    "plzLogin": "Giriş yapmanız gerekiyor",
     "email": "E-posta",
+    "status": "Durum sayfası",
     "name": "Ad & Soyadı",
     "password": "Şifre",
     "confirmPassword": "Şifreyi Onayla",

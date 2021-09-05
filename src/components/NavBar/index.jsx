@@ -151,6 +151,29 @@ const NavBar = () => {
                       >
                         {t("auth.logout")}
                       </MenuItem>
+                      <li
+                        className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
+                        tabIndex="-1"
+                        role="menuitem"
+                        aria-disabled="false"
+                        onClick={(e) => {
+                          handleClose();
+                        }}
+                      >
+                        <Link className="drop_down_status_link" to="/status">
+                          {t("auth.status")}
+                        </Link>
+
+                        <span className="MuiTouchRipple-root"></span>
+                      </li>
+                      {/* <MenuItem
+                        onClick={(e) => {
+
+                          handelLogout();
+                          handleClose();
+                        }}
+                      >
+                      </MenuItem> */}
                     </Menu>
                   </>
                 )}
