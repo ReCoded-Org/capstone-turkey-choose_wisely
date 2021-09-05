@@ -16,6 +16,7 @@ import Blog from "./containers/Blog";
 import NotFound from "./containers/NotFound";
 import Footer from "./components/Footer";
 import Preloader from "./components/PreLoad";
+import SingleBlog from "./containers/SingleBlog";
 
 // const { t, i18n } = useTranslation();
 
@@ -44,6 +45,7 @@ function App() {
         <Route exact path="/resources" component={ResourcesPage} />
         <Route exact path="/Universities" component={Universities} />
         <Route exact path="/Blog" component={Blog} />
+        <Route exact path="/SingleBlog/:cat/:slug" component={SingleBlog} />
         <Route component={NotFound} />
       </Switch>
       <Footer />

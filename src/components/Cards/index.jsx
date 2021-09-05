@@ -31,7 +31,6 @@ import { speeches } from "./../../data.json";
 //   );
 // }
 export default function WhatDidTheyAboutUsCard() {
- 
   const settings = {
     dots: true,
     infinite: true,
