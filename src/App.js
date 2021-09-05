@@ -17,20 +17,11 @@ import NotFound from "./containers/NotFound";
 import Footer from "./components/Footer";
 import Preloader from "./components/PreLoad";
 
-// const { t, i18n } = useTranslation();
-
-// const changeLanguage = (lng) => {
-//   i18n.changeLanguage(lng);
-// };
-
 function App() {
   return (
     <Router history={history}>
       <Preloader />
       <NavBar />
-
-      {/* Routing part */}
-
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />

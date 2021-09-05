@@ -4,3 +4,9 @@
   background-color: $light-color;
   padding: 3rem 0 2.7rem 0;
 }
+
+.slick-slide {
+  .card:hover {
+    box-shadow: none;
+  }
+}

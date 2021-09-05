@@ -8,3 +8,5 @@ export const FILTER_UNIVERSITIES_BY_PROVINCE =
 export const NOTFOUND = "NOTFOUND";
 export const FOUND = "FOUND";
 export const LOADING = "LOADING";
+export const LOGOUT = "LOGOUT";
+export const LOGIN = "LOGIN";

@@ -14,7 +14,7 @@ const CardsWhoAreWe = ({
       <Col lg={{ order: `${customClassName && "last"}` }}>
         <img
           alt={title}
-          className="img"
+          className="who_are_we_img"
           src={require(`./../../images/${img}.svg`)}
         />
       </Col>

@@ -11,7 +11,12 @@
       "title": "ilk 10 üniversite",
       "subText": "İşte kampüs personeli ve eğitim kalitesine göre ilk on üniversite sıralaması evrensel ölçeklerle ölçülmektedir.."
     },
-
+    "blog": {
+      "title": "Blogumuz",
+      "subText": "Ev geride, dünya önde ve gölgelerin arasından uçlara kadar yürümek için pek çok yol var.",
+      "seeAll": "Tümünü Gör",
+      "readMore": "Devamını oku!"
+    },
     "whoAreWe": {
       "title": "Biz kimiz?",
       "card1Title": "Misyonumuz",
@@ -20,7 +25,6 @@
       "card2Text": "Ekibimiz ile iletişim sayfasından iletişime geçebilirsiniz"
     }
   },
-
   "resourcesPage": {
     "ResourcesInfos": {
       "bigTitle": "Faydalı Kaynaklar",
@@ -31,18 +35,9 @@
     "required": "gereklidir",
     "invalidEmail": "Geçersiz e-posta adresi"
   },
-
   "alertMessages": {
     "subscribedSuccessfully": "Bültenimize başarıyla abone oldunuz"
   },
-
-  "blog": {
-    "title": "Blogumuz",
-    "subText": "Ev geride, dünya önde ve gölgelerin arasından uçlara kadar yürümek için pek çok yol var.",
-    "seeAll": "Tümünü Gör",
-    "readMore": "Devamını oku!"
-  },
-
   "speeches": {
     "speechText1": "Şu anda Ford, Fiesta, Focus, Fusion, C-Max, Mustang ve Taurus ile Kuzey Amerika'da altı sedan ve coupe satıyor. Bu seri, kompakt Fiest'ten orta boy Focus, C-Max ve Fusion'dan tam boy Taurus'a kadar birçok segmente hitap ediyor.",
     "auther1": " Emily Jørgense",
@@ -54,11 +49,9 @@
     "auther3": " Emily Jørgense",
     "AutherSection3": "Panoply Store'da yazar"
   },
-
   "WhatDidTheySayAboutUs": {
     "HeaderSection": "Bizim için ne dediler"
   },
-
   "footer": {
     "login": "Oturum açın",
     "subscribe": "Abone ol",
@@ -72,12 +65,10 @@
       "subtitle": "Üniversite Yolculuğunuza başlamak için ihtiyacınız olan tüm kaynakları burada bulabilirsiniz."
     }
   },
-
   "blogs": {
     "header": "En son blog gönderileri",
     "title": "Ev geride, dünya önde ve gölgelerin arasından uçlara kadar yürümek için pek çok yol var."
   },
-
   "constactUs": {
     "hero": {
       "title": "Bizimle iletişime geçin",
@@ -91,7 +82,6 @@
       "submit": "Gönder"
     }
   },
-
   "AboutPage": {
     "title": "Servisimiz ",
     "section1Title": "Eğitim Akademisi için ",
@@ -134,5 +124,24 @@
     "go": "Git"
   },
   "loading": "Yükleniyor",
-  "universitiesTempLink": "universities ler"
+  "universitiesTempLink": "universities ler",
+  "auth": {
+    "email": "E-posta",
+    "name": "Ad & Soyadı",
+    "password": "Şifre",
+    "confirmPassword": "Şifreyi Onayla",
+    "login": "Giriş",
+    "logout": "Çıkış",
+    "register": "Kaydol",
+    "noAccount": "Hesabım yok!",
+    "haveAccount": "Bir hesabım var!",
+    "loggedSuccess": "Başarıyla giriş yaptınız",
+    "loggedOutSuccess": "Başarıyla çıkış yaptınız",
+    "loggedError": "Giriş sırasında hata oluştu lütfen tekrar deneyin",
+    "registeredSuccess": "Başarıyla kayıt oldunuz Lütfen hesabınıza giriş yapın",
+    "registeredError": "Giriş sırasında hata oluştu, lütfen tekrar deneyin",
+    "passwordMatchConfirm": "Şifreyi onayla, şifreyle eşleşmelidir"
+  },
+  "facebook": "Facebook",
+  "google": "Google"
 }

@@ -16,7 +16,7 @@ import {
 } from "../../utilities/types";
 import { db } from "./../../firebase";
 import { useTranslation } from "react-i18next";
-const FilterSection = () => {
+const FilterSection = ({ isLoggedIn }) => {
   const dispatch = useDispatch();
 
   // eslint-disable-next-line
@@ -169,15 +169,17 @@ const FilterSection = () => {
               >
                 {t("universities.filter.type")}
               </button>
-              <button
-                onClick={(e) => {
-                  setFilter({ ...filter, status: !filter.status });
-                  !filter.status && filterUniversities("status");
-                }}
-                className={`toggle ${filter.status && "active"} `}
-              >
-                {t("universities.filter.applicationStatus")}
-              </button>
+              {isLoggedIn && (
+                <button
+                  onClick={(e) => {
+                    setFilter({ ...filter, status: !filter.status });
+                    !filter.status && filterUniversities("status");
+                  }}
+                  className={`toggle ${filter.status && "active"} `}
+                >
+                  {t("universities.filter.applicationStatus")}
+                </button>
+              )}
             </div>
           </Col>
         </Row>

@@ -5,8 +5,17 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { getImageUrl } from "../../utilities/helpers";
 
-const University = ({ logo, name, location, url, type, isApplied }) => {
+const University = ({
+  logo,
+  name,
+  location,
+  url,
+  type,
+  isApplied,
+  isLoggedIn,
+}) => {
   const { t } = useTranslation();
+
   return (
     <div className="university">
       <Row>
@@ -42,15 +51,17 @@ const University = ({ logo, name, location, url, type, isApplied }) => {
                 {/* <div className="university_details__data"> */}
                 <span className="university_data">{location}</span>
                 <span className="university_data">{type}</span>
-                <span
-                  className={`university_data application ${
-                    isApplied && "applied"
-                  }`}
-                >
-                  {isApplied
-                    ? `${t("universities.lists.applied")}`
-                    : `${t("universities.lists.notApplied")}`}
-                </span>
+                {isLoggedIn && (
+                  <span
+                    className={`university_data application ${
+                      isApplied && "applied"
+                    }`}
+                  >
+                    {isApplied
+                      ? `${t("universities.lists.applied")}`
+                      : `${t("universities.lists.notApplied")}`}
+                  </span>
+                )}
                 {/* </div> */}
               </Col>
             </Row>

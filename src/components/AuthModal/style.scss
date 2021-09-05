@@ -1,0 +1,19 @@
+@import "./../../style/variables";
+
+.auth_model {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+}
+.auth_modal--close {
+  display: none;
+}
+
+.auth_modal--open {
+  display: block !important;
+}

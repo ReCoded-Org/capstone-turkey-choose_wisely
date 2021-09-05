@@ -11,10 +11,14 @@ const Universities = () => {
   const { universities, loading, notFound } = useSelector(
     (state) => state.universities
   );
+
+  const { isLoggedIn } = useSelector((state) => state.user);
+
   const { code } = lang();
+
   return (
     <div className="universities">
-      <FilterSection />
+      <FilterSection isLoggedIn={isLoggedIn} />
       <Container>
         <div className="universities_list">
           {loading && "Loading"}
@@ -33,6 +37,7 @@ const Universities = () => {
                   type={code === "en" ? data.enType : data.trType}
                   isApplied={index % 2 === 1 && true}
                   isLogin={true}
+                  isLoggedIn={isLoggedIn}
                 />
               );
             })}
