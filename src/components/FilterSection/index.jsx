@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import SearchBox from "../../components/SearchBox";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import "./style.scss";
 import {
   FETCH_UNIVERSITIES,
@@ -10,6 +10,9 @@ import {
   FILTER_UNIVERSITIES_BY_STATUS,
   FILTER_UNIVERSITIES_BY_TYPE,
   FILTER_UNIVERSITIES_BY_PROVINCE,
+  UNDO_FILTER_UNIVERSITIES_BY_NAME,
+  UNDO_FILTER_UNIVERSITIES_BY_TYPE,
+  UNDO_FILTER_UNIVERSITIES_BY_PROVINCE,
   LOADING,
   FOUND,
   NOTFOUND,
@@ -20,7 +23,7 @@ const FilterSection = () => {
   const dispatch = useDispatch();
 
   // eslint-disable-next-line
-  // const { universities, loading } = useSelector((state) => state.universities);
+  const { userInfo, isLoggedIn } = useSelector((state) => state.user);
 
   const { t } = useTranslation();
 
@@ -33,25 +36,64 @@ const FilterSection = () => {
   // eslint-disable-next-line
   // const [notFound, setNotFound] = useState(false);
 
-  useEffect(() => {
-    fetchAllUniversities();
-    // eslint-disable-next-line
-  }, [dispatch]);
+  // useEffect(() => {
+  //   (async () => {
+  //     await fetchAllUniversities();
+  //   })();
+  //   // eslint-disable-next-line
+  // }, [dispatch, isLoggedIn]);
 
   const fetchAllUniversities = async () => {
     try {
       dispatch({ type: LOADING });
-      db.collection("universities")
-        .get()
-        .then((querySnapshot) => {
-          const universities = querySnapshot.docs.map((doc) => {
-            return { id: doc.id, data: doc.data() };
-          });
-          dispatch({ type: FETCH_UNIVERSITIES, payload: universities });
+      await db.collection("universities").onSnapshot(async (querySnapshot) => {
+        const universities = querySnapshot.docs.map((doc) => {
+          return { id: doc.id, data: doc.data() };
         });
+        if (isLoggedIn) {
+          const withStat = await userAuthenticated(userInfo, universities);
+          dispatch({ type: FETCH_UNIVERSITIES, payload: withStat });
+        } else {
+          dispatch({ type: FETCH_UNIVERSITIES, payload: universities });
+        }
+      });
     } catch (error) {
       console.log("error fetch universities:", error);
     }
+  };
+
+  const userAuthenticated = async (userInfo, universities) => {
+    const { email } = userInfo;
+    return await Promise.all(
+      universities.map(async (university) => {
+        const status = await db
+          .collection("universities")
+          .doc(university.id)
+          .collection("users")
+          .where("email", "==", email)
+          .onSnapshot(async (querySnapshot) => {
+            return querySnapshot.docs.map((doc) => {
+              return { id: doc.id, data: doc.data() };
+            });
+            // querySnapshot.docs.map((doc) => {
+            //   return { id: doc.id, data: doc.data() };
+            // });
+          });
+
+        if (status.length > 0) {
+          university = {
+            ...university,
+            data: { ...university.data, status: status },
+          };
+        } else {
+          university = {
+            ...university,
+            data: { ...university.data, status: false },
+          };
+        }
+        return university;
+      })
+    );
   };
 
   const searchKeyWord = async (field, term) => {
@@ -145,7 +187,9 @@ const FilterSection = () => {
               <button
                 onClick={(e) => {
                   setFilter({ ...filter, name: !filter.name });
-                  !filter.name && filterUniversities("name");
+                  !filter.name
+                    ? filterUniversities("name")
+                    : dispatch({ type: UNDO_FILTER_UNIVERSITIES_BY_NAME });
                 }}
                 className={`toggle ${filter.name && "active"} `}
               >
@@ -154,7 +198,9 @@ const FilterSection = () => {
               <button
                 onClick={(e) => {
                   setFilter({ ...filter, province: !filter.province });
-                  !filter.province && filterUniversities("province");
+                  !filter.province
+                    ? filterUniversities("province")
+                    : dispatch({ type: UNDO_FILTER_UNIVERSITIES_BY_PROVINCE });
                 }}
                 className={`toggle ${filter.province && "active"} `}
               >
@@ -163,21 +209,25 @@ const FilterSection = () => {
               <button
                 onClick={(e) => {
                   setFilter({ ...filter, type: !filter.type });
-                  !filter.type && filterUniversities("type");
+                  !filter.type
+                    ? filterUniversities("type")
+                    : dispatch({ type: UNDO_FILTER_UNIVERSITIES_BY_TYPE });
                 }}
                 className={`toggle ${filter.type && "active"} `}
               >
                 {t("universities.filter.type")}
               </button>
-              <button
-                onClick={(e) => {
-                  setFilter({ ...filter, status: !filter.status });
-                  !filter.status && filterUniversities("status");
-                }}
-                className={`toggle ${filter.status && "active"} `}
-              >
-                {t("universities.filter.applicationStatus")}
-              </button>
+              {isLoggedIn && (
+                <button
+                  onClick={(e) => {
+                    setFilter({ ...filter, status: !filter.status });
+                    !filter.status && filterUniversities("status");
+                  }}
+                  className={`toggle ${filter.status && "active"} `}
+                >
+                  {t("universities.filter.applicationStatus")}
+                </button>
+              )}
             </div>
           </Col>
         </Row>

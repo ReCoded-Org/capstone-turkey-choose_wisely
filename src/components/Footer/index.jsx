@@ -7,6 +7,8 @@ import { useAlert } from "react-alert";
 import { db } from "./../../firebase";
 import { useTranslation } from "react-i18next";
 import "./style.scss";
+import { TEMPLATE_ID, USER_ID } from "../../utilities/variables";
+import emailjs from "emailjs-com";
 
 const Footer = () => {
   const [subscribe, setSubscribe] = useState({ email: "" });
@@ -18,8 +20,19 @@ const Footer = () => {
       if (subscribe.email !== "") {
         try {
           await db.collection("subscribers").add(subscribe);
+
+          await emailjs.send(
+            "service_zd2zans",
+            TEMPLATE_ID,
+            {
+              to_name: subscribe.email,
+              reply_to: " choose.wisely.re@gmail.com",
+            },
+            USER_ID
+          );
           alert.success(t("alertMessages.subscribedSuccessfully"));
         } catch (error) {
+          console.log("error :", error);
           alert.error(`${error.message}`);
         }
       }

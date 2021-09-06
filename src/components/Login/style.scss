@@ -1,0 +1,61 @@
+@import "./../../style/variables.scss";
+@import "./../../style/mixin.scss";
+
+.auth_portal_login_register {
+  width: 100%;
+  overflow: hidden;
+  @include for-big-desktop-up {
+    width: 100rem;
+    margin: auto;
+  }
+}
+.auth_container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .auth_image {
+    margin: auto;
+    padding: 9rem 3rem;
+    width: 100%;
+  }
+}
+.form_section_wrapper {
+  .top_section {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin: 1rem 0;
+    .auth_title {
+      font-weight: 500;
+      font-size: 1.5625rem;
+      color: $gray-secondary-color;
+    }
+    .auth_back_button {
+      background-color: transparent;
+      border: none;
+    }
+  }
+  .social_auth_section {
+    width: 100%;
+    margin: 1rem 0;
+    .facebook {
+      background: #1877f2;
+      opacity: 0.8;
+      margin: 0 1rem;
+      cursor: not-allowed;
+    }
+
+    .third_party_button_auh {
+      box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.2);
+      border-radius: 0.3125rem;
+      border: none;
+      font-weight: 500;
+      font-size: 0.875rem;
+      line-height: 1rem;
+      color: #fff;
+      padding: 0.7rem 1.2rem;
+    }
+  }
+}

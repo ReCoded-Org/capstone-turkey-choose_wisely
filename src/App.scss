@@ -6,7 +6,9 @@ body {
   margin: 0;
   padding: 0;
 }
-
+#root {
+  overflow-x: hidden;
+}
 p {
   margin: 0;
   padding: 0;

@@ -1,12 +1,20 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import uniMap from "./../../images/uni.jpg";
 import "./style.scss";
 
 function Map() {
   return (
     <Container className="text-center">
-      <img src={uniMap} className="map" alt="Map of Universities in Turkey" />
+      <Row>
+        <Col lg={12}>
+          <img
+            src={uniMap}
+            className="map"
+            alt="Map of Universities in Turkey"
+          />
+        </Col>
+      </Row>
     </Container>
   );
 }

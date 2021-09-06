@@ -1,0 +1,30 @@
+@import "./../../style/variables";
+
+.not_found {
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  .not_found__content {
+    padding: 2rem 1rem;
+    background-color: $secondary-color;
+    border: 0.05rem solid rgba(199, 199, 199, 0.452);
+    border-radius: 0.4rem;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    .error_number {
+      text-align: center;
+      color: $gray-secondary-color;
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    .error_message {
+      font-size: 1rem;
+      color: rgb(78, 78, 78);
+    }
+    .no_found_image {
+      width: 50%;
+    }
+  }
+}

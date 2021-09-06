@@ -15,7 +15,7 @@ function UserFieldOfInterest() {
     <Container>
       <Row>
         <div className="title">
-          <Col className="col-lg-4 d-flex">
+          <Col className="col-lg-12 d-flex">
             <h1> {t("userProfile.fieldInterest.title")}</h1>
             <img
               className="add"
@@ -28,8 +28,8 @@ function UserFieldOfInterest() {
         </div>
       </Row>
       <ProgressInterest />
-      <Link to="/Universities" style={{ textDecoration: "none" }}>
-        <Col className="col-lg-4 d-flex">
+      <Link to="/status" style={{ textDecoration: "none" }}>
+        <Col className="col-lg-12 d-flex">
           <p className="link">{t("userProfile.fieldInterest.linkto")}</p>
           <img className="button" alt="link" src={button} />
         </Col>

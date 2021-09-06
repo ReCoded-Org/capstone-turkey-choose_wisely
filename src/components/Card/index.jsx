@@ -4,8 +4,6 @@ import "./style.scss";
 import Avatar from "@material-ui/core/Avatar";
 
 export default function SliderSecion(speech) {
-  console.log(speech);
-
   return (
     <Container>
       <Row className="align-items-center justify-content-center Card">

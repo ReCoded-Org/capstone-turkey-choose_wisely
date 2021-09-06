@@ -30,7 +30,7 @@ exports[`Snapshop test of RessourcesHeader component 1`] = `
               ressourcesPage.header.subtitle
             </p>
             <h2
-              className="title"
+              className="section_title__title"
             />
           </div>
           <div

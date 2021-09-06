@@ -24,7 +24,6 @@ const Blog = () => {
             });
             setPosts(blogInfo);
             setLoading(false);
-            console.log(blogInfo);
           });
       } catch (error) {
         setLoading(false);

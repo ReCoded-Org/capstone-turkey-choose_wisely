@@ -14,7 +14,6 @@ const BlogList = () => {
         const [language] = LANGUAGES.filter(
           (language) => language.code === i18n.language
         );
-        console.log(language);
         const posts = await fetch(
           `https://public-api.wordpress.com/wp/v2/sites/choosewisely834444303.wordpress.com/posts?tags=${language.key}`
         );
