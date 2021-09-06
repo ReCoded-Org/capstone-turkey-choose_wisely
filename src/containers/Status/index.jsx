@@ -4,6 +4,8 @@ import StatusComponent from "./../../components/StatusComponent";
 import { useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
 import notFoundImage from "./../../images/404.svg";
+import { Helmet } from "react-helmet";
+
 const Status = () => {
   const { isLoggedIn } = useSelector((state) => state.user);
   const { universities } = useSelector((state) => state.universities);
@@ -11,6 +13,12 @@ const Status = () => {
   const { t } = useTranslation();
   return (
     <div className="status_page">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>
+          {t("navbar.chooseWisely")} | {t("navbar.status")}
+        </title>
+      </Helmet>
       {isLoggedIn ? (
         <StatusComponent universities={universities} />
       ) : (

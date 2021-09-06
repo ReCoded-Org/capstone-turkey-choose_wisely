@@ -93,12 +93,14 @@
     "title": "Takım"
   },
   "navbar": {
+    "chooseWisely": "Choose Wisely",
     "home": "Ana Sayfa",
     "about": "Hakkımızda",
     "contact": "İletişim",
     "ressources": "kaynaklar",
     "universities": "üniversiteler",
-    "blog": "Blog"
+    "blog": "Blog",
+    "status": "Duromlar"
   },
   "signUp": {
     "sign-up": "Üye olmak"

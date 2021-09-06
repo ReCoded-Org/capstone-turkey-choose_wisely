@@ -93,12 +93,14 @@
     "title": "Team"
   },
   "navbar": {
+    "chooseWisely": "Choose Wisely",
     "home": "Home",
     "about": "About",
     "contact": "Contact",
     "ressources": "Ressources",
     "universities": "Universities",
-    "blog": "Blog"
+    "blog": "Blog",
+    "status": "Status"
   },
   "signUp": {
     "sign-up": "Sign up"

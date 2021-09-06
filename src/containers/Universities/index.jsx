@@ -6,6 +6,8 @@ import { Container } from "react-bootstrap";
 import "./style.scss";
 import University from "../../components/University";
 import { lang } from "../../utilities/helpers";
+import { Helmet } from "react-helmet";
+import { useTranslation } from "react-i18next";
 
 const Universities = () => {
   const { universities, loading, notFound } = useSelector(
@@ -15,9 +17,16 @@ const Universities = () => {
   const { isLoggedIn } = useSelector((state) => state.user);
 
   const { code } = lang();
+  const { t } = useTranslation();
 
   return (
     <div className="universities">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>
+          {t("navbar.chooseWisely")} | {t("navbar.universities")}
+        </title>
+      </Helmet>
       <FilterSection isLoggedIn={isLoggedIn} />
       <Container>
         <div className="universities_list">
