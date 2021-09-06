@@ -23,7 +23,6 @@ import { FETCH_UNIVERSITIES, LOADING } from "./utilities/types";
 import { db } from "./firebase";
 import MessengerCustomerChat from "react-messenger-customer-chat";
 
-import "react-chat-widget/lib/styles.css";
 function App() {
   const dispatch = useDispatch();
 
