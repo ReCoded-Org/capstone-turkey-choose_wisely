@@ -1,13 +1,13 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import "./style.scss";
-// import Avatar from "@material-ui/core/Avatar";
 import Avatar from "react-avatar";
 import { Link } from "react-router-dom";
 import "./style.scss";
-// import Avatar from "@material-ui/core/Avatar";
+import { useTranslation } from "react-i18next";
 
 const BlogDetails = ({ post }) => {
+  const { t } = useTranslation();
   return (
     <div className="blog">
       <Link to={`SingleBlog/${post.category}/${post.slug}`} className="title">
@@ -42,14 +42,13 @@ const BlogDetails = ({ post }) => {
                     className="auther_name"
                   ></h6>
                   <span className="auther_job_title">
-                    Content Writing / IT Depatement
+                    {t("blogs.blogPageAutherDetails")}
                   </span>
                 </div>
               </div>
             </div>
           </Col>
         </Row>
-        {/* </Container> */}
       </Link>
     </div>
   );
