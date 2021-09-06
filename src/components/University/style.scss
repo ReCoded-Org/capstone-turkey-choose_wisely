@@ -5,6 +5,9 @@
   padding: 1rem 2rem;
   .university_details__logo {
     display: flex;
+    @include for-phone-only {
+      flex-direction: column;
+    }
     .university_logo {
       max-width: 15rem;
       min-width: 12rem;

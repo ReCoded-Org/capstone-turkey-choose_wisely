@@ -1,11 +1,16 @@
 @import "./../../style/variables";
+@import "./../../style/mixins";
 
 .hero {
   background-color: $light-color;
 }
 
 .hero_contant {
-  margin-top: 50%;
+  margin-top: 10%;
+
+  @include for-tablet-landscape-up {
+    margin-top: 50%;
+  }
 
   .hero_title {
     margin-bottom: 1.875rem;
@@ -13,13 +18,21 @@
       font-family: sans-serif;
       color: $primary-color;
       font-size: 3rem;
+      text-align: justify;
+      text-justify: inter-word;
     }
   }
   .hero_text {
     margin-bottom: 2.52rem;
-    p {
-      color: $gray-base-color;
-      font-size: 1.125rem;
+    .hero_text_p {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.12rem;
+      text-align: justify;
+      text-justify: inter-word;
+
+      color: $gray-secondary-color;
     }
   }
   .hero_search {

@@ -13,7 +13,7 @@ const CardsResourcesInfos = ({
 
   return (
     <Container>
-      <Row className="text">
+      <Row className="">
         <Col lg={4} md={12}>
           <div className="card_content_wrapper">
             <h3 className="theme">{scholarshipsState.theme}</h3>

@@ -20,9 +20,11 @@
       width: 70%;
     }
   }
-  .title {
+  .section_title__title {
     color: #386641;
     font-weight: 300;
+    margin-bottom: 2rem;
+    text-align: left;
     font-size: 2.125rem;
     line-height: 2.875rem;
     letter-spacing: -0.00625rem;
@@ -32,7 +34,8 @@
     font-size: 1.125rem;
     line-height: 1.625rem;
     letter-spacing: -0.03125rem;
-    color: $secondary-color;
+    text-align: left;
+    color: #666666;
     margin-bottom: 3.6rem;
     width: 100%;
     @include for-desktop-up {

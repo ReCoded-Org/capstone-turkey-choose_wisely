@@ -1,4 +1,5 @@
 @import "./../../style/variables";
+@import "./../../style/mixins";
 
 .nav__bar {
   color: #ffffff !important;
@@ -8,6 +9,7 @@
   color: $primary-color !important;
   font-size: 1.875rem !important;
   font-family: $logo-font;
+  cursor: pointer;
 }
 .nav__btn {
   margin-left: 4rem;
@@ -16,24 +18,44 @@
   background-color: $primary-color !important;
   border: none !important;
 }
-
+.avatar_nav_auth {
+  margin-left: 4rem !important;
+}
+.links_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
 .nav__items {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 1rem;
+  @include for-tablet-landscape-up {
+    align-items: center;
+    margin-top: 0rem;
+  }
   .nav-link {
     display: flex;
     flex-direction: column;
+
     align-items: center;
   }
+}
 
-  .active {
-    color: $primary-color;
+.drop_down_status_link {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #666;
+}
 
-    .dot {
-      position: absolute;
-      height: 0.4rem;
-      width: 0.4rem;
-      bottom: 1.1rem;
-      background-color: $primary-color;
-      border-radius: 100%;
-    }
+.active {
+  color: $primary-color !important;
+  .dot {
+    position: absolute;
+    height: 0.3rem;
+    width: 0.3rem;
+    bottom: 0.8rem;
+    background-color: $primary-color;
+    border-radius: 50% !important;
   }
 }

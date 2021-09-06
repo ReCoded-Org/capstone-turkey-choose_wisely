@@ -1,0 +1,42 @@
+.status_element {
+  display: flex;
+  align-items: center;
+  margin: 2rem;
+  .rounded-circle {
+    width: 5.25rem;
+    height: 5.25rem;
+  }
+  .status_element__details {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+
+    .uni_name {
+      font-weight: bold;
+      font-size: 0.875rem;
+      line-height: 1rem;
+      color: #9dafbd;
+      margin-bottom: 0.5rem;
+    }
+    .uni_date,
+    .uni_city {
+      font-weight: 300;
+      font-size: 0.6rem;
+      line-height: 0.875rem;
+      color: #9dafbd;
+      line-height: 1rem;
+    }
+  }
+}
+
+.rejected {
+  color: #660909;
+}
+
+.pending {
+  color: #386641;
+}

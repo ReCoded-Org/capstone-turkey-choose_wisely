@@ -66,3 +66,6 @@ export const memebers = [
 ];
 
 export const LOADING_TIME = 1000;
+
+export const USER_ID = `user_WoIweft3Igv6PR4Qav1EI`; //userID
+export const TEMPLATE_ID = `template_pmbc2b2`; //templateID
