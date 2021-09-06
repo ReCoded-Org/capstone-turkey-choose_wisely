@@ -21,7 +21,9 @@ import Status from "./containers/Status";
 import { useDispatch, useSelector } from "react-redux";
 import { FETCH_UNIVERSITIES, LOADING } from "./utilities/types";
 import { db } from "./firebase";
+import MessengerCustomerChat from "react-messenger-customer-chat";
 
+import "react-chat-widget/lib/styles.css";
 function App() {
   const dispatch = useDispatch();
 
@@ -93,21 +95,30 @@ function App() {
   };
 
   return (
-    <Router history={history}>
-      <Preloader />
-      <NavBar />
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/Contact" component={Contact} />
-        <Route exact path="/resources" component={ResourcesPage} />
-        <Route exact path="/Universities" component={Universities} />
-        <Route exact path="/Blog" component={Blog} />
-        <Route exact path="/status" component={Status} />
-        <Route component={NotFound} />
-      </Switch>
-      <Footer />
-    </Router>
+    <>
+      <Router history={history}>
+        <Preloader />
+        <NavBar />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/Contact" component={Contact} />
+          <Route exact path="/resources" component={ResourcesPage} />
+          <Route exact path="/Universities" component={Universities} />
+          <Route exact path="/Blog" component={Blog} />
+          <Route exact path="/status" component={Status} />
+          <Route component={NotFound} />
+        </Switch>
+        <Footer />
+      </Router>
+      <div className="chat">
+        <MessengerCustomerChat
+          pageId="234946631767823"
+          appId="371633314425332"
+        />
+      </div>
+    </>
   );
 }
+
 export default App;
