@@ -16,6 +16,7 @@ import Blog from "./containers/Blog";
 import NotFound from "./containers/NotFound";
 import Footer from "./components/Footer";
 import Preloader from "./components/PreLoad";
+import SingleBlog from "./containers/SingleBlog";
 import Status from "./containers/Status";
 import UserProfilePage from "./containers/UserProfilePage";
 
@@ -105,6 +106,7 @@ function App() {
           <Route exact path="/Profile" component={UserProfilePage} />
           <Route exact path="/Blog" component={Blog} />
           <Route exact path="/status" component={Status} />
+          <Route exact path="/SingleBlog/:cat/:slug" component={SingleBlog} />
           <Route component={NotFound} />
         </Switch>
         <Footer />

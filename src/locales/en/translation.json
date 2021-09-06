@@ -23,6 +23,12 @@
       "card1Text": "Our mission is to ensure an adequate and relevant orientation to all the students wishing to reach an university in Turkey",
       "card2Title": "Meet us",
       "card2Text": "You can contact our team through the contact page"
+    },
+    "blog": {
+      "title": "Our Blog",
+      "subText": "Home is behind, the world ahead and there are many paths to tread through shadows to the edge.",
+      "seeAll": "See all",
+      "readMore": "read more!"
     }
   },
   "resourcesPage": {
@@ -76,7 +82,8 @@
   },
   "blogs": {
     "header": "Latest Blog Posts",
-    "title": "Home is behind, the world ahead and there are many paths to tread through shadows to the edge."
+    "title": "Home is behind, the world ahead and there are many paths to tread through shadows to the edge.",
+    "blogPageAutherDetails": "Content Writing / IT Depatement"
   },
   "constactUs": {
     "hero": {
