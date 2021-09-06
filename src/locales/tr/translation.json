@@ -36,7 +36,8 @@
     "invalidEmail": "Geçersiz e-posta adresi"
   },
   "alertMessages": {
-    "subscribedSuccessfully": "Bültenimize başarıyla abone oldunuz"
+    "subscribedSuccessfully": "Bültenimize başarıyla abone oldunuz",
+    "contactSuccess": "Mesajınız başarıyla gönderildi"
   },
   "speeches": {
     "speechText1": "Şu anda Ford, Fiesta, Focus, Fusion, C-Max, Mustang ve Taurus ile Kuzey Amerika'da altı sedan ve coupe satıyor. Bu seri, kompakt Fiest'ten orta boy Focus, C-Max ve Fusion'dan tam boy Taurus'a kadar birçok segmente hitap ediyor.",
@@ -157,5 +158,7 @@
   },
   "facebook": "Facebook",
   "google": "Google",
-  "dataNotFound": "Lütfen üniversiteler sayfasına başvuru ekleyin!"
+  "dataNotFound": "Lütfen üniversiteler sayfasına başvuru ekleyin!",
+  "number": "(222) 872-1245",
+  "address": "321243 Smith street ch."
 }

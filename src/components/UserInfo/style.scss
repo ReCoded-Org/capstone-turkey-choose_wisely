@@ -1,0 +1,29 @@
+@import "./../../style/variables";
+.user_info {
+  background-color: $light-color;
+  padding: 3rem 0;
+}
+
+.details_list {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  .item_detail {
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    .label {
+      font-size: 1.1rem;
+      width: 8rem;
+      color: #386641;
+      font-weight: 400;
+    }
+    .value {
+      margin-left: 1rem;
+      font-weight: 300;
+      font-size: 1rem;
+      line-height: 26px;
+      color: #666666;
+    }
+  }
+}

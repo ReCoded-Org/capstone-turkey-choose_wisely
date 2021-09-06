@@ -27,28 +27,18 @@
   align-items: flex-end;
 }
 .nav__items {
-  // display: none;
+  display: flex;
   align-items: flex-end;
-  // @include for-desktop-up {
-  //   display: flex;
-  // }
+  margin-top: 1rem;
+  @include for-tablet-landscape-up {
+    align-items: center;
+    margin-top: 0rem;
+  }
   .nav-link {
     display: flex;
     flex-direction: column;
+
     align-items: center;
-  }
-
-  .active {
-    color: $primary-color !important;
-
-    .dot {
-      position: absolute;
-      height: 0.3rem;
-      width: 0.3rem;
-      bottom: 0.8rem;
-      background-color: $primary-color;
-      border-radius: 100%;
-    }
   }
 }
 
@@ -56,4 +46,16 @@
   font-size: 1rem;
   text-decoration: none;
   color: #666;
+}
+
+.active {
+  color: $primary-color !important;
+  .dot {
+    position: absolute;
+    height: 0.3rem;
+    width: 0.3rem;
+    bottom: 0.8rem;
+    background-color: $primary-color;
+    border-radius: 50% !important;
+  }
 }

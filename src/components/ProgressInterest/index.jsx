@@ -16,7 +16,6 @@ const ProgressInterest = () => {
       );
     });
   };
-  console.log(fields);
   useEffect(() => {
     addNewField();
   }, []);
@@ -25,10 +24,10 @@ const ProgressInterest = () => {
     return (
       <Container>
         <Row className="interest" key={interest.id}>
-          <Col className="field">
+          <Col sx={12} lg={2} className="field">
             <p>{interest.field}</p>
           </Col>
-          <Col xs={8}>
+          <Col sx={10} lg={8}>
             <div className="progress">
               <div
                 className="progress-bar"
@@ -40,7 +39,7 @@ const ProgressInterest = () => {
               ></div>
             </div>
           </Col>
-          <Col className="field_value">
+          <Col xs={2} lg={2} className="field_value">
             <p>{interest.percent}%</p>
           </Col>
         </Row>

@@ -68,7 +68,7 @@ const NavBar = () => {
                   to="/"
                 >
                   <span> {t("navbar.home")}</span>
-                  <span className="dot"></span>{" "}
+                  <span className="dot"></span>
                 </Nav.Link>
                 <Nav.Link
                   className={location.pathname === "/About" && "active"}

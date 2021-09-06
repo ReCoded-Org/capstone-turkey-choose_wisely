@@ -15,7 +15,7 @@ function UserFieldOfInterest() {
     <Container>
       <Row>
         <div className="title">
-          <Col className="col-lg-4 d-flex">
+          <Col className="col-lg-12 d-flex">
             <h1> {t("userProfile.fieldInterest.title")}</h1>
             <img
               className="add"
