@@ -41,6 +41,7 @@ const Universities = () => {
               return (
                 <University
                   key={university.id}
+                  uniId={university.id}
                   name={code === "en" ? data.enName : data.trName}
                   logo={data.image}
                   location={data.location}

@@ -115,7 +115,7 @@
     "lists": {
       "unknown": "Bilinmeyen",
       "applied": "Başvurdu",
-      "notApplied": "Başvur Yok"
+      "notApplied": "Başvur"
     }
   },
   "notFounded": {
@@ -147,5 +147,6 @@
     "passwordMatchConfirm": "Şifreyi onayla, şifreyle eşleşmelidir"
   },
   "facebook": "Facebook",
-  "google": "Google"
+  "google": "Google",
+  "dataNotFound": "Lütfen üniversiteler sayfasına başvuru ekleyin!"
 }

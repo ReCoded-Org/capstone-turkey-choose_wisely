@@ -38,20 +38,17 @@ function App() {
   const fetchAllUniversities = async () => {
     try {
       dispatch({ type: LOADING });
-      await db
-        .collection("universities")
-        .get()
-        .then(async (querySnapshot) => {
-          const universities = querySnapshot.docs.map((doc) => {
-            return { id: doc.id, data: doc.data() };
-          });
-          if (isLoggedIn) {
-            const withStat = await userAuthenticated(userInfo, universities);
-            dispatch({ type: FETCH_UNIVERSITIES, payload: withStat });
-          } else {
-            dispatch({ type: FETCH_UNIVERSITIES, payload: universities });
-          }
+      await db.collection("universities").onSnapshot(async (querySnapshot) => {
+        const universities = querySnapshot.docs.map((doc) => {
+          return { id: doc.id, data: doc.data() };
         });
+        if (isLoggedIn) {
+          const withStat = await userAuthenticated(userInfo, universities);
+          dispatch({ type: FETCH_UNIVERSITIES, payload: withStat });
+        } else {
+          dispatch({ type: FETCH_UNIVERSITIES, payload: universities });
+        }
+      });
     } catch (error) {
       console.log("error fetch universities:", error);
     }

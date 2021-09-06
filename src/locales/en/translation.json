@@ -115,7 +115,7 @@
     "lists": {
       "unknown": "Unknown",
       "applied": "Applied",
-      "notApplied": "Not Applied"
+      "notApplied": "Apply"
     }
   },
   "notFounded": {
@@ -147,5 +147,6 @@
     "passwordMatchConfirm": "Confirm password must be matching the password"
   },
   "facebook": "Facebook",
-  "google": "Google"
+  "google": "Google",
+  "dataNotFound": "Please add applications for the universities page!"
 }

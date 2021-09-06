@@ -10,6 +10,9 @@ import {
   FILTER_UNIVERSITIES_BY_STATUS,
   FILTER_UNIVERSITIES_BY_TYPE,
   FILTER_UNIVERSITIES_BY_PROVINCE,
+  UNDO_FILTER_UNIVERSITIES_BY_NAME,
+  UNDO_FILTER_UNIVERSITIES_BY_TYPE,
+  UNDO_FILTER_UNIVERSITIES_BY_PROVINCE,
   LOADING,
   FOUND,
   NOTFOUND,
@@ -43,20 +46,17 @@ const FilterSection = () => {
   const fetchAllUniversities = async () => {
     try {
       dispatch({ type: LOADING });
-      await db
-        .collection("universities")
-        .get()
-        .then(async (querySnapshot) => {
-          const universities = querySnapshot.docs.map((doc) => {
-            return { id: doc.id, data: doc.data() };
-          });
-          if (isLoggedIn) {
-            const withStat = await userAuthenticated(userInfo, universities);
-            dispatch({ type: FETCH_UNIVERSITIES, payload: withStat });
-          } else {
-            dispatch({ type: FETCH_UNIVERSITIES, payload: universities });
-          }
+      await db.collection("universities").onSnapshot(async (querySnapshot) => {
+        const universities = querySnapshot.docs.map((doc) => {
+          return { id: doc.id, data: doc.data() };
         });
+        if (isLoggedIn) {
+          const withStat = await userAuthenticated(userInfo, universities);
+          dispatch({ type: FETCH_UNIVERSITIES, payload: withStat });
+        } else {
+          dispatch({ type: FETCH_UNIVERSITIES, payload: universities });
+        }
+      });
     } catch (error) {
       console.log("error fetch universities:", error);
     }
@@ -71,8 +71,7 @@ const FilterSection = () => {
           .doc(university.id)
           .collection("users")
           .where("email", "==", email)
-          .get()
-          .then(async (querySnapshot) => {
+          .onSnapshot(async (querySnapshot) => {
             return querySnapshot.docs.map((doc) => {
               return { id: doc.id, data: doc.data() };
             });
@@ -188,7 +187,9 @@ const FilterSection = () => {
               <button
                 onClick={(e) => {
                   setFilter({ ...filter, name: !filter.name });
-                  !filter.name && filterUniversities("name");
+                  !filter.name
+                    ? filterUniversities("name")
+                    : dispatch({ type: UNDO_FILTER_UNIVERSITIES_BY_NAME });
                 }}
                 className={`toggle ${filter.name && "active"} `}
               >
@@ -197,7 +198,9 @@ const FilterSection = () => {
               <button
                 onClick={(e) => {
                   setFilter({ ...filter, province: !filter.province });
-                  !filter.province && filterUniversities("province");
+                  !filter.province
+                    ? filterUniversities("province")
+                    : dispatch({ type: UNDO_FILTER_UNIVERSITIES_BY_PROVINCE });
                 }}
                 className={`toggle ${filter.province && "active"} `}
               >
@@ -206,7 +209,9 @@ const FilterSection = () => {
               <button
                 onClick={(e) => {
                   setFilter({ ...filter, type: !filter.type });
-                  !filter.type && filterUniversities("type");
+                  !filter.type
+                    ? filterUniversities("type")
+                    : dispatch({ type: UNDO_FILTER_UNIVERSITIES_BY_TYPE });
                 }}
                 className={`toggle ${filter.type && "active"} `}
               >

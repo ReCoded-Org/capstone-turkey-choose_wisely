@@ -1,8 +1,11 @@
 import { LOGIN, LOGOUT } from "../utilities/types";
 
 const initialState = {
-  userInfo: {},
-  isLoggedIn: false,
+  userInfo: {
+    email: "mohammed.alalaya@gmail.com",
+    displayName: "Mohammad Zakaria",
+  },
+  isLoggedIn: true,
 };
 
 const universitiesReducer = (state = initialState, action) => {

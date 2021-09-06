@@ -8,8 +8,7 @@ import { Helmet } from "react-helmet";
 
 const Status = () => {
   const { isLoggedIn } = useSelector((state) => state.user);
-  const { universities } = useSelector((state) => state.universities);
-  // console.log("universities :", universities);
+
   const { t } = useTranslation();
   return (
     <div className="status_page">
@@ -20,7 +19,7 @@ const Status = () => {
         </title>
       </Helmet>
       {isLoggedIn ? (
-        <StatusComponent universities={universities} />
+        <StatusComponent />
       ) : (
         <div className="not_found">
           <div className="not_found__content">
