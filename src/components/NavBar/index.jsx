@@ -59,6 +59,14 @@ const NavBar = () => {
                 <span className="dot"></span>
               </Nav.Link>
               <Nav.Link
+                className={location.pathname === "/UserProfile" && "active"}
+                as={Link}
+                to="/Profile"
+              >
+                <span>{t("navbar.user-profile")}</span>
+                <span className="dot"></span>
+              </Nav.Link>
+              <Nav.Link
                 className={location.pathname === "/Blog" && "active"}
                 as={Link}
                 to="/Blog"

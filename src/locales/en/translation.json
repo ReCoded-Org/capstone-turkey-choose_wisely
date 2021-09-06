@@ -65,6 +65,15 @@
     }
   },
 
+  "userProfile": {
+    "fieldInterest": {
+      "title": "Field of interest",
+      "linkto": "Go to status Page",
+      "field": "Enter your field of interest",
+      "value": "Percentage of interest"
+    }
+  },
+
   "blogs": {
     "header": "Latest Blog Posts",
     "title": "Home is behind, the world ahead and there are many paths to tread through shadows to the edge."
@@ -105,6 +114,7 @@
     "contact": "Contact",
     "resources": "Resources",
     "universities": "Universities",
+    "user-profile": "Profile",
     "blog": "Blog"
   },
   "signUp": {

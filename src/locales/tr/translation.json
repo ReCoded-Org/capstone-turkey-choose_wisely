@@ -73,6 +73,15 @@
     }
   },
 
+  "userProfile": {
+    "fieldInterest": {
+      "title": "İlgi alanı",
+      "linkto": "Durum sayfasına git",
+      "field": "İlgi alanınızı girin",
+      "value": "İlgi yüzdesi"
+    }
+  },
+
   "blogs": {
     "header": "En son blog gönderileri",
     "title": "Ev geride, dünya önde ve gölgelerin arasından uçlara kadar yürümek için pek çok yol var."
@@ -107,6 +116,7 @@
     "about": "Hakkımızda",
     "contact": "İletişim",
     "ressources": "kaynaklar",
+    "user-profile": "Profil",
     "universities": "üniversiteler",
     "blog": "Blog"
   },
