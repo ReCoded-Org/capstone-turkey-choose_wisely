@@ -65,6 +65,14 @@
       "subtitle": "Üniversite Yolculuğunuza başlamak için ihtiyacınız olan tüm kaynakları burada bulabilirsiniz."
     }
   },
+  "userProfile": {
+    "fieldInterest": {
+      "title": "İlgi alanı",
+      "linkto": "Durum sayfasına git",
+      "field": "İlgi alanınızı girin",
+      "value": "İlgi yüzdesi"
+    }
+  },
   "blogs": {
     "header": "En son blog gönderileri",
     "title": "Ev geride, dünya önde ve gölgelerin arasından uçlara kadar yürümek için pek çok yol var."
@@ -98,6 +106,7 @@
     "about": "Hakkımızda",
     "contact": "İletişim",
     "ressources": "kaynaklar",
+    "profile": "Profil",
     "universities": "üniversiteler",
     "blog": "Blog",
     "status": "Duromlar"
@@ -130,7 +139,7 @@
   "auth": {
     "plzLogin": "Giriş yapmanız gerekiyor",
     "email": "E-posta",
-    "status": "Durum sayfası",
+    "status": "Başvurular sayfası",
     "name": "Ad & Soyadı",
     "password": "Şifre",
     "confirmPassword": "Şifreyi Onayla",

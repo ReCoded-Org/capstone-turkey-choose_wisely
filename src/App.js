@@ -17,6 +17,7 @@ import NotFound from "./containers/NotFound";
 import Footer from "./components/Footer";
 import Preloader from "./components/PreLoad";
 import Status from "./containers/Status";
+import UserProfilePage from "./containers/UserProfilePage";
 
 import { useDispatch, useSelector } from "react-redux";
 import { FETCH_UNIVERSITIES, LOADING } from "./utilities/types";
@@ -101,6 +102,7 @@ function App() {
           <Route exact path="/Contact" component={Contact} />
           <Route exact path="/resources" component={ResourcesPage} />
           <Route exact path="/Universities" component={Universities} />
+          <Route exact path="/Profile" component={UserProfilePage} />
           <Route exact path="/Blog" component={Blog} />
           <Route exact path="/status" component={Status} />
           <Route component={NotFound} />

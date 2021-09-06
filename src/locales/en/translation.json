@@ -65,6 +65,14 @@
       "subtitle": "You can find here all the ressources that you need to start your University Journey."
     }
   },
+  "userProfile": {
+    "fieldInterest": {
+      "title": "Field of interest",
+      "linkto": "Go to status Page",
+      "field": "Enter your field of interest",
+      "value": "Percentage of interest"
+    }
+  },
   "blogs": {
     "header": "Latest Blog Posts",
     "title": "Home is behind, the world ahead and there are many paths to tread through shadows to the edge."
@@ -97,10 +105,11 @@
     "home": "Home",
     "about": "About",
     "contact": "Contact",
-    "ressources": "Ressources",
+    "resources": "Resources",
     "universities": "Universities",
     "blog": "Blog",
-    "status": "Status"
+    "status": "Status",
+    "profile": "Profile"
   },
   "signUp": {
     "sign-up": "Sign up"
