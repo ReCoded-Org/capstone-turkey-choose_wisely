@@ -56,7 +56,7 @@ const NavBar = () => {
       <Navbar bg="light" variant="light" expand="lg" className="nav__bar">
         <Container>
           <Navbar.Brand to="/" className="nav__brand">
-            Choose Wisly
+            Choose Wisely
           </Navbar.Brand>
           <div className="links_wrapper">
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
